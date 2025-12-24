@@ -92,19 +92,19 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/committee" element={<Committee />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/staff/academic" element={<AcademicStaff />} />
-        <Route path="/staff/non-academic" element={<NonAcademicStaff />} />
+        <Route path="/#/about" element={<AboutUs />} />
+        <Route path="/#/committee" element={<Committee />} />
+        <Route path="/#/courses" element={<Courses />} />
+        <Route path="/#/events" element={<Events />} />
+        <Route path="/#/staff/academic" element={<AcademicStaff />} />
+        <Route path="/#/staff/non-academic" element={<NonAcademicStaff />} />
 
-        <Route path="/courses/:id" element={<CourseDetail />} />
-        <Route path="/career" element={<Career />} />
-        <Route path="/inquiry" element={<Inquiry />} />
-        <Route path="/gallery" element={<Gallery  />} />
-        <Route path="/terms-of-use" element={<TermsConditions  />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy  />} />
+        <Route path="/#/courses/:id" element={<CourseDetail />} />
+        <Route path="/#/career" element={<Career />} />
+        <Route path="/#/inquiry" element={<Inquiry />} />
+        <Route path="/#/gallery" element={<Gallery  />} />
+        <Route path="/#/terms-of-use" element={<TermsConditions  />} />
+        <Route path="/#/privacy-policy" element={<PrivacyPolicy  />} />
 
         {/* <Route path="/courses" element={<Courses />} />
         <Route path="/faculty" element={<Faculty />} />
