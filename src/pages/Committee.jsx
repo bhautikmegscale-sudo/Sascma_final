@@ -11,56 +11,56 @@ const Committee = () => {
       name: "Shri Nirmalkumar V. Vakharia",
       designation: "President",
       image:
-        "https://sascma.ac.in:8443/api/v1/Uploads/media/4d053ce2-bf1f-4e58-a3c2-aa09ed078209.webp",
+        "https://sascma.ac.in:8443/api/v1/Uploads/media/4d053ce2-bf1f-4e58-a3c2-aa09ed078209.JPG",
     },
     {
       id: 2,
       name: "Shri Prafulchandra B. Shah",
       designation: "Vice President",
       image:
-        "https://sascma.ac.in:8443/api/v1/Uploads/media/bc126d9f-e5ce-4a9b-bced-3f6984d2061a.webp",
+        "https://sascma.ac.in:8443/api/v1/Uploads/media/bc126d9f-e5ce-4a9b-bced-3f6984d2061a.JPG",
     },
     {
       id: 3,
       name: "Shri Niravbhai P. Modi",
       designation: "Member, STERS",
       image:
-        "https://sascma.ac.in:8443/api/v1/Uploads/media/f9fe76e1-d1d9-4ddc-9ecd-cea9cc08dc52.webp",
+        "https://sascma.ac.in:8443/api/v1/Uploads/media/f9fe76e1-d1d9-4ddc-9ecd-cea9cc08dc52.JPG",
     },
     {
       id: 4,
       name: "Shri Dineshbhai S. Zaveri",
       designation: "Hon. Secretary",
       image:
-        "https://sascma.ac.in:8443/api/v1/Uploads/media/8023374c-f2c0-460d-8bbf-19cdc0c364aa.webp",
+        "https://sascma.ac.in:8443/api/v1/Uploads/media/8023374c-f2c0-460d-8bbf-19cdc0c364aa.JPG",
     },
         {
       id: 5,
       name: "Shri Himanshubhai S. Jariwala",
       designation: "Joint Secretary",
       image:
-        "https://sascma.ac.in:8443/api/v1/Uploads/media/52f2d493-ea0e-4485-a6b2-5cb6cf778bf1.webp",
+        "https://sascma.ac.in:8443/api/v1/Uploads/media/52f2d493-ea0e-4485-a6b2-5cb6cf778bf1.JPG",
     },
     {
       id: 6,
       name: "Shri Jaykantbhai M. Chevli",
       designation: "Joint Treasurer",
       image:
-        "https://sascma.ac.in:8443/api/v1/Uploads/media/b7d60bc7-20d9-463b-9326-628d626b7654.webp",
+        "https://sascma.ac.in:8443/api/v1/Uploads/media/b7d60bc7-20d9-463b-9326-628d626b7654.JPG",
     },
     {
       id: 7,
       name: "Shri Kiritbhai F. Vakharia",
       designation: "Treasurer",
       image:
-        "https://sascma.ac.in:8443/api/v1/Uploads/media/da2fd1f3-3ec2-4945-b9c0-cb163a7e99b6.webp",
+        "https://sascma.ac.in:8443/api/v1/Uploads/media/da2fd1f3-3ec2-4945-b9c0-cb163a7e99b6.JPG",
     },
     {
       id: 8,
       name: "Shri Harishbhai B. Nagoria",
       designation: "Administrator, STERS",
       image:
-        "https://sascma.ac.in:8443/api/v1/Uploads/media/fb3788d3-5762-4851-80ab-2f9da225ba6b.webp",
+        "https://sascma.ac.in:8443/api/v1/Uploads/media/fb3788d3-5762-4851-80ab-2f9da225ba6b.JPG",
     },
   ];
 
