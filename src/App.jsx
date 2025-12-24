@@ -50,19 +50,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Loader from './Components/Loader';
-import AcademicStaff from './Pages/AcadamicStaff';
-import NonAcademicStaff from './Pages/NonAcademicStaff';
+import AcademicStaff from './pages/AcademicStaff';
+import NonAcademicStaff from './pages/NonAcademicStaff';
+import CourseDetail from './pages/CourseDetail';
+
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Career from './pages/Career';
 import Committee from './pages/Committee';
 import Courses from './pages/Courses';
 import Events from './pages/Events';
-import CourseDetail from "./Pages/CourseDeatil";
 import TermsConditions from "./pages/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Inquiry from "./pages/Inquiry";
 import Gallery from "./pages/Gallery";
+
 import FloatingInquiryButton from "./Components/FloatingInquiryButton";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
 import { i } from "framer-motion/client";
