@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss";
+
+
+/* Global text selection */
+/* ::selection {
+  background: #b11226;
+  color: #ffffff;
+} */
+
+/* Firefox support (optional but safe) */
+/* ::-moz-selection {
+  background: #b11226;
+  color: #ffffff;
+} */
+
+
+button,
+a {
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p, span {
+  cursor: text;
+}
+
+.disabled {
+  cursor: not-allowed;
 }
