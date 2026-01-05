@@ -1,8 +1,20 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/admin/(.*)",
       "destination": "/index.html"
+    },
+    {
+      "source": "/student/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/faculty/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://sascmafront.megascale.co.in/$1"
     }
   ]
 }

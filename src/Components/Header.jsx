@@ -606,72 +606,139 @@ const Header = () => {
     },
   ];
 
-  const mainLinks = [
-    {
-      name: "Home",
-      submenu: null,
-      link: "https://sascma.ac.in",
-    },
-    {
-      name: "About Us",
-      link: "https://sascma.ac.in/about",
-      submenu: [
-        { label: "About Us", link: "https://sascma.ac.in/about" },
-        { label: "Committee", link: "https://sascma.ac.in/committee" },
-      ],
-    },
-    {
-      name: "Courses",
-      link: "https://sascma.ac.in/courses",
-      submenu: [
-        { label: "Courses", link: "https://sascma.ac.in/courses" },
-        { label: "B.B.A", link: "https://sascma.ac.in/courses/bba" },
-        { label: "B.COM.", link: "https://sascma.ac.in/courses/bcom" },
-        { label: "B.C.A", link: "https://sascma.ac.in/courses/bca" },
-        { label: "M.COM.", link: "https://sascma.ac.in/courses/mcom" },
-        { label: "M.SC.", link: "https://sascma.ac.in/courses/msc" },
-        { label: "B.A.", link: "https://sascma.ac.in/courses/ba" },
-        { label: "B.SC.", link: "https://sascma.ac.in/courses/bsc" },
-      ],
-    },
-    {
-      name: "Staff",
-      link: "https://sascma.ac.in/staff/academic",
-      submenu: [
-        {
-          label: "Academic Staff",
-          link: "https://sascma.ac.in/staff/academic",
-          submenu: [
+  // const mainLinks = [
+  //   {
+  //     name: "Home",
+  //     submenu: null,
+  //     link: "https://sascma.ac.in",
+  //   },
+  //   {
+  //     name: "About Us",
+  //     link: "https://sascma.ac.in/about",
+  //     submenu: [
+  //       { label: "About Us", link: "https://sascma.ac.in/about" },
+  //       { label: "Committee", link: "https://sascma.ac.in/committee" },
+  //     ],
+  //   },
+  //   {
+  //     name: "Courses",
+  //     link: "https://sascma.ac.in/courses",
+  //     submenu: [
+  //       { label: "Courses", link: "https://sascma.ac.in/courses" },
+  //       { label: "B.B.A", link: "https://sascma.ac.in/courses/bba" },
+  //       { label: "B.COM.", link: "https://sascma.ac.in/courses/bcom" },
+  //       { label: "B.C.A", link: "https://sascma.ac.in/courses/bca" },
+  //       { label: "M.COM.", link: "https://sascma.ac.in/courses/mcom" },
+  //       { label: "M.SC.", link: "https://sascma.ac.in/courses/msc" },
+  //       { label: "B.A.", link: "https://sascma.ac.in/courses/ba" },
+  //       { label: "B.SC.", link: "https://sascma.ac.in/courses/bsc" },
+  //     ],
+  //   },
+  //   {
+  //     name: "Staff",
+  //     link: "https://sascma.ac.in/staff/academic",
+  //     submenu: [
+  //       {
+  //         label: "Academic Staff",
+  //         link: "https://sascma.ac.in/staff/academic",
+  //         submenu: [
 
-            { label: "B.B.A", link: "https://sascma.ac.in/staff/academic/bba" },
-            { label: "B.COM.", link: "https://sascma.ac.in/staff/academic/bcom" },
-            { label: "B.C.A", link: "https://sascma.ac.in/staff/academic/bca" },
-            { label: "M.COM.", link: "https://sascma.ac.in/staff/academic/mcom" },
-            { label: "M.SC.", link: "https://sascma.ac.in/staff/academic/msc" },
-            { label: "B.A.", link: "https://sascma.ac.in/staff/academic/ba" },
-            { label: "B.SC.", link: "https://sascma.ac.in/staff/academic/bsc" },
+  //           { label: "B.B.A", link: "https://sascma.ac.in/staff/academic/bba" },
+  //           { label: "B.COM.", link: "https://sascma.ac.in/staff/academic/bcom" },
+  //           { label: "B.C.A", link: "https://sascma.ac.in/staff/academic/bca" },
+  //           { label: "M.COM.", link: "https://sascma.ac.in/staff/academic/mcom" },
+  //           { label: "M.SC.", link: "https://sascma.ac.in/staff/academic/msc" },
+  //           { label: "B.A.", link: "https://sascma.ac.in/staff/academic/ba" },
+  //           { label: "B.SC.", link: "https://sascma.ac.in/staff/academic/bsc" },
          
-          ],
-        },
-        { label: "Non-Academic Staff", link: "https://sascma.ac.in/staff/non-academic" },
-      ],
-    },
-    {
-      name: "Gallery",
-      submenu: null,
-      link: "https://sascma.ac.in/gallery",
-    },
-    {
-      name: "Career",
-      link: "https://sascma.ac.in/career",
-      submenu: null,
-    },
-     {
-      name: "IDP",
-      submenu: null,
-      link: "https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf",
-    },
-  ];
+  //         ],
+  //       },
+  //       { label: "Non-Academic Staff", link: "https://sascma.ac.in/staff/non-academic" },
+  //     ],
+  //   },
+  //   {
+  //     name: "Gallery",
+  //     submenu: null,
+  //     link: "https://sascma.ac.in/gallery",
+  //   },
+  //   {
+  //     name: "Career",
+  //     link: "https://sascma.ac.in/career",
+  //     submenu: null,
+  //   },
+  //    {
+  //     name: "IDP",
+  //     submenu: null,
+  //     link: "https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf",
+  //   },
+  // ];
+const mainLinks = [
+  {
+    name: "Home",
+    submenu: null,
+    link: "/",
+  },
+  {
+    name: "About Us",
+    link: "/about",
+    submenu: [
+      { label: "About Us", link: "/about" },
+      { label: "Committee", link: "/committee" },
+    ],
+  },
+  {
+    name: "Courses",
+    link: "/courses",
+    submenu: [
+      { label: "Courses", link: "/courses" },
+      { label: "B.B.A", link: "/courses/bba" },
+      { label: "B.COM.", link: "/courses/bcom" },
+      { label: "B.C.A", link: "/courses/bca" },
+      { label: "M.COM.", link: "/courses/mcom" },
+      { label: "M.SC.", link: "/courses/msc" },
+      { label: "B.A.", link: "/courses/ba" },
+      { label: "B.SC.", link: "/courses/bsc" },
+    ],
+  },
+  {
+    name: "Staff",
+    link: "/staff/academic",
+    submenu: [
+      {
+        label: "Academic Staff",
+        link: "/staff/academic",
+        submenu: [
+          { label: "B.B.A", link: "/staff/academic/bba" },
+          { label: "B.COM.", link: "/staff/academic/bcom" },
+          { label: "B.C.A", link: "/staff/academic/bca" },
+          { label: "M.COM.", link: "/staff/academic/mcom" },
+          { label: "M.SC.", link: "/staff/academic/msc" },
+          { label: "B.A.", link: "/staff/academic/ba" },
+          { label: "B.SC.", link: "/staff/academic/bsc" },
+        ],
+      },
+      {
+        label: "Non-Academic Staff",
+        link: "/staff/non-academic",
+      },
+    ],
+  },
+  {
+    name: "Gallery",
+    submenu: null,
+    link: "/gallery",
+  },
+  {
+    name: "Career",
+    submenu: null,
+    link: "/career",
+  },
+  {
+    name: "IDP",
+    submenu: null,
+    link: "/IDP/SASCMA_IDP_final.pdf",
+  },
+];
 
   useEffect(() => {
     if (!mobileMenuOpen) {
