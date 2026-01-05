@@ -669,7 +669,7 @@ const Header = () => {
      {
       name: "IDP",
       submenu: null,
-      link: "/IDP/SASCMA_IDP_final.pdf",
+      link: "https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf",
     },
   ];
 
