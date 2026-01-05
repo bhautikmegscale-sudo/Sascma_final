@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const faculty = [
-  { name: "Dr. Bhumi Desai", role: "Vice-Principal", image: "/Astaff/p4.webp" },
-  { name: "Dr. Ashish Desai", role: "Principal", image: "/Astaff/p1.webp" },
-  { name: "Ms. Dhyani Vashi", role: "Coordinator", image: "/Astaff/p5.webp" },
-  { name: "Dr. Hemang Desai", role: "Coordinator", image: "/Astaff/p3.webp" },
-  { name: "Dr. Dilshad Patel", role: "Coordinator", image: "/Astaff/p7.webp" },
-  { name: "Dr. Shalini Mali", role: "Coordinator", image: "/Astaff/p6.webp" },
-  { name: "Dr. Heta Desai", role: "Coordinator", image: "/Astaff/p2.webp" },
-  { name: "Dr. Chandani Desai", role: "Coordinator", image: "/Astaff/p8.webp" },
+  { name: "Dr. Bhumi Desai", role: "Vice-Principal", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG" },
+  { name: "Dr. Ashish Desai", role: "Principal", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG" },
+  { name: "Ms. Dhyani Vashi", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG" },
+  { name: "Dr. Hemang Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG" },
+  { name: "Dr. Dilshad Patel", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/581ec79f-0852-4c82-94e4-8d368f0319ea.JPG" },
+  { name: "Dr. Shalini Mali", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG" },
+  { name: "Dr. Heta Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/d191e008-e546-4858-b03c-f8cd876263fb.JPG" },
+  { name: "Dr. Chandani Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/97461799-055a-41d3-8efe-a7871cbd1ee3.JPG" },
 ];
 
 // Only double for infinite loop (not triple ❌)
@@ -19,7 +19,8 @@ export default function Faculty() {
   const intervalRef = useRef(null);
   const startX = useRef(0);
 
-  const [index, setIndex] = useState(faculty.length);
+  const [index, setIndex] = useState(0);
+
   const [hover, setHover] = useState(false);
   const [cardWidth, setCardWidth] = useState(324);
 
@@ -42,27 +43,32 @@ export default function Faculty() {
     return () => clearInterval(intervalRef.current);
   }, [hover]);
 
-  // SLIDE TRANSFORM
-  useEffect(() => {
-    const slider = sliderRef.current;
-    slider.style.transition = "transform 0.6s ease";
-    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+useEffect(() => {
+  const slider = sliderRef.current;
+  slider.style.transition = "transform 0.6s ease";
+  slider.style.transform = `translateX(-${index * cardWidth}px)`;
 
-    // Infinite reset
-    if (index >= faculty.length * 2) {
-      setTimeout(() => {
-        slider.style.transition = "none";
-        setIndex(faculty.length);
-      }, 600);
-    }
+  // When user passes original set, silently jump back
+  if (index >= faculty.length) {
+    setTimeout(() => {
+      slider.style.transition = "none";
+      slider.style.transform = `translateX(0px)`;
+      setIndex(0);
+    }, 600);
+  }
 
-    if (index < faculty.length) {
-      setTimeout(() => {
-        slider.style.transition = "none";
-        setIndex(faculty.length * 2 - 1);
-      }, 600);
-    }
-  }, [index, cardWidth]);
+  // When swiping backward past first
+  if (index < 0) {
+    setTimeout(() => {
+      slider.style.transition = "none";
+      const last = faculty.length - 1;
+      slider.style.transform = `translateX(-${last * cardWidth}px)`;
+      setIndex(last);
+    }, 600);
+  }
+}, [index, cardWidth]);
+
+
 
   // SWIPE SUPPORT
   const touchStart = (e) => (startX.current = e.touches[0].clientX);
@@ -75,8 +81,8 @@ export default function Faculty() {
   // ⭐ LOAD ONLY NEARBY IMAGES ⭐
   const shouldLoadImage = (i) => Math.abs(i - index) <= 2;
 
-  const activeDot =
-    (index - faculty.length + faculty.length) % faculty.length;
+  const activeDot = index % faculty.length;
+
 
   return (
     <section className="bg-linear-to-b from-[#eef2ff] to-white py-10 overflow-hidden">
@@ -133,14 +139,14 @@ export default function Faculty() {
           {/* ARROWS */}
           <button
             onClick={() => setIndex((i) => i - 1)}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white w-10 h-10 rounded-full shadow"
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white w-10 h-10 rounded-full shadow flex items-center justify-center text-2xl"
           >
             ‹
           </button>
 
           <button
             onClick={() => setIndex((i) => i + 1)}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white w-10 h-10 rounded-full shadow"
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white w-10 h-10 rounded-full shadow flex items-center justify-center text-2xl"
           >
             ›
           </button>
