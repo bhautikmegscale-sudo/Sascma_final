@@ -666,6 +666,11 @@ const Header = () => {
       link: "/career",
       submenu: null,
     },
+     {
+      name: "IDP",
+      submenu: null,
+      link: "/IDP/SASCMA_IDP_final.pdf",
+    },
   ];
 
   useEffect(() => {
