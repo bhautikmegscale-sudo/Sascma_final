@@ -24,6 +24,40 @@ export const coursesData = [
       initials: "RM",
     },
   },
+   {
+    id: "bba",
+    short: "BBA",
+    full: "Bachelor of Business Administration",
+    duration: "3 Years",
+    banner: "/c4.webp",
+    about:
+      "BBA focuses on developing management skills, business knowledge, and leadership abilities.",
+    syllabus: ["Principles of Management", "Marketing", "Human Resource Management", "Finance"],
+    timetable: "Monday to Friday, 9:00 AM – 2:00 PM",
+    material: "Lecture notes, case studies, and project work.",
+    mentor: {
+      name: "Prof. K. Patel",
+      experience: "12+ years experience in Business Education",
+      initials: "KP",
+    },
+  },
+   {
+    id: "bca",
+    short: "BCA",
+    full: "Bachelor of Computer Applications",
+    duration: "3 Years",
+    banner: "/c3.webp",
+    about:
+      "BCA prepares students for careers in software development, programming, and IT services.",
+    syllabus: ["Programming in C", "Data Structures", "Database Management", "Web Development"],
+    timetable: "Monday to Friday, 9:30 AM – 2:30 PM",
+    material: "Code labs, recorded sessions, project files.",
+    mentor: {
+      name: "Mr. S. Verma",
+      experience: "10+ years experience in IT & Software Development",
+      initials: "SV",
+    },
+  },
   {
     id: "mcom",
     short: "MCOM",
@@ -45,45 +79,28 @@ export const coursesData = [
       experience: "18+ years experience in Commerce Education",
       initials: "AS",
     },
-  },
-  {
-    id: "bca",
-    short: "BCA",
-    full: "Bachelor of Computer Applications",
-    duration: "3 Years",
-    banner: "/c3.webp",
-    about:
-      "BCA prepares students for careers in software development, programming, and IT services.",
-    syllabus: ["Programming in C", "Data Structures", "Database Management", "Web Development"],
-    timetable: "Monday to Friday, 9:30 AM – 2:30 PM",
-    material: "Code labs, recorded sessions, project files.",
+  },{
+    id: "msc",
+    short: "MSC",
+    full: "Master of Science (Information Technology)",
+    duration: "2 Years",
+    banner: "/c7.webp",
+    about: "MSc focuses on advanced scientific research and specialization.",
+    syllabus: ["Advanced Physics", "Advanced Chemistry", "Advanced Biology", "Mathematics"],
+    timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
+    material: "Research papers, lab reports, and advanced reference books.",
     mentor: {
-      name: "Mr. S. Verma",
-      experience: "10+ years experience in IT & Software Development",
-      initials: "SV",
+      name: "Dr. P. Mehta",
+      experience: "18+ years experience in Science Education",
+      initials: "PM",
     },
   },
-  {
-    id: "bba",
-    short: "BBA",
-    full: "Bachelor of Business Administration",
-    duration: "3 Years",
-    banner: "/c4.webp",
-    about:
-      "BBA focuses on developing management skills, business knowledge, and leadership abilities.",
-    syllabus: ["Principles of Management", "Marketing", "Human Resource Management", "Finance"],
-    timetable: "Monday to Friday, 9:00 AM – 2:00 PM",
-    material: "Lecture notes, case studies, and project work.",
-    mentor: {
-      name: "Prof. K. Patel",
-      experience: "12+ years experience in Business Education",
-      initials: "KP",
-    },
-  },
+ 
+ 
   {
     id: "ba",
     short: "BA",
-    full: "Bachelor of Arts",
+    full: "Bachelor of Arts(Psychology)",
     duration: "3 Years",
     banner: "/c5.webp",
     about: "BA provides a broad education in humanities, languages, and social sciences.",
@@ -99,7 +116,7 @@ export const coursesData = [
   {
     id: "bsc",
     short: "BSC",
-    full: "Bachelor of Science",
+    full: "Bachelor of Science(Data Science)",
     duration: "3 Years",
     banner: "/c6.webp",
     about: "BSc provides in-depth scientific knowledge in various disciplines.",
@@ -112,20 +129,5 @@ export const coursesData = [
       initials: "ND",
     },
   },
-  {
-    id: "msc",
-    short: "MSC",
-    full: "Master of Science",
-    duration: "2 Years",
-    banner: "/c7.webp",
-    about: "MSc focuses on advanced scientific research and specialization.",
-    syllabus: ["Advanced Physics", "Advanced Chemistry", "Advanced Biology", "Mathematics"],
-    timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
-    material: "Research papers, lab reports, and advanced reference books.",
-    mentor: {
-      name: "Dr. P. Mehta",
-      experience: "18+ years experience in Science Education",
-      initials: "PM",
-    },
-  },
+  
 ];

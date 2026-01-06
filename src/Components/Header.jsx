@@ -625,13 +625,13 @@ const Header = () => {
       link: "https://sascma.ac.in/courses",
       submenu: [
         { label: "Courses", link: "https://sascma.ac.in/courses" },
-        { label: "B.B.A", link: "https://sascma.ac.in/courses/bba" },
         { label: "B.COM.", link: "https://sascma.ac.in/courses/bcom" },
+        { label: "B.B.A", link: "https://sascma.ac.in/courses/bba" },
         { label: "B.C.A", link: "https://sascma.ac.in/courses/bca" },
         { label: "M.COM.", link: "https://sascma.ac.in/courses/mcom" },
-        { label: "M.SC.", link: "https://sascma.ac.in/courses/msc" },
-        { label: "B.A.", link: "https://sascma.ac.in/courses/ba" },
-        { label: "B.SC.", link: "https://sascma.ac.in/courses/bsc" },
+        { label: "M.SC.(I.T.)", link: "https://sascma.ac.in/courses/msc" },
+        { label: "B.A.(Psychology)", link: "https://sascma.ac.in/courses/ba" },
+        { label: "B.SC.(Data Science)", link: "https://sascma.ac.in/courses/bsc" },
       ],
     },
     {

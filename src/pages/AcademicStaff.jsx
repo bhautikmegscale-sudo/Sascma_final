@@ -13,7 +13,7 @@ const staffData = [
     qualification: "PhD, MPhil, M.Com, B.Com",
     experience: "21 Years",
     email: "kavirashish1421@gmail.com",
-    courses:["B.COM."]
+    courses:["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "M.SC.", "B.A."]
   },
   {
     id: 2,
@@ -24,29 +24,7 @@ const staffData = [
     qualification: "B.Com., B.A., M.B.E., GSET, M.Phil., Ph.D.",
     experience: "16 Years",
     email: "bhumisdesai@gmail.com",
-    courses:["B.A."]
-  },
-  {
-    id: 3,
-    name: "Dr. Hemang Desai",
-    designation: "Coordinator",
-    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG",
-    specialization: "AI, Data Science and Programming",
-    qualification: "PhD, MPhil, PGDRM, MSC ICT, BCA",
-    experience: "17 Years",
-    email: "hemanddesai11@gmail.com",
-    courses:["M.SC."]
-  },
-  {
-    id: 4,
-    name: "Dr. Shalini Animeshbhai Mali",
-    designation: "Coordinator",
-    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG",
-    specialization: "Web",
-    qualification: "PhD, MCA, BCA",
-    experience: "9 Years",
-    email: "mali.shalini.sm@gmail.com",
-    courses:["B.C.A"]
+    courses:["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "M.SC.", "B.A."]
   },
   {
     id: 5,
@@ -70,7 +48,18 @@ const staffData = [
     email: "chandnidesai11@gmail.com",
     courses:["B.B.A."]
   },
-  {
+   {
+    id: 4,
+    name: "Dr. Shalini Animeshbhai Mali",
+    designation: "Coordinator",
+    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG",
+    specialization: "Web",
+    qualification: "PhD, MCA, BCA",
+    experience: "9 Years",
+    email: "mali.shalini.sm@gmail.com",
+    courses:["B.C.A"]
+  },
+    {
     id: 7,
     name: "Dr. Heta Subhashchandra Desai",
     designation: "Coordinator",
@@ -80,6 +69,17 @@ const staffData = [
     experience: "8 Years",
     email: "prof.hetadesai@gmail.com",
     courses:["B.C.A"]
+  },
+  {
+    id: 3,
+    name: "Dr. Hemang Desai",
+    designation: "Coordinator",
+    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG",
+    specialization: "AI, Data Science and Programming",
+    qualification: "PhD, MPhil, PGDRM, MSC ICT, BCA",
+    experience: "17 Years",
+    email: "hemanddesai11@gmail.com",
+    courses:["M.SC."]
   },
   {
     id: 8,

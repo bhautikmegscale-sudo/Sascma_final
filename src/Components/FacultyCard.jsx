@@ -175,12 +175,12 @@ import React, { useEffect, useRef, useState } from "react";
 const faculty = [
   { name: "Dr. Bhumi Desai", role: "Vice-Principal", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG" },
   { name: "Dr. Ashish Desai", role: "Principal", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG" },
-  { name: "Ms. Dhyani Vashi", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG" },
-  { name: "Dr. Hemang Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG" },
   { name: "Dr. Dilshad Patel", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/581ec79f-0852-4c82-94e4-8d368f0319ea.JPG" },
+  { name: "Dr. Chandani Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/97461799-055a-41d3-8efe-a7871cbd1ee3.JPG" },
   { name: "Dr. Shalini Mali", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG" },
   { name: "Dr. Heta Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/d191e008-e546-4858-b03c-f8cd876263fb.JPG" },
-  { name: "Dr. Chandani Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/97461799-055a-41d3-8efe-a7871cbd1ee3.JPG" },
+  { name: "Dr. Hemang Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG" },
+  { name: "Ms. Dhyani Vashi", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG" },
 ];
 
 // Only double for infinite loop (not triple ❌)
