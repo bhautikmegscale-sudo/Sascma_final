@@ -179,13 +179,13 @@ const Header = () => {
     {
       name: "Accreditations",
       submenu: [
-        { label: "IPD", link: "https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf" },
+        { label: "IPD", link: "https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf", newTab: true },
         { 
           label: "AICTE", 
           link: "https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf",
           submenu :[
-            { label: "LOA", link: "https://sascma.ac.in/AICTE/EOA_Report_2025-26.PDF" },
-            { label: "EOA", link: "https://sascma.ac.in/AICTE/LOA_Report_24-25.PDF" },
+            { label: "LOA 2024-25" , link: "https://sascma.ac.in/AICTE/LOA_Report_24-25.PDF", newTab: true },
+            { label: "EOA 2025-26", link: "https://sascma.ac.in/AICTE/EOA_Report_2025-26.PDF", newTab: true },
           ]
         },
         { label: "NIRF", link: null },
@@ -199,6 +199,12 @@ const Header = () => {
       setActiveMenu(null);
     }
   }, [mobileMenuOpen]);
+
+  const shouldOpenInNewTab = (item) => {
+    if (!item || !item.link) return false;
+    if (item.newTab) return true;
+    return typeof item.link === "string" && item.link.startsWith("http");
+  };
 
 
   return (
@@ -269,12 +275,23 @@ const Header = () => {
                   >
                     <div className="flex items-center gap-1">
                       {/* TEXT → NAVIGATE */}
-                      <Link
-                        to={link.link}
-                        className="text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1"
-                      >
-                        {link.name}
-                      </Link>
+                      {shouldOpenInNewTab(link) ? (
+                        <a
+                          href={link.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1"
+                        >
+                          {link.name}
+                        </a>
+                      ) : (
+                        <Link
+                          to={link.link}
+                          className="text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1"
+                        >
+                          {link.name}
+                        </Link>
+                      )}
 
                       {/* ARROW → TOGGLE SUBMENU */}
                       {hasSubmenu && (
@@ -335,32 +352,63 @@ const Header = () => {
                               setActiveSubmenuItem(null);
                             }}
                           >
-                            <a
-                              href={item.link}
-                              className={`flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
-                                } ${index === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
-                              onClick={() => setActiveMenu(null)}
-                            >
-                              <span>{item.label}</span>
-                              {item.submenu && (
-                                <svg className="h-4 w-4 text-gray-400 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                              )}
-                            </a>
+                            {shouldOpenInNewTab(item) ? (
+                              <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
+                                  } ${index === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
+                                onClick={() => setActiveMenu(null)}
+                              >
+                                <span>{item.label}</span>
+                                {item.submenu && (
+                                  <svg className="h-4 w-4 text-gray-400 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                  </svg>
+                                )}
+                              </a>
+                            ) : (
+                              <a
+                                href={item.link}
+                                className={`flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
+                                  } ${index === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
+                                onClick={() => setActiveMenu(null)}
+                              >
+                                <span>{item.label}</span>
+                                {item.submenu && (
+                                  <svg className="h-4 w-4 text-gray-400 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                  </svg>
+                                )}
+                              </a>
+                            )}
 
                             {/* Nested submenu for items that have their own submenu (e.g. Academic Staff → courses) */}
                             {item.submenu && activeSubmenuItem === item.label && (
                               <div className={`absolute top-0 w-52 bg-white shadow-xl rounded-md border border-gray-200 z-50 overflow-hidden ${nestedDirection[item.label] === 'right' ? 'left-full ml-1' : '-left-[13.25rem]'}`}>
                                 {item.submenu.map((sub) => (
-                                  <a
-                                    key={sub.label}
-                                    href={sub.link}
-                                    className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
-                                    onClick={() => setActiveMenu(null)}
-                                  >
-                                    {sub.label}
-                                  </a>
+                                  shouldOpenInNewTab(sub) ? (
+                                    <a
+                                      key={sub.label}
+                                      href={sub.link}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
+                                      onClick={() => setActiveMenu(null)}
+                                    >
+                                      {sub.label}
+                                    </a>
+                                  ) : (
+                                    <a
+                                      key={sub.label}
+                                      href={sub.link}
+                                      className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
+                                      onClick={() => setActiveMenu(null)}
+                                    >
+                                      {sub.label}
+                                    </a>
+                                  )
                                 ))}
                               </div>
                             )}
@@ -418,16 +466,31 @@ const Header = () => {
                 <div key={link.name} className=" hover:bg-gray-100">
                   <div className="flex items-center justify-between px-4 py-3 text-[#9D2235] font-medium">
                     {/* TEXT → NAVIGATE */}
-                    <Link
-                      to={link.link}
-                      onClick={() => {
-                        setActiveMenu(null);
-                        setMobileMenuOpen(false);
-                      }}
-                      className="flex-1"
-                    >
-                      {link.name}
-                    </Link>
+                    {shouldOpenInNewTab(link) ? (
+                      <a
+                        href={link.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => {
+                          setActiveMenu(null);
+                          setMobileMenuOpen(false);
+                        }}
+                        className="flex-1"
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.link}
+                        onClick={() => {
+                          setActiveMenu(null);
+                          setMobileMenuOpen(false);
+                        }}
+                        className="flex-1"
+                      >
+                        {link.name}
+                      </Link>
+                    )}
 
                     {/* ARROW → TOGGLE SUBMENU */}
                     {link.submenu && (
@@ -477,27 +540,53 @@ const Header = () => {
                               {mobileOpenSubmenu === item.label && (
                                 <div className="pl-12">
                                   {item.submenu.map((sub) => (
-                                    <a
-                                      key={sub.label}
-                                      href={sub.link}
-                                      onClick={() => { setActiveMenu(null); setMobileMenuOpen(false); }}
-                                      className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
-                                    >
-                                      {sub.label}
-                                    </a>
+                                    shouldOpenInNewTab(sub) ? (
+                                      <a
+                                        key={sub.label}
+                                        href={sub.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={() => { setActiveMenu(null); setMobileMenuOpen(false); }}
+                                        className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
+                                      >
+                                        {sub.label}
+                                      </a>
+                                    ) : (
+                                      <a
+                                        key={sub.label}
+                                        href={sub.link}
+                                        onClick={() => { setActiveMenu(null); setMobileMenuOpen(false); }}
+                                        className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
+                                      >
+                                        {sub.label}
+                                      </a>
+                                    )
                                   ))}
                                 </div>
                               )}
                             </div>
                           ) : (
-                            <a
-                              key={item.label}
-                              href={item.link}
-                              className="block px-8 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
-                              onClick={() => { setActiveMenu(null); setMobileMenuOpen(false); }}
-                            >
-                              {item.label}
-                            </a>
+                            shouldOpenInNewTab(item) ? (
+                              <a
+                                key={item.label}
+                                href={item.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block px-8 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
+                                onClick={() => { setActiveMenu(null); setMobileMenuOpen(false); }}
+                              >
+                                {item.label}
+                              </a>
+                            ) : (
+                              <a
+                                key={item.label}
+                                href={item.link}
+                                className="block px-8 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
+                                onClick={() => { setActiveMenu(null); setMobileMenuOpen(false); }}
+                              >
+                                {item.label}
+                              </a>
+                            )
                           )}
                         </div>
                       ))}
