@@ -276,14 +276,24 @@ const Header = () => {
                   >
                     <div className="flex items-center gap-1">
                       {/* TEXT → NAVIGATE */}
-                      <a
-                        href={link.link}
-                        target={link.name === "Home" ? undefined : "_blank"}
-                        rel={link.name === "Home" ? undefined : "noopener noreferrer"}
-                        className="text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1"
-                      >
-                        {link.name}
-                      </a>
+                      {/* TEXT → NAVIGATE */}
+                      {shouldOpenInNewTab(link) ? (
+                        <a
+                          href={link.link}
+                          target={link.newTab ? "_blank" : undefined}
+                          rel={link.newTab ? "noopener noreferrer" : undefined}
+                          className="text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1"
+                        >
+                          {link.name}
+                        </a>
+                      ) : (
+                        <Link
+                          to={link.link}
+                          className="text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1"
+                        >
+                          {link.name}
+                        </Link>
+                      )}
 
                       {/* ARROW → TOGGLE SUBMENU */}
                       {hasSubmenu && (
@@ -344,10 +354,11 @@ const Header = () => {
                               setActiveSubmenuItem(null);
                             }}
                           >
+                            {shouldOpenInNewTab(item) ? (
                               <a
                                 href={item.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                target={item.newTab ? "_blank" : undefined}
+                                rel={item.newTab ? "noopener noreferrer" : undefined}
                                 className={`flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
                                   } ${index === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
                                 onClick={() => setActiveMenu(null)}
@@ -359,21 +370,47 @@ const Header = () => {
                                   </svg>
                                 )}
                               </a>
+                            ) : (
+                              <a
+                                href={item.link}
+                                className={`flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
+                                  } ${index === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
+                                onClick={() => setActiveMenu(null)}
+                              >
+                                <span>{item.label}</span>
+                                {item.submenu && (
+                                  <svg className="h-4 w-4 text-gray-400 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                  </svg>
+                                )}
+                              </a>
+                            )}
 
                             {/* Nested submenu for items that have their own submenu (e.g. Academic Staff → courses) */}
                             {item.submenu && activeSubmenuItem === item.label && (
                               <div className={`absolute top-0 w-52 bg-white shadow-xl rounded-md border border-gray-200 z-50 overflow-hidden ${nestedDirection[item.label] === 'right' ? 'left-full ml-1' : '-left-[13.25rem]'}`}>
                                 {item.submenu.map((sub) => (
+                                  shouldOpenInNewTab(sub) ? (
                                     <a
                                       key={sub.label}
                                       href={sub.link}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
+                                      target={sub.newTab ? "_blank" : undefined}
+                                      rel={sub.newTab ? "noopener noreferrer" : undefined}
                                       className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
                                       onClick={() => setActiveMenu(null)}
                                     >
                                       {sub.label}
                                     </a>
+                                  ) : (
+                                    <a
+                                      key={sub.label}
+                                      href={sub.link}
+                                      className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
+                                      onClick={() => setActiveMenu(null)}
+                                    >
+                                      {sub.label}
+                                    </a>
+                                  )
                                 ))}
                               </div>
                             )}
