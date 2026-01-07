@@ -161,7 +161,7 @@ const Header = () => {
             { label: "B.A.(Psychology)", link: "https://sascma.ac.in/staff/academic/ba" },
             { label: "B.SC.(Data Science)", link: "https://sascma.ac.in/staff/academic/bsc" },
          
-          ],
+          ],    
         },
         { label: "Non-Academic Staff", link: "/staff/non-academic" },
       ],
@@ -465,8 +465,21 @@ const Header = () => {
               {mainLinks.map((link) => (
                 <div key={link.name} className=" hover:bg-gray-100">
                   <div className="flex items-center justify-between px-4 py-3 text-[#9D2235] font-medium">
-                    {/* TEXT → NAVIGATE */}
-                    {shouldOpenInNewTab(link) ? (
+                    {/* TEXT → NAVIGATE (mobile: open submenu instead of navigating when submenu exists) */}
+                    {link.submenu ? (
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setActiveMenu(prev => prev === link.name ? null : link.name);
+                          // close any open nested submenu when switching top-level menu
+                          setMobileOpenSubmenu(null);
+                        }}
+                        className="flex-1 text-left"
+                      >
+                        {link.name}
+                      </button>
+                    ) : shouldOpenInNewTab(link) ? (
                       <a
                         href={link.link}
                         target="_blank"
