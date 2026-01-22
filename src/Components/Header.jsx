@@ -238,8 +238,8 @@ const Header = () => {
           <div className="flex justify-between items-center py-4 relative">
             <div className="flex ">
               {/* Logo */}
-              <Link
-                to="/"
+              <a
+                href="https://sascma.ac.in"
                 className="flex items-center gap-4 cursor-pointer">
                 <img
                   src="/logo.webp"
@@ -255,7 +255,7 @@ const Header = () => {
                     SINCE 1910
                   </p>
                 </div>
-              </Link>
+              </a>
 
 
             </div>

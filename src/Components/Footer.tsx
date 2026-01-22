@@ -6,25 +6,25 @@ const Footer = () => {
     {
       title: "Home",
       submenu: [
-        { label: "Home", url: "/" },
-        { label: "About Us", url: "/about" },
-        { label: "Committee", url: "/committee" },
-        { label: "Courses", url: "/courses" },
-        { label: "Career", url: "/career" },
-        { label: "Events", url: "/events" },
-        { label: "Staff", url: "/staff/academic" },
+        { label: "Home", url: "https://sascma.ac.in" },
+        { label: "About Us", url: "https://sascma.ac.in/about" },
+        { label: "Committee", url: "https://sascma.ac.in/committee" },
+        { label: "Courses", url: "https://sascma.ac.in/courses" },
+        { label: "Career", url: "https://sascma.ac.in/career" },
+        { label: "Events", url: "https://sascma.ac.in/events" },
+        { label: "Staff", url: "https://sascma.ac.in/staff/academic" },
       ],
     },
     {
       title: "Courses",
       submenu: [
-        { label: "B.B.A", url: "/courses/bba" },
-        { label: "B.COM.", url: "/courses/bcom" },
-        { label: "B.C.A", url: "/courses/bca" },
-        { label: "M.COM.", url: "/courses/mcom" },
-        { label: "M.SC.", url: "/courses/msc" },
-        { label: "B.A.", url: "/courses/ba" },
-        { label: "B.SC.", url: "/courses/bsc" },
+        { label: "B.B.A", url: "https://sascma.ac.in/courses/bba" },
+        { label: "B.COM.", url: "https://sascma.ac.in/courses/bcom" },
+        { label: "B.C.A", url: "https://sascma.ac.in/courses/bca" },
+        { label: "M.COM.", url: "https://sascma.ac.in/courses/mcom" },
+        { label: "M.SC.", url: "https://sascma.ac.in/courses/msc" },
+        { label: "B.A.", url: "https://sascma.ac.in/courses/ba" },
+        { label: "B.SC.", url: "https://sascma.ac.in/courses/bsc" },
       ],
     },
   ];
@@ -119,11 +119,11 @@ const Footer = () => {
             </a>
           </p>
           <div className="flex items-center gap-3">
-            <a href="/privacy-policy" className="hover:text-white cursor-pointer">
+            <a href="https://sascma.ac.in/privacy-policy" className="hover:text-white cursor-pointer">
               Privacy Policy
             </a>
             <span>|</span>
-            <a href="/terms-of-use" className="hover:text-white cursor-pointer">
+            <a href="https://sascma.ac.in/terms-of-use" className="hover:text-white cursor-pointer">
               Terms of Use
             </a>
           </div>
