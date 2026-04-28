@@ -188,7 +188,7 @@ const Header = () => {
             { label: "EOA 2025-26", link: "https://sascma.ac.in/AICTE/EOA_Report_2025-26.PDF", newTab: true },
           ]
         },
-        { label: "NIRF", link: "https://sascma.ac.in/NIRF/NIRF-REPORT-SASCMA COLLEGE.pdf" },
+        { label: "NIRF", link: "https://sascma.ac.in/NIRF/NIRF-REPORT-SASCMA COLLEGE.pdf",newTab: true },
       ],
       
     }
