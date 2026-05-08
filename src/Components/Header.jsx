@@ -127,7 +127,8 @@ const Header = () => {
       link: "https://sascma.ac.in/about",
       submenu: [
         { label: "About Us", link: "https://sascma.ac.in/about" },
-        { label: "Committee", link: "https://sascma.ac.in/committee" },
+        { label: "Trustee", link: "https://sascma.ac.in/committee" },
+        { label: "Amenities", link: "https://sascma.ac.in/amenities" },
       ],
     },
     {
@@ -190,8 +191,26 @@ const Header = () => {
         },
         { label: "NIRF", link: "https://sascma.ac.in/NIRF/NIRF-REPORT-SASCMA COLLEGE.pdf",newTab: true },
       ],
-      
-    }
+    },
+    {
+      name: "Student Corner",
+      link: "https://sascma.ac.in/",
+      submenu: [
+        { label: "Notice Board", link: "https://sascma.ac.in/" },
+        { label: "Exam Schedule", link: "https://sascma.ac.in/" },
+        { label: "Fees Details", link: "https://sascma.ac.in/" },
+        { label: "Admission Details", link: "https://sascma.ac.in" },
+        { label: "Toppers Details", link: "http://10.27.1.16:3000/admissions/view/our-toppers" }
+      ],
+    },
+    {
+      name: "Alumni",
+      link: "https://sascma.ac.in/",
+      submenu: [
+        { label: "Testimonials", link: "https://sascma.ac.in/testimonial" },
+        { label: "Reviews", link: "https://sascma.ac.in/courses/" }
+      ],
+    },
   ];
 
   useEffect(() => {
@@ -234,13 +253,13 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center py-4 relative">
+        <div className="max-w-8xl mx-auto px-4">
+          <div className="flex justify-between lg:justify-around items-center py-4 relative">
             <div className="flex ">
               {/* Logo */}
               <a
                 href="https://sascma.ac.in"
-                className="flex items-center gap-4 cursor-pointer">
+                className="flex items-center gap-2 md:gap-4 cursor-pointer">
                 <img
                   src="/logo.webp"
                   alt="SASCMA Logo"
@@ -261,7 +280,7 @@ const Header = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8 text-[#9D2235] font-medium">
+            <div className="hidden lg:flex space-x-3 xl:space-x-6 text-[#9D2235] font-medium">
               {mainLinks.map((link) => {
                 const hasSubmenu = !!link.submenu;
                 const isOpen = activeMenu === link.name;
@@ -282,14 +301,14 @@ const Header = () => {
                           href={link.link}
                           target={link.newTab ? "_blank" : undefined}
                           rel={link.newTab ? "noopener noreferrer" : undefined}
-                          className="text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1"
+                          className="text-md xl:text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1 cursor-pointer"
                         >
                           {link.name}
                         </a>
                       ) : (
                         <Link
                           to={link.link}
-                          className="text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1"
+                          className="text-md xl:text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1 cursor-pointer"
                         >
                           {link.name}
                         </Link>
@@ -305,7 +324,7 @@ const Header = () => {
                               prev === link.name ? null : link.name
                             );
                           }}
-                          className="p-1"
+                          className="p-1 cursor-pointer"
                           aria-label="Toggle submenu"
                         >
                           <svg
@@ -330,7 +349,7 @@ const Header = () => {
                     {/* Submenu */}
                     {hasSubmenu && isOpen && (
                       <div
-                        className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-md border border-gray-200 z-50"
+                        className=" absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-md border border-gray-200 z-50"
                         // Keep open when hovering over submenu itself
                         onMouseEnter={() => { setActiveMenu(link.name); }}
                         onMouseLeave={() => { setActiveMenu(null); }}
@@ -359,7 +378,7 @@ const Header = () => {
                                 href={item.link}
                                 target={item.newTab ? "_blank" : undefined}
                                 rel={item.newTab ? "noopener noreferrer" : undefined}
-                                className={`flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
+                                className={`cursor-pointer flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
                                   } ${index === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
                                 onClick={() => setActiveMenu(null)}
                               >
@@ -373,7 +392,7 @@ const Header = () => {
                             ) : (
                               <a
                                 href={item.link}
-                                className={`flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
+                                className={`cursor-pointer flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
                                   } ${index === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
                                 onClick={() => setActiveMenu(null)}
                               >
@@ -388,7 +407,7 @@ const Header = () => {
 
                             {/* Nested submenu for items that have their own submenu (e.g. Academic Staff → courses) */}
                             {item.submenu && activeSubmenuItem === item.label && (
-                              <div className={`absolute top-0 w-52 bg-white shadow-xl rounded-md border border-gray-200 z-50 overflow-hidden ${nestedDirection[item.label] === 'right' ? 'left-full ml-1' : '-left-[13.25rem]'}`}>
+                              <div className={`absolute top-0 w-52 bg-white shadow-xl rounded-md border border-gray-200 z-50 overflow-hidden ${nestedDirection[item.label] === 'right' ? 'left-full ml-1' : '-left-53'}`}>
                                 {item.submenu.map((sub) => (
                                   shouldOpenInNewTab(sub) ? (
                                     <a
@@ -425,7 +444,7 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden flex items-center px-3 py-2 text-[#9D2235] "
+              className="lg:hidden flex items-center px-1 py-2 text-[#9D2235] "
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -463,7 +482,7 @@ const Header = () => {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="md:hidden bg-white mb-4">
+            <div className="lg:hidden bg-white mb-4">
               {mainLinks.map((link) => (
                 <div key={link.name} className=" hover:bg-gray-100">
                   <div className="flex items-center justify-between px-4 py-3 text-[#9D2235] font-medium">

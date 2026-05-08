@@ -58,12 +58,17 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Career from './pages/Career';
 import Committee from './pages/Committee';
+import Amenities from './pages/Amenities';
+import PdfViewer from "./pages/PdfViewer";
+import TestimonialVideos from "./pages/TestimonialVideos";
 import Courses from './pages/Courses';
 import Events from './pages/Events';
 import TermsConditions from "./pages/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Inquiry from "./pages/Inquiry";
 import Gallery from "./pages/Gallery";
+import AdmissionDocuments from "./pages/AdmissionDocuments";
+import AdmissionPdfViewer from "./pages/AdmissionPdfViewer";
 
 import FloatingInquiryButton from "./Components/FloatingInquiryButton";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
@@ -93,6 +98,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/committee" element={<Committee />} />
+        <Route path="/amenities" element={<Amenities />} />
+        <Route path="/pdf-viewer" element={<PdfViewer />} />
+        <Route path="/testimonial" element={<TestimonialVideos />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/events" element={<Events />} />
         <Route path="/staff/academic/:course" element={<AcademicStaff />} />
@@ -103,6 +111,8 @@ function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/gallery" element={<Gallery  />} />
+        <Route path="/admissions" element={<AdmissionDocuments />} />
+        <Route path="/admissions/view/:id" element={<AdmissionPdfViewer />} />
         <Route path="/terms-of-use" element={<TermsConditions  />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy  />} />
 

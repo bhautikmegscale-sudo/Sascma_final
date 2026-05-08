@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+/* Global text selection */
+/* ::selection {
+  background: #b11226;
+  color: #ffffff;
+} */
+
+/* Firefox support (optional but safe) */
+/* ::-moz-selection {
+  background: #b11226;
+  color: #ffffff;
+} */
+
+
+button,
+a {
+  cursor: pointer;
+}
+
+p, span {
+  cursor: text;
+}
+
+.disabled {
+  cursor: not-allowed;
+}

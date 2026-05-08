@@ -2,13 +2,8 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { coursesData } from "../data/coursesData";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Info,
-  BookOpen,
-  Calendar,
-  FileText,
-  User,
-} from "lucide-react";
+import { Info, BookOpen, Calendar, FileText, User } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 /* -------- Tabs -------- */
 
@@ -16,11 +11,10 @@ const tabs = [
   { id: "about", label: "About", icon: Info },
   { id: "syllabus", label: "Syllabus", icon: BookOpen },
   { id: "timetable", label: "Timetable", icon: Calendar },
-  { id: "material", label: "Material", icon: FileText },
-  { id: "mentor", label: "Mentor", icon: User },
 ];
 
 export default function CourseDetail() {
+  const navigate = useNavigate();
   const { id } = useParams();
   const course = coursesData.find((c) => c.id === id);
 
@@ -36,10 +30,8 @@ export default function CourseDetail() {
 
   return (
     <div className="bg-white min-h-screen pt-20 md:pt-24 pb-8 md:pb-10">
-
       {/* ================= HERO SECTION ================= */}
       <div className="relative h-65 sm:h-80 md:h-95 w-full">
-        
         {/* Background Image */}
         <img
           src={course.banner}
@@ -71,7 +63,6 @@ export default function CourseDetail() {
       {/* ================= CONTENT ================= */}
       <div className=" pt-4  md:py-8">
         <div className="max-w-7xl px-4 lg:px-8 mx-auto">
-
           {/* Tabs */}
           <div className="flex flex-wrap gap-2 sm:gap-4 border-b border-[#213153]/15 mb-4 md:mb-8">
             {tabs.map((tab) => {
@@ -103,17 +94,21 @@ export default function CourseDetail() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.35 }}
-              className=" rounded-lg border border-[#213153]/15 bg-white p-6 sm:p-8 shadow-sm"
+              className=" rounded-lg border border-[#213153]/15 bg-white p-3 md:p-6 shadow-sm"
             >
               {/* ABOUT */}
               {activeTab === "about" && (
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-semibold text-[#213153] mb-4">
+                  {/* <h3 className="text-xl sm:text-2xl font-semibold text-[#213153] mb-4">
                     About the Course
-                  </h3>
-                  <p className="text-[#213153]/70 leading-relaxed text-sm sm:text-base">
+                  </h3> */}
+                  {/* <p className="text-[#213153]/70 leading-relaxed text-sm sm:text-base">
                     {course.about}
-                  </p>
+                  </p> */}
+                  <div
+                    className="text-[#213153]/70 leading-relaxed text-sm sm:text-base space-y-4"
+                    dangerouslySetInnerHTML={{ __html: course.about }}
+                  />
                 </div>
               )}
 
@@ -123,11 +118,100 @@ export default function CourseDetail() {
                   <h3 className="text-xl sm:text-2xl font-semibold text-[#213153] mb-4">
                     Course Syllabus
                   </h3>
-                  <ul className="list-disc pl-5 space-y-2 text-[#213153]/70 text-sm sm:text-base">
-                    {course.syllabus.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
+                  {activeTab === "syllabus" && (
+                    <div>
+                      {/* <h3 className="text-xl sm:text-2xl font-semibold text-[#213153] mb-4">
+                        Course Syllabus
+                      </h3> */}
+
+                      {/* ✅ CASE 1: MODULE EXISTS */}
+                      {course.modules ? (
+                        <div className="space-y-4">
+                          {course.modules.map((module, i) => (
+                            <details
+                              key={i}
+                              className=" rounded-lg p-2 md:p-4 bg-gray-50"
+                            >
+                              <summary className="cursor-pointer font-semibold text-[#213153] text-[16px] md:text-[18px]">
+                                {module.name}
+                              </summary>
+
+                              <div className="mt-3 space-y-3">
+                                {module.semesters.map((sem, j) => (
+                                  <details
+                                    key={j}
+                                    className="ml-2 pl-2 md:ml-4 md:pl-4"
+                                  >
+                                    <summary className="cursor-pointer text-[#9d2235] font-medium text-[15px] md:text-[17px]">
+                                      {sem.sem}
+                                    </summary>
+
+                                    <ul className="mt-2 ml-4 space-y-2">
+                                      {sem.subjects.map((sub, k) => (
+                                        <li
+                                          key={k}
+                                          className="flex justify-between text-[13px] md:text-[14px]"
+                                        >
+                                          {sub.name}
+                                          <button
+                                            onClick={() =>
+                                              navigate(
+                                                `/pdf-viewer?file=${encodeURIComponent(sub.pdf)}`,
+                                              )
+                                            }
+                                            className="text-[#9d2235] text-[11px] md:text-[14px] hover:underline font-semibold"
+                                          >
+                                            View PDF
+                                          </button>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </details>
+                                ))}
+                              </div>
+                            </details>
+                          ))}
+                        </div>
+                      ) : course.semesters ? (
+                        /* ✅ CASE 2: DIRECT SEM (LIKE BCOM) */
+                        <div className="space-y-4">
+                          {course.semesters.map((sem, i) => (
+                            <details
+                              key={i}
+                              className=" rounded-lg p-4 bg-gray-50"
+                            >
+                              <summary className="cursor-pointer font-semibold text-[#9d2235] text-[15px] md:text-[17px]">
+                                {sem.sem}
+                              </summary>
+
+                              <ul className="mt-2 ml-4 space-y-2 text-sm">
+                                {sem.subjects.map((sub, k) => (
+                                  <li
+                                    key={k}
+                                    className="flex justify-between text-[13px] md:text-[14px]"
+                                  >
+                                    {sub.name}
+                                    <button
+                                      onClick={() =>
+                                        navigate(
+                                          `/pdf-viewer?file=${encodeURIComponent(sub.pdf)}`,
+                                        )
+                                      }
+                                      className="text-[#9d2235] text-[11px] md:text-[14px] hover:underline font-semibold"
+                                    >
+                                      View PDF
+                                    </button>
+                                  </li>
+                                ))}
+                              </ul>
+                            </details>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-gray-500">No syllabus available</p>
+                      )}
+                    </div>
+                  )}
                 </div>
               )}
 

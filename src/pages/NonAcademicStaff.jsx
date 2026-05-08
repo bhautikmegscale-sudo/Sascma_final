@@ -5,37 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const staffData = [
   {
     id: 1,
-  name: "Patel Rakesh Ratilal",
-    designation: "Administrative Staff",
-   image: "https://sascma.ac.in:8443/api/v1/Uploads/media/d8ccd89d-3450-4c27-a408-803789e13727.JPG",
-    specialization: "-",
-    qualification: "M.com (DCPA)",
-    experience: "14 Years",
-    email:"rakeshrnatali@gmail.com",
-  },
-  {
-    id: 2,
-    name: "Desai Bimalkumar Balvantbhai",
-    designation: "Administrative Staff",
-   image: "https://sascma.ac.in:8443/api/v1/Uploads/media/f66f23b1-a6e9-4a7a-a417-89828f30ac99.JPG",
-    specialization: "-",
-    qualification: "B.com",
-    experience: "20 Years",
-    email:"desai.bimal1980@yahoo.com",
-  },
-  {
-    id: 3,
-    name: "Mr. Shah Nikhilesh Dineshbhai",
-    designation: "Administrative Staff",
-  image: "https://sascma.ac.in:8443/api/v1/Uploads/media/21d27c45-89ec-4759-a467-9a32be878244.JPG",
-    specialization: "-",
-    qualification: "MCA, BCA",
-    experience: "-",
-    email:"nikshah19@yahoo.in",
-  },
-
-  {
-    id: 4,
     name: "Mrs Trivedi Rupal J",
     designation: "Administrative Staff",
    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8f78eb0c-4dfe-4ab0-be7d-b8bb540d6f01.JPG",
@@ -47,7 +16,7 @@ const staffData = [
 
   },
   {
-    id: 5,
+    id: 3,
     name: "Mr. Mehul Gandhi",
     designation: "Administrative Staff",
    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/6244d678-3460-4c9d-97ec-6410012cb742.JPG",
@@ -56,6 +25,26 @@ const staffData = [
     experience: "-",
     email:"meh_janu83@yahoo.com",
   },
+  {
+    id: 4,
+    name: "Desai Bimalkumar Balvantbhai",
+    designation: "Administrative Staff",
+   image: "https://sascma.ac.in:8443/api/v1/Uploads/media/f66f23b1-a6e9-4a7a-a417-89828f30ac99.JPG",
+    specialization: "-",
+    qualification: "B.com",
+    experience: "20 Years",
+    email:"desai.bimal1980@yahoo.com",
+  },
+  {
+    id: 5,
+  name: "Patel Rakesh Ratilal",
+    designation: "Administrative Staff",
+   image: "https://sascma.ac.in:8443/api/v1/Uploads/media/d8ccd89d-3450-4c27-a408-803789e13727.JPG",
+    specialization: "-",
+    qualification: "M.com (DCPA)",
+    experience: "14 Years",
+    email:"rakeshrnatali@gmail.com",
+  },  
   {
     id: 6,
     name: "Viraj Patel",
@@ -66,6 +55,19 @@ const staffData = [
     experience: "4 Years",
     email:"patelviraj4@gmail.com",
   },
+  {
+    id: 7,
+    name: "Mr. Shah Nikhilesh Dineshbhai",
+    designation: "Administrative Staff",
+    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/21d27c45-89ec-4759-a467-9a32be878244.JPG",
+    specialization: "-",
+    qualification: "MCA, BCA",
+    experience: "-",
+    email:"nikshah19@yahoo.in",
+  },
+
+  
+  
  
   
 ];
