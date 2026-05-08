@@ -102,6 +102,7 @@ export const coursesData = [
     full: "Bachelor of Commerce",
     duration: "3 Years",
     banner: "/c1.webp",
+    about1:"The Bachelor of Commerce program provides a strong foundation in accounting, finance, economics, taxation, and business law.",
     about: `
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
         ABOUT THE DEPARTMENT OF COMMERCE
@@ -235,6 +236,7 @@ export const coursesData = [
     full: "Bachelor of Computer Applications",
     duration: "3 Years",
     banner: "/c3.webp",
+    about1: "BCA prepares students for IT careers.",
     about: "BCA prepares students for IT careers.",
 
     // ✅ WITH MODULES
@@ -383,6 +385,7 @@ export const coursesData = [
     full: "Bachelor of Business Administration",
     duration: "3 Years",
     banner: "/c4.webp",
+    about1: "BBA focuses on developing management skills, business knowledge, and leadership abilities.",
     about: `
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
         Bachelor of Business Administration (BBA)
@@ -700,6 +703,7 @@ export const coursesData = [
      full: "Master of Commerce",
      duration: "2 Years",
      banner: "/c2.webp",
+     about1: "The Master of Commerce program offers advanced and research-oriented studies in commerce, finance, business laws, and strategic management.",
      about:
      `
         <h3 class="text-2xl font-bold text-[#213153] mb-2">
@@ -815,6 +819,7 @@ export const coursesData = [
      full: "Master of Science (Information Technology) Integrated",
      duration: "5 Years",
      banner: "/c7.webp",
+     about1: "The Master of Science in Information Technology (Integrated) program is a five-year course designed to provide students with a strong and continuous education in Information Technology, combining both undergraduate and postgraduate levels.",
      about: `
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
         About M.Sc.IT (Integrated) Course
@@ -932,6 +937,7 @@ export const coursesData = [
      full: "Bachelor of Arts(Psychology)",
      duration: "3 Years",
      banner: "/c5.webp",
+      about1: "The BA Psychology program is a three-year undergraduate course designed to provide students with a deep and comprehensive understanding of human behavior, mental processes, and emotional functioning.",
      about: `
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
         Bachelor of Arts in Psychology (BA Psychology)
@@ -1092,6 +1098,7 @@ export const coursesData = [
      full: "Bachelor of Science(Data Science)",
      duration: "3 Years",
      banner: "/c6.webp",
+     about1: "The Bachelor of Science in Data Science (B.Sc. Data Science) program is to provide students with a strong interdisciplinary foundation in computer science, statistics, and data analytics to effectively manage, analyze, and derive meaningful insights from large and complex datasets.",
      about: `
         <h2 class="text-2xl font-bold text-[#213153] mb-2">
           About B.Sc.(DS) Course

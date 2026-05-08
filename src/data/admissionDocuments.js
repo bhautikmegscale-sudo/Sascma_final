@@ -1,5 +1,10 @@
 export const admissionDocuments = [
   {
+    id: "prospectus-admissions",
+    title: "Prospectus Admissions 2026-27",
+    pdfPath: "/admission/Prospectus Admissions 2026-27.pdf",
+  },
+  {
     id: "our-toppers",
     title: "Our Toppers",
     pdfPath: "/AICTE/toppers.pdf",
@@ -13,11 +18,6 @@ export const admissionDocuments = [
     id: "extra-curricular-activities",
     title: "Our Extra Curricular Activities 2025-26",
     pdfPath: "/AICTE/EOA_Report_2025-26.PDF",
-  },
-  {
-    id: "prospectus-admissions",
-    title: "Prospectus Admissions 2026-27",
-    pdfPath: "/admission/Prospectus Admissions 2026-27.pdf",
   },
 
   // NEW ITEMS

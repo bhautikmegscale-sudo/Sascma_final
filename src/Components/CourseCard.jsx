@@ -42,7 +42,7 @@ const CourseCard = () => {
                   </h3>
 
                   <p className="text-white font-medium mb-4 line-clamp-2">
-                    {course.about}
+                    {course.about1}
                   </p>
 
                   <a
@@ -67,7 +67,7 @@ const CourseCard = () => {
                 </h3>
 
                 <p className="text-gray-700 font-medium line-clamp-2">
-                  {course.about}
+                  {course.about1}
                 </p>
 
                 <a
