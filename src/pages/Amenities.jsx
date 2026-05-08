@@ -100,7 +100,7 @@ const Amenities = () => {
             className="group w-full max-w-sm mx-auto overflow-hidden rou bg-white shadow-md rounded-b-lg transition-all duration-300 hover:shadow-2xl"
           >
             {/* 🔼 Increased Image Height */}
-            <div className="relative h-96 sm:h-auto overflow-hidden">
+            <div className="relative h-60 md:h-96 sm:h-auto overflow-hidden">
               <img
                 src={faculty.image}
                 alt={faculty.name}
