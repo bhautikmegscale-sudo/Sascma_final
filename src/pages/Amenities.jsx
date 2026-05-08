@@ -8,7 +8,7 @@ const Amenities = () => {
   const facultyData = [
     {
       id: 1,
-      name: "Seminal Hall - Auditorium-",
+      name: "Seminar Hall - Auditorium-",
       designation: "President",
       image:
         "/amenities/SEMINAR HALL - AUDITORIUM.jpeg",

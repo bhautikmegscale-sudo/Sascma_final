@@ -2,7 +2,12 @@ export const admissionDocuments = [
   {
     id: "prospectus-admissions",
     title: "Prospectus Admissions 2026-27",
-    pdfPath: "/admission/Prospectus Admissions 2026-27.pdf",
+    pdfPath: "/admission/Prospectus Admissions 2026-27_page-0001.jpg",
+  },
+  {
+    id: "gcas-admission-process",
+    title: "GCAS ADMISSION PROCESS",
+    pdfPath: "/admission/GCAS ADMISSION PROCESS.pdf",
   },
   {
     id: "our-toppers",
@@ -72,9 +77,5 @@ export const admissionDocuments = [
     pdfPath: "/career/Career opportunities After BA.jpeg",
   },
 
-  {
-    id: "gcas-admission-process",
-    title: "GCAS ADMISSION PROCESS",
-    pdfPath: "/admission/GCAS ADMISSION PROCESS.pdf",
-  },
+  
 ];
