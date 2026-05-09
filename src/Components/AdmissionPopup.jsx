@@ -53,16 +53,19 @@ export default function AdmissionPopup() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9D2235]">
             Admissions Open
           </p>
-          <h2 className="mt-3 text-2xl font-bold leading-snug text-black sm:text-3xl md:text-3xl">
+          <h2 className="mt-3 text-lg md:text-2xl font-bold leading-snug text-black sm:text-3xl md:text-3xl">
             B.Com. (VNSGU)
             <br />
             B.B.A. &amp; B.C.A. (VNSGU &amp; AICTE Approved)
             <br />
             M.Com / MMS / Integrated MSc(IT) (VNSGU)
           </h2>
+          <div className="text-lg font-semibold">For all courses search "SASCMA" on GCAS
+                <br/>For BA & MA search "STERS" on GCASF
+          </div>
         </div>
 
-        <div className="mt-6 overflow-hidden rounded-md border-4 border-black shadow-xl">
+        <div className="mt-4 md:mt-6 overflow-hidden rounded-md border-4 border-black shadow-xl">
           <img
             src="/aboutImg/banner.webp"
             alt="SASCMA campus"
@@ -70,13 +73,27 @@ export default function AdmissionPopup() {
           />
         </div>
 
-        <div className="mt-8 flex justify-center">
+        <div className="mt-4 md:mt-6 grid gap-4 grid-cols-1 md:grid-cols-3">
+          <Link
+            to="/admissions-support"
+            onClick={() => setOpen(false)}
+            className="inline-flex min-w-[220px] items-center justify-center bg-[#9D2235] px-3lg:px-6 py-2 lg:py-4 text-md lg:text-lg font-semibold text-white transition hover:bg-[#7d1b2b]"
+          >
+            Admission Process GCAS
+          </Link>
           <Link
             to="/admissions"
             onClick={() => setOpen(false)}
-            className="inline-flex min-w-[220px] items-center justify-center bg-[#9D2235] px-6 py-4 text-lg font-semibold text-white transition hover:bg-[#7d1b2b]"
+            className="inline-flex min-w-[220px] items-center justify-center bg-[#9D2235] px-3 lg:px-6 py-2 lg:py-4 text-md lg:text-lg font-semibold text-white transition hover:bg-[#7d1b2b]"
           >
             Admission for 2026-27
+          </Link>
+          <Link
+            to="/inquiry"
+            onClick={() => setOpen(false)}
+            className="inline-flex min-w-[220px] items-center justify-center bg-[#9D2235] px-3lg:px-6 py-2 lg:py-4 text-md lg:text-lg font-semibold text-white transition hover:bg-[#7d1b2b]"
+          >
+            Student Enquiry
           </Link>
         </div>
       </div>

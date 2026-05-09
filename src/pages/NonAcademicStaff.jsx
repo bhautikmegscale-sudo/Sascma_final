@@ -7,13 +7,21 @@ const staffData = [
     id: 1,
     name: "Mrs Trivedi Rupal J",
     designation: "Administrative Staff",
-   image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8f78eb0c-4dfe-4ab0-be7d-b8bb540d6f01.JPG",
+    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8f78eb0c-4dfe-4ab0-be7d-b8bb540d6f01.JPG",
     specialization: "-",
     qualification: "M.Com, B.Com, MBA (Pursuing)",
     experience: "3 Years",
     email:"nistha.jaimin@gmail.com",
-  
-
+  },
+  {
+    id: 8,
+    name: "Jinesh Shah",
+    designation: "Support Staff",
+    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/ef6c131c-345d-43ad-966e-61bfb920af56.JPG",
+    specialization: "-",
+    qualification: "-",
+    experience: "-",
+    email:"-",
   },
   {
     id: 3,
@@ -64,12 +72,7 @@ const staffData = [
     qualification: "MCA, BCA",
     experience: "-",
     email:"nikshah19@yahoo.in",
-  },
-
-  
-  
- 
-  
+  }, 
 ];
 
 export default function StaffCards() {
@@ -124,12 +127,7 @@ function StaffCard({ staff }) {
         </h3>
         <p className="text-slate-500 mb-2 md:mb-4">{staff.designation}</p>
 
-        <button
-          onClick={() => setOpen(!open)}
-          className="text-sm font-medium text-[#9e2335] transition"
-        >
-          {open ? "Hide Details" : "View More →"}
-        </button>
+        
 
         <AnimatePresence>
           {open && (

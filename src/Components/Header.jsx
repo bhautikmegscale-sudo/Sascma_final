@@ -356,23 +356,28 @@ const Header = () => {
                       >
                         {link.submenu.map((item, index) => (
                           <div
-                            key={item.label}
-                            className="relative"
-                            onMouseEnter={(e) => {
-                              setActiveSubmenuItem(item.label);
-                              if (item.submenu) {
-                                const rect = e.currentTarget.getBoundingClientRect();
-                                const spaceRight = window.innerWidth - rect.right;
-                                setNestedDirection(prev => ({
-                                  ...prev,
-                                  [item.label]: spaceRight < 212 ? 'left' : 'right'
-                                }));
-                              }
-                            }}
-                            onMouseLeave={() => {
-                              setActiveSubmenuItem(null);
-                            }}
-                          >
+  key={item.label}
+  className="relative group"
+  onMouseEnter={(e) => {
+    if (item.submenu) {
+      setActiveSubmenuItem(item.label);
+
+      const rect = e.currentTarget.getBoundingClientRect();
+      const spaceRight = window.innerWidth - rect.right;
+
+      setNestedDirection((prev) => ({
+        ...prev,
+        [item.label]: spaceRight < 212 ? "left" : "right",
+      }));
+    }
+  }}
+  onMouseLeave={(e) => {
+    // check if mouse moved into nested submenu
+    if (!e.currentTarget.contains(e.relatedTarget)) {
+      setActiveSubmenuItem(null);
+    }
+  }}
+>
                             {shouldOpenInNewTab(item) ? (
                               <a
                                 href={item.link}

@@ -68,6 +68,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Inquiry from "./pages/Inquiry";
 import Gallery from "./pages/Gallery";
 import AdmissionDocuments from "./pages/AdmissionDocuments";
+import AdmissionSupportPage from "./pages/AdmissionSupportPage";
 import AdmissionPdfViewer from "./pages/AdmissionPdfViewer";
 
 import FloatingInquiryButton from "./Components/FloatingInquiryButton";
@@ -112,6 +113,8 @@ function App() {
         <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/gallery" element={<Gallery  />} />
         <Route path="/admissions" element={<AdmissionDocuments />} />
+        <Route path="/admissions-support" element={<AdmissionSupportPage />} />
+        <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/admissions/view/:id" element={<AdmissionPdfViewer />} />
         <Route path="/terms-of-use" element={<TermsConditions  />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy  />} />

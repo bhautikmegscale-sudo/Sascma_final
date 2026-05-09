@@ -97,14 +97,14 @@ const Amenities = () => {
         {facultyData.map((faculty) => (
           <div
             key={faculty.id}
-            className="group w-full max-w-sm mx-auto overflow-hidden rou bg-white shadow-md rounded-b-lg transition-all duration-300 hover:shadow-2xl"
+            className="group w-full overflow-hidden rou bg-white shadow-md rounded-b-lg transition-all duration-300 hover:shadow-2xl"
           >
             {/* 🔼 Increased Image Height */}
             <div className="relative h-60 md:h-96 sm:h-auto overflow-hidden">
               <img
                 src={faculty.image}
                 alt={faculty.name}
-                className="h-60 w-full object-cover  rounded-lg transition-transform duration-500 group-hover:scale-110"
+                className="h-60 md:h-96  w-full object-cover  rounded-lg transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-linear-to-t from-white/20 via-black/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </div>

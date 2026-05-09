@@ -8,7 +8,7 @@ const Footer = () => {
       submenu: [
         { label: "Home", url: "https://sascma.ac.in" },
         { label: "About Us", url: "https://sascma.ac.in/about" },
-        { label: "Committee", url: "https://sascma.ac.in/committee" },
+        { label: "Committee", url: "https://sascma.ac.in0//committee" },
         { label: "Courses", url: "https://sascma.ac.in/courses" },
         { label: "Career", url: "https://sascma.ac.in/career" },
         { label: "Events", url: "https://sascma.ac.in/events" },
@@ -19,12 +19,12 @@ const Footer = () => {
       title: "Courses",
       submenu: [
         { label: "B.B.A", url: "https://sascma.ac.in/courses/bba" },
-        { label: "B.COM.", url: "https://sascma.ac.in/courses/bcom" },
-        { label: "B.C.A", url: "https://sascma.ac.in/courses/bca" },
-        { label: "M.COM.", url: "https://sascma.ac.in/courses/mcom" },
-        { label: "M.SC.", url: "https://sascma.ac.in/courses/msc" },
-        { label: "B.A.", url: "https://sascma.ac.in/courses/ba" },
-        { label: "B.SC.", url: "https://sascma.ac.in/courses/bsc" },
+        { label: "B.COM.", url: "https://sascma.ac.in0//courses/bcom" },
+        { label: "B.C.A", url: "https://sascma.ac.in0//courses/bca" },
+        { label: "M.COM.", url: "https://sascma.ac.in0/0//courses/mcom" },
+        { label: "M.SC.", url: "https://sascma.ac.in0/0//courses/msc" },
+        { label: "B.A.", url: "https://sascma.ac.in0//courses/ba" },
+        { label: "B.SC.", url: "https://sascma.ac.in0//courses/bsc" },
       ],
     },
   ];

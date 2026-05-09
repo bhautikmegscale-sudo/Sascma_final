@@ -104,6 +104,9 @@ export const coursesData = [
     banner: "/c1.webp",
     about1:"The Bachelor of Commerce program provides a strong foundation in accounting, finance, economics, taxation, and business law.",
     about: `
+    <div class="grid lg:grid-cols-4 gap-8 items-start">
+      <!-- LEFT CONTENT -->
+      <div class="lg:col-span-3 text-justify">
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
         ABOUT THE DEPARTMENT OF COMMERCE
       </h2>
@@ -200,7 +203,24 @@ export const coursesData = [
         <li>Business Development Executive</li>
         <li>Administrative Officer</li>
       </ul>
-      
+      </div>
+      <!-- Coordinator Section -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+        <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
+          alt="Dr. Bhumi Soham Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Bhumi Soham Desai
+          </p>
+          <p class="text-gray-600">
+            Vice Principal and Coordinator
+          </p>
+        </div>
+      </div>
+      </div>
     `,
 
     // ✅ DIRECT SEM (NO MODULE)
@@ -237,7 +257,44 @@ export const coursesData = [
     duration: "3 Years",
     banner: "/c3.webp",
     about1: "BCA prepares students for IT careers.",
-    about: "BCA prepares students for IT careers.",
+    about: `
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <!-- Coordinator Card -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 flex items-center gap-5">
+        <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG"
+          alt="Dr. Shalini Animeshbhai Mali"
+          class="w-48 h-58 rounded-xl object-cover border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235]">
+            Dr. Shalini Animeshbhai Mali
+          </p>
+          <p class="text-gray-600 text-lg">
+            Coordinator
+          </p>
+        </div>
+      </div>
+
+      <!-- Example Second Card -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 flex items-center gap-5">
+        <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/d191e008-e546-4858-b03c-f8cd876263fb.JPG"
+          alt="Coordinator"
+          class="w-48 h-58 rounded-xl object-cover border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235]">
+            Dr. Heta Desai
+          </p>
+          <p class="text-gray-600 text-lg">
+            Coordinator
+          </p>
+        </div>
+      </div>
+    </div>
+    `,
 
     // ✅ WITH MODULES
     modules: [
@@ -387,6 +444,9 @@ export const coursesData = [
     banner: "/c4.webp",
     about1: "BBA focuses on developing management skills, business knowledge, and leadership abilities.",
     about: `
+    <div class="grid lg:grid-cols-4 gap-8 items-start">
+      <!-- LEFT CONTENT -->
+      <div class="lg:col-span-3 text-justify">
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
         Bachelor of Business Administration (BBA)
       </h2>
@@ -528,6 +588,24 @@ export const coursesData = [
           Entrepreneur / Startup Founder
         </li>
       </ul>
+      </div>
+      <!-- Coordinator Section -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+        <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
+          alt="Dr. Chandni Sanket Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Chandni Sanket Desai
+          </p>
+          <p class="text-gray-600">
+            Coordinator
+          </p>
+        </div>
+      </div>
+      </div>
     `,
 
     modules: [
@@ -706,6 +784,10 @@ export const coursesData = [
      about1: "The Master of Commerce program offers advanced and research-oriented studies in commerce, finance, business laws, and strategic management.",
      about:
      `
+     <div class="grid lg:grid-cols-4 gap-8 items-start">
+       <!-- LEFT CONTENT -->
+        <div class="lg:col-span-3 text-justify">
+
         <h3 class="text-2xl font-bold text-[#213153] mb-2">
           Master of Commerce (M.Com.) at a Glance
         </h3>
@@ -795,6 +877,24 @@ export const coursesData = [
         <p class="mt-6">
           At SASCMA, we believe in nurturing potential and transforming students into future-ready professionals who make a meaningful impact in commerce and society.
         </p>
+        </div>
+        <!-- Coordinator Section -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+          <img
+            src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
+            alt="Dr. Bhumi Soham Desai"
+            class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          />
+          <div>
+            <p class="text-xl font-semibold text-[#9d2235] mt-2">
+              Dr. Bhumi Soham Desai
+            </p>
+            <p class="text-gray-600">
+              Vice Principal and Coordinator
+            </p>
+          </div>
+        </div>
+        </div>
       `,
      semesters: [
       {
@@ -813,7 +913,7 @@ export const coursesData = [
      timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
    },
 
-   {
+   {  
      id: "msc",
      short: "MSC",
      full: "Master of Science (Information Technology) Integrated",
@@ -821,6 +921,9 @@ export const coursesData = [
      banner: "/c7.webp",
      about1: "The Master of Science in Information Technology (Integrated) program is a five-year course designed to provide students with a strong and continuous education in Information Technology, combining both undergraduate and postgraduate levels.",
      about: `
+     <div class="grid lg:grid-cols-4 gap-8 items-start">
+       <!-- LEFT CONTENT -->
+      <div class="lg:col-span-3 text-justify">
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
         About M.Sc.IT (Integrated) Course
       </h2>
@@ -919,6 +1022,24 @@ export const coursesData = [
         <li>IT Consultant</li>
         <li>Research Associate</li>
       </ul>
+      </div>
+      <!-- Coordinator Section -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+        <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG"
+          alt="Dr. Hemang Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Hemang Desai
+          </p>
+          <p class="text-gray-600">
+            Coordinator
+          </p>
+        </div>
+      </div>
+      </div>
      `,
      semesters: [
       {
@@ -939,6 +1060,9 @@ export const coursesData = [
      banner: "/c5.webp",
       about1: "The BA Psychology program is a three-year undergraduate course designed to provide students with a deep and comprehensive understanding of human behavior, mental processes, and emotional functioning.",
      about: `
+       <!-- LEFT CONTENT -->
+      <div class="grid lg:grid-cols-4 gap-8 items-start">
+      <div class="lg:col-span-3 text-justify">
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
         Bachelor of Arts in Psychology (BA Psychology)
       </h2>
@@ -1080,6 +1204,24 @@ export const coursesData = [
           Corporate Trainer or Wellness Coach
         </li>
       </ul>
+      </div>
+      <!-- Coordinator Section -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+        <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG"
+          alt="Ms. Dhyani Darpan Vashi"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-lg font-semibold text-[#9d2235] mt-2">
+            Ms. Dhyani Darpan Vashi
+          </p>
+          <p class="text-gray-600 ">
+            Coordinator
+          </p>
+        </div>
+      </div>
+      </div>
      `,
      semesters: [
       {
@@ -1100,6 +1242,9 @@ export const coursesData = [
      banner: "/c6.webp",
      about1: "The Bachelor of Science in Data Science (B.Sc. Data Science) program is to provide students with a strong interdisciplinary foundation in computer science, statistics, and data analytics to effectively manage, analyze, and derive meaningful insights from large and complex datasets.",
      about: `
+     <div class="grid lg:grid-cols-4 gap-8 items-start">
+       <!-- LEFT CONTENT -->
+        <div class="lg:col-span-3 text-justify">
         <h2 class="text-2xl font-bold text-[#213153] mb-2">
           About B.Sc.(DS) Course
         </h2>
@@ -1160,6 +1305,24 @@ export const coursesData = [
           <li>Machine Learning Engineer</li>
           <li>Data Engineer</li>
         </ul>
+        </div>
+        <!-- Coordinator Section -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4  items-center gap-5 mb-8">
+          <img
+            src="https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG"
+            alt="Dr. Hemang Desai"
+            class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          />
+          <div>
+            <p class="text-lg font-semibold text-[#9d2235] mt-2">
+              Dr. Hemang Desai
+            </p>
+            <p class="text-gray-600 ">
+              Coordinator
+            </p>
+          </div>
+        </div>
+        </div>
       `,
      semesters: [
       {
