@@ -58,7 +58,7 @@ export default function AdmissionPopup() {
             <br />
             B.B.A. &amp; B.C.A. (VNSGU &amp; AICTE Approved)
             <br />
-            M.Com / MMS / Integrated MSc(IT) (VNSGU)
+            M.Com / MMS / Integrated MSc(IT) / BSc (Data Science) (VNSGU)
             <br />
             BA & MA (VNSGU)
           </h2>
