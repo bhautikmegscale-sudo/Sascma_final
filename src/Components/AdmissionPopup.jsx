@@ -61,7 +61,7 @@ export default function AdmissionPopup() {
             M.Com / MMS / Integrated MSc(IT) (VNSGU)
           </h2>
           <div className="text-lg font-semibold">For all courses search "SASCMA" on GCAS
-            <br />For BA & MA search "STERS" on GCAS
+            <br />For B.A. & M.A. search "STERS" on GCAS
           </div>
         </div>
 
