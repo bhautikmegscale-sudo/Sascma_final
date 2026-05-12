@@ -61,13 +61,13 @@ export default function AdmissionPopup() {
             M.Com / MMS / Integrated MSc(IT) (VNSGU)
           </h2>
           <div className="text-lg font-semibold">For all courses search "SASCMA" on GCAS
-                <br/>For BA & MA search "STERS" on GCASF
+            <br />For BA & MA search "STERS" on GCASF
           </div>
         </div>
 
         <div className="mt-4 md:mt-6 overflow-hidden rounded-md border-4 border-black shadow-xl">
           <img
-            src="/aboutImg/banner.webp"
+            src="/aboutImg/Prospectus Admissions 2026-27_page-0001_new.jpg"
             alt="SASCMA campus"
             className="h-[260px] w-full object-cover sm:h-[360px] md:h-[460px]"
           />

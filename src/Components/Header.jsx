@@ -143,6 +143,7 @@ const Header = () => {
         { label: "M.SC.(I.T.)", link: "https://sascma.ac.in/courses/msc" },
         { label: "B.A.(Psychology)", link: "https://sascma.ac.in/courses/ba" },
         { label: "B.SC.(Data Science)", link: "https://sascma.ac.in/courses/bsc" },
+        { label: "M.A.(Psychology)", link: "https://sascma.ac.in/courses/ma" },
       ],
     },
     {
@@ -161,7 +162,7 @@ const Header = () => {
             { label: "M.SC.(I.T.)", link: "https://sascma.ac.in/staff/academic/msc" },
             { label: "B.A.(Psychology)", link: "https://sascma.ac.in/staff/academic/ba" },
             { label: "B.SC.(Data Science)", link: "https://sascma.ac.in/staff/academic/bsc" },
-         
+            { label: "M.A.(Psychology)", link: "https://sascma.ac.in/staff/academic/ma" },
           ],    
         },
         { label: "Non-Academic Staff", link: "/staff/non-academic" },
@@ -180,35 +181,35 @@ const Header = () => {
     {
       name: "Accreditations",
       submenu: [
-        { label: "IPD", link: "https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf", newTab: true },
+        { label: "IPD", link: `/pdf-viewer?file=${encodeURIComponent("https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf")}`, newTab: false },
         { 
           label: "AICTE", 
-          link: "https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf",
+          link: `/pdf-viewer?file=${encodeURIComponent("https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf")}`,
           submenu :[
-            { label: "LOA 2024-25" , link: "https://sascma.ac.in/AICTE/LOA_Report_24-25.PDF", newTab: true },
-            { label: "EOA 2025-26", link: "https://sascma.ac.in/AICTE/EOA_Report_2025-26.PDF", newTab: true },
+            { label: "LOA 2024-25" , link: "/pdf-viewer?file=/AICTE/LOA_Report_24-25.PDF", newTab: false },
+            { label: "EOA 2025-26", link: "/pdf-viewer?file=/AICTE/EOA_Report_2025-26.PDF", newTab: false },
           ]
         },
-        { label: "NIRF", link: "https://sascma.ac.in/NIRF/NIRF-REPORT-SASCMA COLLEGE.pdf",newTab: true },
+        { label: "NIRF", link: "/pdf-viewer?file=/NIRF/NIRF-REPORT-SASCMA%20COLLEGE.pdf", newTab: false },
       ],
     },
     {
       name: "Student Corner",
-      link: "https://sascma.ac.in/",
+      link: "/",
       submenu: [
-        { label: "Notice Board", link: "https://sascma.ac.in/" },
-        { label: "Exam Schedule", link: "https://sascma.ac.in/" },
-        { label: "Fees Details", link: "https://sascma.ac.in/" },
-        { label: "Admission Details", link: "https://sascma.ac.in" },
-        { label: "Toppers Details", link: "http://10.27.1.16:3000/admissions/view/our-toppers" }
+        { label: "Notice Board", link: "/" },
+        { label: "Exam Schedule", link: "/" },
+        { label: "Fees Details", link: "/" },
+        { label: "Admission Details", link: "/admissions" },
+        { label: "Toppers Details", link: "/admissions/view/our-toppers" }
       ],
     },
     {
       name: "Alumni",
-      link: "https://sascma.ac.in/",
+      link: "/",
       submenu: [
-        { label: "Testimonials", link: "https://sascma.ac.in/testimonial" },
-        { label: "Reviews", link: "https://sascma.ac.in/courses/" }
+        { label: "Testimonials", link: "/testimonial" },
+        { label: "Reviews", link: "/courses" }
       ],
     },
   ];
@@ -258,7 +259,11 @@ const Header = () => {
             <div className="flex ">
               {/* Logo */}
               <a
-                href="https://sascma.ac.in"
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "/";
+                }}
                 className="flex items-center gap-2 md:gap-4 cursor-pointer">
                 <img
                   src="/logo.webp"
@@ -301,6 +306,12 @@ const Header = () => {
                           href={link.link}
                           target={link.newTab ? "_blank" : undefined}
                           rel={link.newTab ? "noopener noreferrer" : undefined}
+                          onClick={(e) => {
+                            if (link.name === "Home") {
+                              e.preventDefault();
+                              window.location.href = "/";
+                            }
+                          }}
                           className="text-md xl:text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1 cursor-pointer"
                         >
                           {link.name}
@@ -308,6 +319,12 @@ const Header = () => {
                       ) : (
                         <Link
                           to={link.link}
+                          onClick={(e) => {
+                            if (link.name === "Home") {
+                              e.preventDefault();
+                              window.location.href = "/";
+                            }
+                          }}
                           className="text-md xl:text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1 cursor-pointer"
                         >
                           {link.name}
@@ -395,8 +412,8 @@ const Header = () => {
                                 )}
                               </a>
                             ) : (
-                              <a
-                                href={item.link}
+                              <Link
+                                to={item.link}
                                 className={`cursor-pointer flex items-center justify-between px-6 py-3 text-gray-700 hover:bg-[#9D2235] hover:text-white transition-colors ${index === 0 ? "rounded-t-md" : ""
                                   } ${index === link.submenu.length - 1 ? "rounded-b-md" : ""}`}
                                 onClick={() => setActiveMenu(null)}
@@ -407,7 +424,7 @@ const Header = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                   </svg>
                                 )}
-                              </a>
+                              </Link>
                             )}
 
                             {/* Nested submenu for items that have their own submenu (e.g. Academic Staff → courses) */}
@@ -426,14 +443,14 @@ const Header = () => {
                                       {sub.label}
                                     </a>
                                   ) : (
-                                    <a
+                                    <Link
                                       key={sub.label}
-                                      href={sub.link}
+                                      to={sub.link}
                                       className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
                                       onClick={() => setActiveMenu(null)}
                                     >
                                       {sub.label}
-                                    </a>
+                                    </Link>
                                   )
                                 ))}
                               </div>
@@ -446,6 +463,18 @@ const Header = () => {
                 );
               })}
             </div>
+            
+            {/* Desktop Admission Button */}
+            <div className="hidden lg:block ml-4">
+              <Link
+                to="/admissions"
+                className="relative overflow-hidden rounded-full inline-flex min-w-[220px] items-center justify-center bg-[#9D2235] px-6 py-3 text-md font-semibold text-white transition-all duration-500 ease-in-out group z-10 border border-[#9D2235] hover:shadow-2xl"
+              >
+                <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center rounded-full"></span>
+                <span className="relative z-10">Admission for 2026-27</span>
+              </Link>
+            </div>
+
 
             {/* Mobile Menu Button */}
             <button
@@ -510,9 +539,13 @@ const Header = () => {
                         href={link.link}
                         target={link.newTab ? "_blank" : undefined}
                         rel={link.newTab ? "noopener noreferrer" : undefined}
-                        onClick={() => {
+                        onClick={(e) => {
                           setActiveMenu(null);
                           setMobileMenuOpen(false);
+                          if (link.name === "Home") {
+                            e.preventDefault();
+                            window.location.href = "/";
+                          }
                         }}
                         className="flex-1"
                       >
@@ -521,9 +554,13 @@ const Header = () => {
                     ) : (
                       <Link
                         to={link.link}
-                        onClick={() => {
+                        onClick={(e) => {
                           setActiveMenu(null);
                           setMobileMenuOpen(false);
+                          if (link.name === "Home") {
+                            e.preventDefault();
+                            window.location.href = "/";
+                          }
                         }}
                         className="flex-1"
                       >
@@ -591,14 +628,14 @@ const Header = () => {
                                         {sub.label}
                                       </a>
                                     ) : (
-                                      <a
+                                    <Link
                                         key={sub.label}
-                                        href={sub.link}
+                                        to={sub.link}
                                         onClick={() => { setActiveMenu(null); setMobileMenuOpen(false); }}
                                         className="block px-4 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
                                       >
                                         {sub.label}
-                                      </a>
+                                      </Link>
                                     )
                                   ))}
                                 </div>
@@ -617,14 +654,14 @@ const Header = () => {
                                 {item.label}
                               </a>
                             ) : (
-                              <a
+                              <Link
                                 key={item.label}
-                                href={item.link}
+                                to={item.link}
                                 className="block px-8 py-2 text-gray-700 hover:bg-[#9D2235] hover:text-white transition"
                                 onClick={() => { setActiveMenu(null); setMobileMenuOpen(false); }}
                               >
                                 {item.label}
-                              </a>
+                              </Link>
                             )
                           )}
                         </div>
@@ -633,6 +670,16 @@ const Header = () => {
                   )}
                 </div>
               ))}
+              <div className="px-4 py-3 border-t border-gray-100">
+                <Link
+                  to="/admissions"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="relative overflow-hidden rounded-full inline-flex w-full items-center justify-center bg-[#9D2235] px-3 py-3 text-md font-semibold text-white transition-all duration-500 ease-in-out group z-10 border border-[#9D2235]"
+                >
+                  <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center rounded-full"></span>
+                  <span className="relative z-10">Admission for 2026-27</span>
+                </Link>
+              </div>
             </div>
           )}
         </div>

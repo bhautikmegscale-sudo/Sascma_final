@@ -8,24 +8,73 @@ export default function PdfViewer() {
 
   return (
     <div className="min-h-screen bg-gray-100 pt-20 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 mt-30 pb-8">
-        {/* LEFT SIDE - PDF */}
-        <div className="md:col-span-2 bg-white rounded shadow h-[90vh]">
-          {file ? (
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 mt-32 pb-8">
+        <div className="md:col-span-2 bg-white rounded shadow overflow-hidden">
+          {file?.toLowerCase().endsWith(".pdf") ? (
             <iframe
-              src={`${file}#toolbar=1`}
+              src={file.startsWith("http") ? file : window.location.origin + file}
               title="PDF Viewer"
-              className="w-full h-full border-0"
+              className="w-full h-[90vh] border-0"
             />
           ) : (
-            <div className="flex items-center justify-center h-full text-gray-400">
-              No PDF selected
+            <div className="flex items-center justify-center bg-gray-100 p-4 min-h-[70vh]">
+              <img
+                src={file.startsWith("http") ? file : window.location.origin + file}
+                alt="Document"
+                className="w-full rounded object-contain"
+              />
             </div>
           )}
         </div>
 
         {/* RIGHT SIDE - USEFUL LINKS */}
         <div className="space-y-5 sticky top-24">
+          {/* Accreditations */}
+          <div className="bg-white rounded-xl shadow-sm ">
+            <h3 className="px-4 py-3 font-semibold text-[#213153] text-[18px]">
+              Accreditations
+            </h3>
+
+            <ul className="ps-2 text-sm pb-2">
+              <li>
+                <Link
+                  to={`/pdf-viewer?file=${encodeURIComponent("https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf")}`}
+                  className="flex items-center px-4 py-1.5 hover:bg-gray-50 transition"
+                >
+                  <FileText size={16} className="mr-2 text-[#9d2235]" />
+                  IPD
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/pdf-viewer?file=/AICTE/LOA_Report_24-25.PDF"
+                  className="flex items-center px-4 py-1.5 hover:bg-gray-50 transition"
+                >
+                  <FileText size={16} className="mr-2 text-[#9d2235]" />
+                  AICTE LOA 2024-25
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/pdf-viewer?file=/AICTE/EOA_Report_2025-26.PDF"
+                  className="flex items-center px-4 py-1.5 hover:bg-gray-50 transition"
+                >
+                  <FileText size={16} className="mr-2 text-[#9d2235]" />
+                  AICTE EOA 2025-26
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/pdf-viewer?file=/NIRF/NIRF-REPORT-SASCMA%20COLLEGE.pdf"
+                  className="flex items-center px-4 py-1.5 hover:bg-gray-50 transition"
+                >
+                  <FileText size={16} className="mr-2 text-[#9d2235]" />
+                  NIRF
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Useful Links */}
           <div className="bg-white rounded-xl shadow-sm ">
             <h3 className="px-4 py-3 font-semibold text-[#213153] text-[18px]">
@@ -54,15 +103,6 @@ export default function PdfViewer() {
                 </Link>
               </li>
 
-              <li>
-                <Link
-                  to={`/pdf-viewer?file=${encodeURIComponent("/NIRF/NIRF-REPORT-SASCMA COLLEGE.pdf")}`}
-                  className="flex items-center px-4 py-1.5 hover:bg-gray-50 transition"
-                >
-                  <FileText size={16} className="mr-2 text-[#9d2235]" />
-                  NIRF
-                </Link>
-              </li>
             </ul>
           </div>
 

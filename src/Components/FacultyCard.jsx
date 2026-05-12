@@ -173,12 +173,12 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const faculty = [
-   { name: "Dr. Ashish Desai", role: "Principal", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG" },
+  { name: "Dr. Ashish Desai", role: "Principal", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG" },
   { name: "Dr. Bhumi Desai", role: "Vice-Principal", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG" },
-  { name: "Dr. Chandani Desai", role: "Coordinator", image: "https://sascma.ac.in0/:8443/api/v1/Uploads/media/97461799-055a-41d3-8efe-a7871cbd1ee3.JPG" },
+  { name: "Dr. Chandani Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/97461799-055a-41d3-8efe-a7871cbd1ee3.JPG" },
   { name: "Dr. Shalini Mali", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG" },
   { name: "Dr. Heta Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/d191e008-e546-4858-b03c-f8cd876263fb.JPG" },
-  { name: "Dr. Hemang Desai", role: "Coordinator", image: "https://sascma.ac.in0/:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG" },
+  { name: "Dr. Hemang Desai", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG" },
   { name: "Ms. Dhyani Vashi", role: "Coordinator", image: "https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG" },
 ];
 
@@ -252,14 +252,14 @@ export default function Faculty() {
   return (
     <section className="bg-linear-to-b from-[#eef2ff] to-white py-10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-start lg:justify-center mb-4"> 
-          <span className="w-10 h-0.5 bg-red-700 mr-3"></span> 
-          <h4 className="text-sm uppercase tracking-widest text-gray-500"> Our Faculty </h4> 
-          <span className="w-10 h-0.5 bg-red-700 ml-3"></span> 
-          </div> 
-          <h1 className="text-start text-3xl md:text-4xl font-bold text-gray-900 mb-6 lg:text-center">
-             Meet our experienced and dedicated faculty members 
-          </h1> 
+        <div className="flex items-center justify-start lg:justify-center mb-4">
+          <span className="w-10 h-0.5 bg-red-700 mr-3"></span>
+          <h4 className="text-sm uppercase tracking-widest text-gray-500"> Our Faculty </h4>
+          <span className="w-10 h-0.5 bg-red-700 ml-3"></span>
+        </div>
+        <h1 className="text-start text-3xl md:text-4xl font-bold text-gray-900 mb-6 lg:text-center">
+          Meet our experienced and dedicated faculty members
+        </h1>
 
         <div
           className="relative"
@@ -323,9 +323,8 @@ export default function Faculty() {
             <button
               key={i}
               onClick={() => setIndex(faculty.length + i)}
-              className={`h-3 rounded-full transition-all ${
-                activeDot === i ? "w-8 bg-red-700" : "w-3 bg-gray-400"
-              }`}
+              className={`h-3 rounded-full transition-all ${activeDot === i ? "w-8 bg-red-700" : "w-3 bg-gray-400"
+                }`}
             />
           ))}
         </div>

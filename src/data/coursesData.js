@@ -66,8 +66,8 @@
 //     timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
 //     material: "Research papers, lab reports, and advanced reference books.",
 //   },
- 
- 
+
+
 //   {
 //     id: "ba",
 //     short: "BA",
@@ -89,7 +89,7 @@
 //     syllabus: ["Physics", "Chemistry", "Biology", "Mathematics"],
 //     timetable: "Monday to Friday, 9:00 AM – 2:00 PM",
 //   },
-  
+
 // ];
 
 
@@ -102,7 +102,7 @@ export const coursesData = [
     full: "Bachelor of Commerce",
     duration: "3 Years",
     banner: "/c1.webp",
-    about1:"The Bachelor of Commerce program provides a strong foundation in accounting, finance, economics, taxation, and business law.",
+    about1: "The Bachelor of Commerce program provides a strong foundation in accounting, finance, economics, taxation, and business law.",
     about: `
     <div class="grid lg:grid-cols-4 gap-8 items-start">
       <!-- LEFT CONTENT -->
@@ -256,41 +256,233 @@ export const coursesData = [
     full: "Bachelor of Computer Applications",
     duration: "3 Years",
     banner: "/c3.webp",
-    about1: "BCA prepares students for IT careers.",
+    about1: "The Bachelor of Computer Applications (BCA) is a three-year undergraduate program focused on computer science, software development, and information technology.",
     about: `
+    <div class="grid lg:grid-cols-4 gap-8 items-start">
+      <!-- LEFT CONTENT -->
+      <div class="lg:col-span-3 text-justify">
+      <h2 class="text-2xl font-bold text-[#213153] mb-2">
+        Bachelor of Computer Applications (BCA)
+      </h2>
+      <p class="mb-2">
+        The Bachelor of Computer Applications (BCA) is a three-year undergraduate program focused on computer science, software development, and information technology.
+      </p>
+      <p class="mb-2">
+        It provides students with a strong foundation in programming languages, database management, networking, web development, operating systems, and software engineering.
+      </p>
+      <p class="mb-2">
+        BCA aims to develop technical, analytical, and problem-solving skills required in the modern IT industry.
+      </p>
+      <p class="mb-2">
+        The course often includes practical lab sessions, live projects, internships, coding assignments, and industry-based training to provide hands-on experience.
+      </p>
+      <p class="mb-2">
+        Students can choose from specialized programs such as BCA-Regular, BCA-AI, and BCA Cyber Security based on their career interests and future goals.
+      </p>
+      <p class="mb-2">
+        BCA is an excellent choice for students who wish to build a career in the technology sector or pursue higher studies such as MCA, MBA, or MS in Computer Science.
+      </p>
+      <p class="mb-2">
+        Graduates can explore career opportunities in software companies, IT services, startups, web development firms, and multinational organizations.
+      </p>
+      <p class="mb-6">
+        With the rapid growth of the digital and technology industry, BCA serves as a strong foundation for a successful career in computer applications and software development.
+      </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-      <!-- Coordinator Card -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 flex items-center gap-5">
-        <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG"
-          alt="Dr. Shalini Animeshbhai Mali"
-          class="w-48 h-58 rounded-xl object-cover border border-gray-300 shadow-md"
-        />
-        <div>
-          <p class="text-xl font-semibold text-[#9d2235]">
-            Dr. Shalini Animeshbhai Mali
+      <h3 class="text-xl font-bold text-[#213153] mb-4">
+        BCA Programs Offered
+      </h3>
+      
+      <div class="space-y-6 mb-8">
+        <!-- BCA-Regular -->
+        <div class="bg-blue-50/50 p-5 rounded-xl border border-blue-100">
+          <h4 class="text-lg font-bold text-[#9d2235] mb-2">1. BCA-Regular</h4>
+          <p class="mb-3 text-sm">
+            BCA-Regular focuses on core computer application subjects including programming, databases, web technologies, networking, and software development. This program is ideal for students who want a broad understanding of IT and software technologies while keeping multiple career options open.
           </p>
-          <p class="text-gray-600 text-lg">
-            Coordinator
+          <div class="grid md:grid-cols-2 gap-4 text-xs">
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Key Areas:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Programming (C, C++, Java, Python)</li>
+                <li>Database Management</li>
+                <li>Web Development</li>
+                <li>Software Engineering</li>
+                <li>Computer Networks</li>
+                <li>Mobile App Development</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Career Opportunities:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Software Developer</li>
+                <li>Web Developer</li>
+                <li>System Administrator</li>
+                <li>Technical Support Engineer</li>
+                <li>IT Executive</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- BCA-AI -->
+        <div class="bg-purple-50/50 p-5 rounded-xl border border-purple-100">
+          <h4 class="text-lg font-bold text-[#9d2235] mb-2">2. BCA-AI (Artificial Intelligence)</h4>
+          <p class="mb-3 text-sm">
+            BCA-AI is designed for students interested in modern technologies like Artificial Intelligence, Machine Learning, Data Analytics, and Automation. The program combines traditional computer applications with intelligent systems and emerging technologies.
           </p>
+          <div class="grid md:grid-cols-2 gap-4 text-xs">
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Key Areas:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Data Science</li>
+                <li>Python Programming</li>
+                <li>Deep Learning Basics</li>
+                <li>Data Analytics & Visualization</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Career Opportunities:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>AI Developer</li>
+                <li>Data Analyst</li>
+                <li>Machine Learning Associate</li>
+                <li>Business Intelligence Executive</li>
+                <li>AI Support Engineer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- BCA Cyber Security -->
+        <div class="bg-red-50/50 p-5 rounded-xl border border-red-100">
+          <h4 class="text-lg font-bold text-[#9d2235] mb-2">3. BCA Cyber Security</h4>
+          <p class="mb-3 text-sm">
+            BCA Cyber Security focuses on protecting digital systems, networks, and data from cyber threats and attacks. This specialization prepares students for careers in ethical hacking, network security, digital forensics, and cyber risk management.
+          </p>
+          <div class="grid md:grid-cols-2 gap-4 text-xs">
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Key Areas:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Cyber Security Fundamentals</li>
+                <li>Ethical Hacking</li>
+                <li>Network Security</li>
+                <li>Cryptography</li>
+                <li>Digital Forensics</li>
+                <li>Information Security Management</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Career Opportunities:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Cyber Security Analyst</li>
+                <li>Ethical Hacker</li>
+                <li>Security Consultant</li>
+                <li>Network Security Engineer</li>
+                <li>Information Security Executive</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Example Second Card -->
-      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 flex items-center gap-5">
-        <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/d191e008-e546-4858-b03c-f8cd876263fb.JPG"
-          alt="Coordinator"
-          class="w-48 h-58 rounded-xl object-cover border border-gray-300 shadow-md"
-        />
-        <div>
-          <p class="text-xl font-semibold text-[#9d2235]">
-            Dr. Heta Desai
-          </p>
-          <p class="text-gray-600 text-lg">
-            Coordinator
-          </p>
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2">Duration</h3>
+          <p>3 Years (6 Semesters)</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2">Eligibility</h3>
+          <p>10+2 or equivalent with minimum 50% marks (requirements vary by institution)</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2">Stream</h3>
+          <p>Open to students from all streams (Commerce, Science, Arts)</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2">Admission Process</h3>
+          <p>Through GCAS</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg md:col-span-2">
+          <h3 class="font-bold text-[#9d2235] mb-2">Type</h3>
+          <p>Undergraduate</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-[#213153] mb-3">WHY:</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Industry-focused curriculum with practical learning</li>
+        <li>Strong career opportunities in the growing IT industry</li>
+        <li>Specializations available in trending technologies</li>
+        <li>Hands-on experience through projects, internships, and workshops</li>
+        <li>Excellent foundation for higher studies like MCA, MBA, or MS</li>
+        <li>Opportunities in software companies, startups, and multinational organizations</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-[#213153] mb-3">What After BCA?</h3>
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>MCA / MSc IT / MBA</li>
+        <li>Software Development & IT Services</li>
+        <li>Artificial Intelligence & Data Science</li>
+        <li>Cyber Security & Ethical Hacking</li>
+        <li>Cloud Computing & DevOps</li>
+        <li>Professional Certifications (AWS, Cisco, Microsoft, Google, CEH)</li>
+        <li>Study Abroad (MS in Computer Science or IT)</li>
+        <li>Competitive Exams (GATE, UPSC, Bank Exams)</li>
+        <li>Entrepreneurship & Startups</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-[#213153] mb-3">Job Scope (After BCA):</h3>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Software Developer</li>
+        <li>Full Stack Developer</li>
+        <li>Mobile App Developer</li>
+        <li>Data Analyst</li>
+        <li>AI & Machine Learning Associate</li>
+        <li>Cyber Security Analyst</li>
+        <li>Ethical Hacker</li>
+        <li>System Administrator</li>
+        <li>Cloud Support Associate</li>
+        <li>IT Consultant</li>
+        <li>Technical Support Engineer</li>
+        <li>Entrepreneur / Startup Founder</li>
+      </ul>
+      </div>
+
+      <!-- Coordinator Section -->
+      <div class="space-y-6">
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5">
+          <img
+            src="https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG"
+            alt="Dr. Shalini Animeshbhai Mali"
+            class="w-full h-auto rounded-xl border border-gray-300 shadow-md"
+          />
+          <div>
+            <p class="text-xl font-semibold text-[#9d2235] mt-2">
+              Dr. Shalini Animeshbhai Mali
+            </p>
+            <p class="text-gray-600">
+              Coordinator
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5">
+          <img
+            src="https://sascma.ac.in:8443/api/v1/Uploads/media/d191e008-e546-4858-b03c-f8cd876263fb.JPG"
+            alt="Dr. Heta Desai"
+            class="w-full h-auto rounded-xl border border-gray-300 shadow-md"
+          />
+          <div>
+            <p class="text-xl font-semibold text-[#9d2235] mt-2">
+              Dr. Heta Desai
+            </p>
+            <p class="text-gray-600">
+              Coordinator
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -775,15 +967,15 @@ export const coursesData = [
     timetable: "Monday to Friday, 9:00 AM – 2:00 PM",
   },
 
-   {
-     id: "mcom",
-     short: "MCOM",
-     full: "Master of Commerce",
-     duration: "2 Years",
-     banner: "/c2.webp",
-     about1: "The Master of Commerce program offers advanced and research-oriented studies in commerce, finance, business laws, and strategic management.",
-     about:
-     `
+  {
+    id: "mcom",
+    short: "MCOM",
+    full: "Master of Commerce",
+    duration: "2 Years",
+    banner: "/c2.webp",
+    about1: "The Master of Commerce program offers advanced and research-oriented studies in commerce, finance, business laws, and strategic management.",
+    about:
+      `
      <div class="grid lg:grid-cols-4 gap-8 items-start">
        <!-- LEFT CONTENT -->
         <div class="lg:col-span-3 text-justify">
@@ -896,7 +1088,7 @@ export const coursesData = [
         </div>
         </div>
       `,
-     semesters: [
+    semesters: [
       {
         sem: "Semester 1 & 2",
         subjects: [
@@ -910,17 +1102,17 @@ export const coursesData = [
         ]
       },
     ],
-     timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
-   },
+    timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
+  },
 
-   {  
-     id: "msc",
-     short: "MSC",
-     full: "Master of Science (Information Technology) Integrated",
-     duration: "5 Years",
-     banner: "/c7.webp",
-     about1: "The Master of Science in Information Technology (Integrated) program is a five-year course designed to provide students with a strong and continuous education in Information Technology, combining both undergraduate and postgraduate levels.",
-     about: `
+  {
+    id: "msc",
+    short: "MSC",
+    full: "Master of Science (Information Technology) Integrated",
+    duration: "5 Years",
+    banner: "/c7.webp",
+    about1: "The Master of Science in Information Technology (Integrated) program is a five-year course designed to provide students with a strong and continuous education in Information Technology, combining both undergraduate and postgraduate levels.",
+    about: `
      <div class="grid lg:grid-cols-4 gap-8 items-start">
        <!-- LEFT CONTENT -->
       <div class="lg:col-span-3 text-justify">
@@ -1041,7 +1233,7 @@ export const coursesData = [
       </div>
       </div>
      `,
-     semesters: [
+    semesters: [
       {
         sem: "FY BSc IT (5 years Integrated Programme)",
         subjects: [
@@ -1049,17 +1241,17 @@ export const coursesData = [
         ]
       },
     ],
-     timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
-   },
+    timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
+  },
 
-   {
-     id: "ba",
-     short: "BA",
-     full: "Bachelor of Arts(Psychology)",
-     duration: "3 Years",
-     banner: "/c5.webp",
-      about1: "The BA Psychology program is a three-year undergraduate course designed to provide students with a deep and comprehensive understanding of human behavior, mental processes, and emotional functioning.",
-     about: `
+  {
+    id: "ba",
+    short: "BA",
+    full: "Bachelor of Arts(Psychology)",
+    duration: "3 Years",
+    banner: "/c5.webp",
+    about1: "The BA Psychology program is a three-year undergraduate course designed to provide students with a deep and comprehensive understanding of human behavior, mental processes, and emotional functioning.",
+    about: `
        <!-- LEFT CONTENT -->
       <div class="grid lg:grid-cols-4 gap-8 items-start">
       <div class="lg:col-span-3 text-justify">
@@ -1223,7 +1415,7 @@ export const coursesData = [
       </div>
       </div>
      `,
-     semesters: [
+    semesters: [
       {
         sem: "FY BA (Psychology)",
         subjects: [
@@ -1231,17 +1423,17 @@ export const coursesData = [
         ]
       },
     ],
-     timetable: "Monday to Friday, 9:00 AM – 2:00 PM",
-   },
+    timetable: "Monday to Friday, 9:00 AM – 2:00 PM",
+  },
 
-   {
-     id: "bsc",
-     short: "BSC",
-     full: "Bachelor of Science(Data Science)",
-     duration: "3 Years",
-     banner: "/c6.webp",
-     about1: "The Bachelor of Science in Data Science (B.Sc. Data Science) program is to provide students with a strong interdisciplinary foundation in computer science, statistics, and data analytics to effectively manage, analyze, and derive meaningful insights from large and complex datasets.",
-     about: `
+  {
+    id: "bsc",
+    short: "BSC",
+    full: "Bachelor of Science(Data Science)",
+    duration: "3 Years",
+    banner: "/c6.webp",
+    about1: "The Bachelor of Science in Data Science (B.Sc. Data Science) program is to provide students with a strong interdisciplinary foundation in computer science, statistics, and data analytics to effectively manage, analyze, and derive meaningful insights from large and complex datasets.",
+    about: `
      <div class="grid lg:grid-cols-4 gap-8 items-start">
        <!-- LEFT CONTENT -->
         <div class="lg:col-span-3 text-justify">
@@ -1324,13 +1516,198 @@ export const coursesData = [
         </div>
         </div>
       `,
-     semesters: [
+    semesters: [
       {
         sem: "Semester 1 & 2",
         subjects: [
-          { name: "FY B.SC. (DS) Full Syllabus", pdf: "/syllabus/bsc/FY BSc (DS) Full Syllabus.pdf" },
+          { name: "FY B.SC. (DS) Full Syllabus", pdf: "/syllabus/bsc/FY BSc (DS) Full Syllabus.pdf" }
         ]
       },
     ],
-   },
+  },
+  {
+    id: "ma",
+    short: "MA",
+    full: "Master of Arts (Psychology)",
+    duration: "2 Years",
+    banner: "/c5.webp",
+    about1: "The Master of Arts in Psychology (MA Psychology) is a two-year postgraduate program designed to provide advanced knowledge of human behavior, mental processes, emotional well-being, and psychological assessment.",
+    about: `
+    <div class="grid lg:grid-cols-4 gap-8 items-start">
+      <!-- LEFT CONTENT -->
+      <div class="lg:col-span-3 text-justify">
+      <h2 class="text-2xl font-bold text-[#213153] mb-4">
+        Master of Arts in Psychology (MA)
+      </h2>
+      <p class="mb-4">
+        The Master of Arts in Psychology (MA Psychology) is a two-year postgraduate program designed to provide advanced knowledge of human behavior, mental processes, emotional well-being, and psychological assessment.
+      </p>
+      <p class="mb-4">
+        The program focuses on developing analytical, counselling, therapeutic, and research skills required in the fields of mental health, education, healthcare, and organizational development.
+      </p>
+      <p class="mb-4">
+        MA Psychology combines theoretical learning with practical exposure through case studies, counselling practice, psychological assessments, internships, workshops, and research projects.
+      </p>
+      <p class="mb-4">
+        Students can choose specialized programs such as MA Psychology (Clinical) and MA Psychology (Counselling) based on their career interests and professional goals.
+      </p>
+      <p class="mb-4">
+        The course prepares students for careers in mental health services, counselling centers, hospitals, educational institutions, NGOs, corporate wellness, and research organizations.
+      </p>
+      <p class="mb-8">
+        With the growing awareness of mental health and emotional well-being, MA Psychology offers strong career opportunities in both private and public sectors.
+      </p>
+
+      <h3 class="text-xl font-bold text-[#213153] mb-6">MA Psychology Programs Offered</h3>
+      
+      <div class="space-y-8 mb-10">
+        <!-- MA Clinical -->
+        <div class="bg-blue-50/50 p-6 rounded-xl border border-blue-100">
+          <h4 class="text-xl font-bold text-[#9d2235] mb-2">1. MA Psychology (Clinical)</h4>
+          <p class="mb-4 text-sm">
+            MA Psychology (Clinical) focuses on understanding psychological disorders, mental health conditions, assessment techniques, and therapeutic interventions. This specialization is ideal for students interested in clinical practice, mental healthcare, psychological assessment, and rehabilitation support services.
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <p class="font-bold text-[#213153] mb-2">Details:</p>
+              <ul class="text-sm space-y-1 text-gray-700">
+                <li><span class="font-semibold text-[#9d2235]">Duration:</span> 2 Years (4 Semesters)</li>
+                <li><span class="font-semibold text-[#9d2235]">Eligibility:</span> BA Psychology / Equivalent Degree</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-[#213153] mb-2">Curriculum Highlights:</p>
+              <ul class="list-disc pl-4 text-sm space-y-1 text-gray-700">
+                <li>Advanced Psychopathology</li>
+                <li>Psychological Testing</li>
+                <li>CBT (Cognitive Behavioral Therapy)</li>
+                <li>Neuropsychology</li>
+                <li>Child Psychology</li>
+                <li>Research & Statistics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="font-bold text-[#213153] mb-2">Career Opportunities:</p>
+            <ul class="list-disc pl-4 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1 text-gray-700">
+              <li>Clinical Psychology Assistance</li>
+              <li>Hospitals & Mental Health Clinics</li>
+              <li>NGOs & Rehabilitation Centers</li>
+              <li>Research & Academia</li>
+              <li>Mental Health Services</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- MA Counselling -->
+        <div class="bg-green-50/50 p-6 rounded-xl border border-green-100">
+          <h4 class="text-xl font-bold text-[#9d2235] mb-2">2. MA Psychology (Counselling)</h4>
+          <p class="mb-4 text-sm">
+            MA Psychology (Counselling) focuses on guidance, emotional support, behavioural counselling, and therapeutic communication techniques. This specialization is suitable for students who wish to work in counselling services, educational guidance, family support, and wellness programs.
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <p class="font-bold text-[#213153] mb-2">Details:</p>
+              <ul class="text-sm space-y-1 text-gray-700">
+                <li><span class="font-semibold text-[#9d2235]">Duration:</span> 2 Years (4 Semesters)</li>
+                <li><span class="font-semibold text-[#9d2235]">Eligibility:</span> BA Psychology / Equivalent Degree</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-[#213153] mb-2">Curriculum Highlights:</p>
+              <ul class="list-disc pl-4 text-sm space-y-1 text-gray-700">
+                <li>Counselling Theories</li>
+                <li>Career Counselling</li>
+                <li>Family Counselling</li>
+                <li>Group Counselling</li>
+                <li>Positive Psychology</li>
+                <li>Trauma-Informed Practice</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4">
+            <p class="font-bold text-[#213153] mb-2">Career Opportunities:</p>
+            <ul class="list-disc pl-4 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1 text-gray-700">
+              <li>Schools & Educational Institutions</li>
+              <li>Counselling Centers</li>
+              <li>Corporate Wellness Programs</li>
+              <li>NGOs & Community Services</li>
+              <li>Private Practice Support Roles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2 text-sm uppercase">Type</h3>
+          <p>Postgraduate</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2 text-sm uppercase">Admission Process</h3>
+          <p>Through GCAS</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-[#213153] mb-4">WHY CHOOSE MA PSYCHOLOGY?</h3>
+      <ul class="list-disc pl-6 mb-8 space-y-2">
+        <li>Growing demand for mental health professionals</li>
+        <li>Specialized learning in Clinical and Counselling Psychology</li>
+        <li>Practical exposure through internships, case studies, and counselling sessions</li>
+        <li>Strong career opportunities in healthcare, education, NGOs, and corporate sectors</li>
+        <li>Excellent foundation for research, higher studies, and professional certifications</li>
+        <li>Opportunity to contribute positively to emotional and mental well-being in society</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-[#213153] mb-4">What After MA Psychology?</h3>
+      <ul class="list-disc pl-6 mb-8 space-y-2">
+        <li>M.Phil. in Clinical Psychology</li>
+        <li>PhD in Psychology</li>
+        <li>Research & Academic Careers</li>
+        <li>Mental Health & Counselling Services</li>
+        <li>Rehabilitation & Community Wellness Programs</li>
+        <li>Corporate HR & Wellness Roles</li>
+        <li>Professional Certifications in Therapy & Counselling</li>
+        <li>Private Practice & Consulting</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-[#213153] mb-4">Job Scope (After MA Psychology):</h3>
+      <ul class="list-disc pl-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+        <li>Counsellor</li>
+        <li>Clinical Psychology Assistant</li>
+        <li>School Counsellor</li>
+        <li>Mental Health Support Professional</li>
+        <li>Behaviour Therapist</li>
+        <li>Career Counsellor</li>
+        <li>Rehabilitation Support Executive</li>
+        <li>Research Associate</li>
+        <li>Academic Coordinator</li>
+        <li>Corporate Wellness Executive</li>
+        <li>NGO Mental Health Worker</li>
+      </ul>
+      </div>
+
+      <!-- Coordinator Section -->
+      <div class="space-y-6">
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5">
+          <img
+            src="https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG"
+            alt="Ms. Dhyani Darpan Vashi"
+            class="w-full h-auto rounded-xl border border-gray-300 shadow-md"
+          />
+          <div>
+            <p class="text-xl font-semibold text-[#9d2235] mt-2">
+              Ms. Dhyani Darpan Vashi
+            </p>
+            <p class="text-gray-600">
+              Coordinator
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    `,
+    semesters: [],
+    timetable: "Monday to Friday, 10:00 AM – 3:00 PM",
+  },
 ];
