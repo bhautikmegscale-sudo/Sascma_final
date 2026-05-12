@@ -53,7 +53,7 @@ export default function AdmissionPopup() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9D2235]">
             Admissions Open
           </p>
-          <h2 className="mt-3 text-lg md:text-2xl font-bold leading-snug text-black sm:text-3xl md:text-3xl">
+          <h2 className="mt-3 text-lg md:text-xl font-bold leading-snug text-black sm:text-3xl md:text-3xl">
             B.Com. (VNSGU)
             <br />
             B.B.A. &amp; B.C.A. (VNSGU &amp; AICTE Approved)
@@ -62,8 +62,17 @@ export default function AdmissionPopup() {
             <br />
             BA & MA (VNSGU)
           </h2>
-          <div className="text-lg font-semibold">For all courses search "SASCMA" on GCAS
-            <br />For BA & MA search "STERS" on GCAS
+          <div className="text-lg font-semibold">
+            For all courses search{" "}
+            <span className="bg-[#9D2235] text-white px-2 py-0">
+              "SASCMA"  on GCAS
+            </span>
+
+            <br className="" />
+            For BA & MA search{" "}
+            <span className="bg-[#9D2235] text-white px-2 py-0 ">
+              "STERS" on GCAS
+            </span>
           </div>
         </div>
 
