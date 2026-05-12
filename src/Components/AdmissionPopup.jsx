@@ -59,9 +59,11 @@ export default function AdmissionPopup() {
             B.B.A. &amp; B.C.A. (VNSGU &amp; AICTE Approved)
             <br />
             M.Com / MMS / Integrated MSc(IT) (VNSGU)
+            <br />
+            BA & MA (VNSGU)
           </h2>
           <div className="text-lg font-semibold">For all courses search "SASCMA" on GCAS
-            <br />For B.A. & M.A. search "STERS" on GCAS
+            <br />For BA & MA search "STERS" on GCAS
           </div>
         </div>
 
