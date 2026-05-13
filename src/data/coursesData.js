@@ -206,6 +206,20 @@ export const coursesData = [
       </div>
       <!-- Coordinator Section -->
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+       <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          alt="Dr. Ashish Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Ashish Desai
+          </p>
+          <p class="text-gray-600">
+            Principal
+          </p>
+        </div>
+        <br />
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
           alt="Dr. Bhumi Soham Desai"
@@ -256,110 +270,218 @@ export const coursesData = [
     full: "Bachelor of Computer Applications",
     duration: "3 Years",
     banner: "/c3.webp",
-    about1: "The Department of Computer Applications at Veer Narmad South Gujarat University is committed to developing skilled, innovative, and industry-ready IT professionals through quality education and practical learning.",
+    about1: "The Bachelor of Computer Applications (BCA) is a three-year undergraduate program focused on computer science, software development, and information technology.",
     about: `
     <div class="grid lg:grid-cols-4 gap-8 items-start">
       <!-- LEFT CONTENT -->
       <div class="lg:col-span-3 text-justify">
       <h2 class="text-2xl font-bold text-[#213153] mb-2">
-        ABOUT THE DEPARTMENT OF COMPUTER APPLICATIONS
+        Bachelor of Computer Applications (BCA)
       </h2>
       <p class="mb-2">
-        The Department of Computer Applications at Veer Narmad South Gujarat University is committed to developing skilled, innovative, and industry-ready IT professionals through quality education, modern teaching methodologies, and practical learning experiences.
+        The Bachelor of Computer Applications (BCA) is a three-year undergraduate program focused on computer science, software development, and information technology.
       </p>
       <p class="mb-2">
-        With a strong academic foundation and exposure to emerging technologies, the department aims to equip students with the technical knowledge, analytical thinking, and professional skills required to succeed in the rapidly evolving digital world.
+        It provides students with a strong foundation in programming languages, database management, networking, web development, operating systems, and software engineering.
+      </p>
+      <p class="mb-2">
+        BCA aims to develop technical, analytical, and problem-solving skills required in the modern IT industry.
+      </p>
+      <p class="mb-2">
+        The course often includes practical lab sessions, live projects, internships, coding assignments, and industry-based training to provide hands-on experience.
+      </p>
+      <p class="mb-2">
+        Students can choose from specialized programs such as BCA-Regular, BCA-AI, and BCA Cyber Security based on their career interests and future goals.
+      </p>
+      <p class="mb-2">
+        BCA is an excellent choice for students who wish to build a career in the technology sector or pursue higher studies such as MCA, MBA, or MS in Computer Science.
+      </p>
+      <p class="mb-2">
+        Graduates can explore career opportunities in software companies, IT services, startups, web development firms, and multinational organizations.
       </p>
       <p class="mb-6">
-        The Bachelor of Computer Applications (BCA) programs are designed to provide students with comprehensive knowledge of computer science, software development, programming, networking, databases, web technologies, Artificial Intelligence, and Cyber Security. The curriculum combines theoretical concepts with hands-on training, lab work, projects, and real-world applications to ensure students gain practical industry exposure alongside academic excellence.
+        With the rapid growth of the digital and technology industry, BCA serves as a strong foundation for a successful career in computer applications and software development.
       </p>
 
-      <h3 class="text-2xl font-bold text-[#213153] mb-2">
-        Bachelor of Computer Applications (BCA) at a Glance
+      <h3 class="text-xl font-bold text-[#213153] mb-4">
+        BCA Programs Offered
       </h3>
-      <div class="space-y-4 mb-6">
-        <div>
-          <h4 class="font-bold text-[#9d2235]">
-            Programme Overview:
-          </h4>
-          <p>
-            An undergraduate degree focused on computer applications, programming, software development, intelligent systems, and cyber security with emphasis on technical skills, innovation, and practical learning.
+      
+      <div class="space-y-6 mb-8">
+        <!-- BCA-Regular -->
+        <div class="bg-blue-50/50 p-5 rounded-xl border border-blue-100">
+          <h4 class="text-lg font-bold text-[#9d2235] mb-2">1. BCA-Regular</h4>
+          <p class="mb-3 text-sm">
+            BCA-Regular focuses on core computer application subjects including programming, databases, web technologies, networking, and software development. This program is ideal for students who want a broad understanding of IT and software technologies while keeping multiple career options open.
           </p>
+          <div class="grid md:grid-cols-2 gap-4 text-xs">
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Key Areas:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Programming (C, C++, Java, Python)</li>
+                <li>Database Management</li>
+                <li>Web Development</li>
+                <li>Software Engineering</li>
+                <li>Computer Networks</li>
+                <li>Mobile App Development</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Career Opportunities:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Software Developer</li>
+                <li>Web Developer</li>
+                <li>System Administrator</li>
+                <li>Technical Support Engineer</li>
+                <li>IT Executive</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <h4 class="font-bold text-[#9d2235]">
-            Duration:
-          </h4>
-          <p>
-            3 Years (6 Semesters)
+
+        <!-- BCA-AI -->
+        <div class="bg-purple-50/50 p-5 rounded-xl border border-purple-100">
+          <h4 class="text-lg font-bold text-[#9d2235] mb-2">2. BCA-AI (Artificial Intelligence)</h4>
+          <p class="mb-3 text-sm">
+            BCA-AI is designed for students interested in modern technologies like Artificial Intelligence, Machine Learning, Data Analytics, and Automation. The program combines traditional computer applications with intelligent systems and emerging technologies.
           </p>
+          <div class="grid md:grid-cols-2 gap-4 text-xs">
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Key Areas:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Data Science</li>
+                <li>Python Programming</li>
+                <li>Deep Learning Basics</li>
+                <li>Data Analytics & Visualization</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Career Opportunities:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>AI Developer</li>
+                <li>Data Analyst</li>
+                <li>Machine Learning Associate</li>
+                <li>Business Intelligence Executive</li>
+                <li>AI Support Engineer</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <h4 class="font-bold text-[#9d2235]">
-            Eligibility:
-          </h4>
-          <p>
-            12th Pass (Higher Secondary Certificate) from any recognized board.
+
+        <!-- BCA Cyber Security -->
+        <div class="bg-red-50/50 p-5 rounded-xl border border-red-100">
+          <h4 class="text-lg font-bold text-[#9d2235] mb-2">3. BCA Cyber Security</h4>
+          <p class="mb-3 text-sm">
+            BCA Cyber Security focuses on protecting digital systems, networks, and data from cyber threats and attacks. This specialization prepares students for careers in ethical hacking, network security, digital forensics, and cyber risk management.
           </p>
-        </div>
-        <div>
-          <h4 class="font-bold text-[#9d2235]">
-            Admission Process:
-          </h4>
-          <p>
-            Through GCAS (Gujarat Common Admission System)
-          </p>
-        </div>
-        <div>
-          <h4 class="font-bold text-[#9d2235]">
-            Programme Type:
-          </h4>
-          <p>
-            Undergraduate Degree
-          </p>
+          <div class="grid md:grid-cols-2 gap-4 text-xs">
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Key Areas:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Cyber Security Fundamentals</li>
+                <li>Ethical Hacking</li>
+                <li>Network Security</li>
+                <li>Cryptography</li>
+                <li>Digital Forensics</li>
+                <li>Information Security Management</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold text-[#213153] mb-1">Career Opportunities:</p>
+              <ul class="list-disc pl-4 space-y-1">
+                <li>Cyber Security Analyst</li>
+                <li>Ethical Hacker</li>
+                <li>Security Consultant</li>
+                <li>Network Security Engineer</li>
+                <li>Information Security Executive</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
-      <h3 class="text-xl font-bold text-[#213153] mb-3">
-        Why Choose BCA?
-      </h3>
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2">Duration</h3>
+          <p>3 Years (6 Semesters)</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2">Eligibility</h3>
+          <p>10+2 or equivalent with minimum 50% marks (requirements vary by institution)</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2">Stream</h3>
+          <p>Open to students from all streams (Commerce, Science, Arts)</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-bold text-[#9d2235] mb-2">Admission Process</h3>
+          <p>Through GCAS</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg md:col-span-2">
+          <h3 class="font-bold text-[#9d2235] mb-2">Type</h3>
+          <p>Undergraduate</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-[#213153] mb-3">WHY:</h3>
       <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Strong foundation in programming, software development, and computer applications</li>
-        <li>Exposure to emerging technologies like Artificial Intelligence and Cyber Security</li>
-        <li>Hands-on practical learning through projects, labs, workshops, and case studies</li>
-        <li>Skill development in problem-solving, logical thinking, and analytical abilities</li>
-        <li>Industry-oriented curriculum with focus on real-world applications</li>
-        <li>Opportunities for innovation, research, and higher education</li>
-        <li>Development of communication skills, teamwork, and professional ethics</li>
+        <li>Industry-focused curriculum with practical learning</li>
+        <li>Strong career opportunities in the growing IT industry</li>
+        <li>Specializations available in trending technologies</li>
+        <li>Hands-on experience through projects, internships, and workshops</li>
+        <li>Excellent foundation for higher studies like MCA, MBA, or MS</li>
+        <li>Opportunities in software companies, startups, and multinational organizations</li>
       </ul>
 
       <h3 class="text-xl font-bold text-[#213153] mb-3">What After BCA?</h3>
       <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Higher studies such as MCA, M.Sc. IT, M.Sc. AI, M.Sc. Cyber Security, MBA (IT)</li>
-        <li>Professional certifications in Python, Java, Web Development, Machine Learning, Deep Learning, Ethical Hacking, CEH, CISSP, CISA, and related technologies</li>
-        <li>Opportunities in research, startups, and advanced IT domains</li>
+        <li>MCA / MSc IT / MBA</li>
+        <li>Software Development & IT Services</li>
+        <li>Artificial Intelligence & Data Science</li>
+        <li>Cyber Security & Ethical Hacking</li>
+        <li>Cloud Computing & DevOps</li>
+        <li>Professional Certifications (AWS, Cisco, Microsoft, Google, CEH)</li>
+        <li>Study Abroad (MS in Computer Science or IT)</li>
+        <li>Competitive Exams (GATE, UPSC, Bank Exams)</li>
+        <li>Entrepreneurship & Startups</li>
       </ul>
 
-      <h3 class="text-xl font-bold text-[#213153] mb-3">Career Opportunities</h3>
+      <h3 class="text-xl font-bold text-[#213153] mb-3">Job Scope (After BCA):</h3>
       <ul class="list-disc pl-6 space-y-2">
         <li>Software Developer</li>
-        <li>Web Developer</li>
-        <li>System Analyst</li>
-        <li>Database Administrator</li>
-        <li>AI/ML Engineer</li>
+        <li>Full Stack Developer</li>
+        <li>Mobile App Developer</li>
         <li>Data Analyst</li>
-        <li>Python Developer</li>
+        <li>AI & Machine Learning Associate</li>
         <li>Cyber Security Analyst</li>
         <li>Ethical Hacker</li>
-        <li>Network Security Engineer</li>
-        <li>Digital Forensics Expert</li>
-        <li>Security Consultant</li>
+        <li>System Administrator</li>
+        <li>Cloud Support Associate</li>
+        <li>IT Consultant</li>
+        <li>Technical Support Engineer</li>
+        <li>Entrepreneur / Startup Founder</li>
       </ul>
       </div>
 
       <!-- Coordinator Section -->
       <div class="space-y-6">
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5">
+         <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          alt="Dr. Ashish Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Ashish Desai
+          </p>
+          <p class="text-gray-600">
+            Principal
+          </p>
+        </div>
+        <br />
           <img
             src="https://sascma.ac.in:8443/api/v1/Uploads/media/5ef739cc-8be5-4177-bb39-49fa4e82088b.JPG"
             alt="Dr. Shalini Animeshbhai Mali"
@@ -689,8 +811,23 @@ export const coursesData = [
       </div>
       <!-- Coordinator Section -->
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+       
         <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          alt="Dr. Ashish Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Ashish Desai
+          </p>
+          <p class="text-gray-600">
+            Principal
+          </p>
+        </div>
+        <br />
+        <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/97461799-055a-41d3-8efe-a7871cbd1ee3.JPG"
           alt="Dr. Chandni Sanket Desai"
           class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
         />
@@ -703,6 +840,7 @@ export const coursesData = [
           </p>
         </div>
       </div>
+      
       </div>
     `,
 
@@ -978,6 +1116,20 @@ export const coursesData = [
         </div>
         <!-- Coordinator Section -->
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+         <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          alt="Dr. Ashish Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Ashish Desai
+          </p>
+          <p class="text-gray-600">
+            Principal
+          </p>
+        </div>
+        <br />
           <img
             src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
             alt="Dr. Bhumi Soham Desai"
@@ -1123,6 +1275,20 @@ export const coursesData = [
       </div>
       <!-- Coordinator Section -->
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+       <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          alt="Dr. Ashish Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Ashish Desai
+          </p>
+          <p class="text-gray-600">
+            Principal
+          </p>
+        </div>
+        <br />
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG"
           alt="Dr. Hemang Desai"
@@ -1305,6 +1471,20 @@ export const coursesData = [
       </div>
       <!-- Coordinator Section -->
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
+       <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          alt="Dr. Ashish Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Ashish Desai
+          </p>
+          <p class="text-gray-600">
+            Principal
+          </p>
+        </div>
+        <br />
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG"
           alt="Ms. Dhyani Darpan Vashi"
@@ -1406,6 +1586,20 @@ export const coursesData = [
         </div>
         <!-- Coordinator Section -->
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4  items-center gap-5 mb-8">
+         <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          alt="Dr. Ashish Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Ashish Desai
+          </p>
+          <p class="text-gray-600">
+            Principal
+          </p>
+        </div>
+        <br />
           <img
             src="https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG"
             alt="Dr. Hemang Desai"
@@ -1596,6 +1790,20 @@ export const coursesData = [
       <!-- Coordinator Section -->
       <div class="space-y-6">
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5">
+         <img
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          alt="Dr. Ashish Desai"
+          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+        />
+        <div>
+          <p class="text-xl font-semibold text-[#9d2235] mt-2">
+            Dr. Ashish Desai
+          </p>
+          <p class="text-gray-600">
+            Principal
+          </p>
+        </div>
+        <br />
           <img
             src="https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG"
             alt="Ms. Dhyani Darpan Vashi"
