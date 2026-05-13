@@ -28,30 +28,7 @@ const staffData = [
     email: "bhumisdesai@gmail.com",
     courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
   },
-  {
-    id: 47,
-    name: "Dr. Sonal Amit Desai",
-    designation: "Librarian",
-    image:
-      "https://sascma.ac.in:8443/api/v1/Uploads/media/ce4efeb4-221b-4ec3-a734-07288ac21502.JPG",
-    specialization: "Libraries",
-    qualification: "B.Com, BLISc, MLISc, PhD",
-    experience: "12 Years",
-    email: "sonaladesai02@gmail.com",
-    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
-  },
-  {
-    id: 19,
-    name: "Dr. Umesh Kumar Amrutlal Patel",
-    designation: "Sports Coach",
-    image:
-      "https://sascma.ac.in:8443/api/v1/Uploads/media/27cb19e1-4e96-4c38-b407-3e9ed1c16a25.JPG",
-    specialization: "Physical Education",
-    qualification: "PhD, M.P.Ed, B.P.Ed, BA",
-    experience: "12 Years",
-    email: "athleteumesh5@gmail.com",
-    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
-  },
+  
   // {
   //   id: 5,
   //   name: "Dr. Dilshad Burzin Patel",
@@ -755,6 +732,30 @@ const staffData = [
   email: "priyajariwala8676@gmail.com",
   courses: ["B.COM."]
 },
+{
+    id: 47,
+    name: "Dr. Sonal Amit Desai",
+    designation: "Librarian",
+    image:
+      "https://sascma.ac.in:8443/api/v1/Uploads/media/ce4efeb4-221b-4ec3-a734-07288ac21502.JPG",
+    specialization: "Libraries",
+    qualification: "B.Com, BLISc, MLISc, PhD",
+    experience: "12 Years",
+    email: "sonaladesai02@gmail.com",
+    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
+  },
+  {
+    id: 19,
+    name: "Dr. Umesh Kumar Amrutlal Patel",
+    designation: "Sports Coach",
+    image:
+      "https://sascma.ac.in:8443/api/v1/Uploads/media/27cb19e1-4e96-4c38-b407-3e9ed1c16a25.JPG",
+    specialization: "Physical Education",
+    qualification: "PhD, M.P.Ed, B.P.Ed, BA",
+    experience: "12 Years",
+    email: "athleteumesh5@gmail.com",
+    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
+  },
 ];
 
 // Ensure every staff record has a `courses` array we can use for exact mappings later.
