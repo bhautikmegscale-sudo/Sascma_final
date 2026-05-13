@@ -14,7 +14,7 @@ const staffData = [
     qualification: "PhD, MPhil, M.Com, B.Com",
     experience: "22 Years",
     email: "kavirashish1421@gmail.com",
-    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
+    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A.","M.A."],
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const staffData = [
     qualification: "B.Com., B.A., M.B.E., GSET, M.Phil., Ph.D.",
     experience: "17 Years",
     email: "bhumisdesai@gmail.com",
-    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
+    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A.","M.A."],
   },
 
   // {
@@ -99,7 +99,7 @@ const staffData = [
     qualification: "PhD in Psychology ( Pursuing ) MA in Clinical Psychology BA Psychology ",
     experience: "3 Year",
     email: "dhyanivashi@gmail.com",
-    courses: ["B.A."],
+    courses: ["B.A.","M.A."],
   },
   {
     id: 9,
@@ -170,7 +170,7 @@ const staffData = [
     qualification: "GSET, MA (Economics), PhD (Pursuing)",
     experience: "2 Year",
     email: "yaashidp3001@gmail.com",
-    courses: ["B.A."],
+    courses: ["B.A.","M.A."],
   },
   {
     id: 15,
@@ -348,7 +348,7 @@ const staffData = [
     qualification: "BA, MA (English), PhD (Pursuing)",
     experience: "17 Years",
     email: "romali018@gmail.com",
-    courses: ["B.A.", "B.SC.", "M.SC.", "B.B.A."],
+    courses: ["B.A.", "B.SC.", "M.SC.", "B.B.A.","M.A."],
   },
   {
     id: 31,
@@ -433,7 +433,7 @@ const staffData = [
     qualification: "BA, LL.B, LLM",
     experience: "5 Years",
     email: "shekhawatrajni311@gmail.com",
-    courses: ["B.COM.", "B.A."]
+    courses: ["B.COM.", "B.A.", "M.A."],
   },
   // {
   //   id: 38,
@@ -742,7 +742,7 @@ const staffData = [
     qualification: "B.Com, BLISc, MLISc, PhD",
     experience: "12 Years",
     email: "sonaladesai02@gmail.com",
-    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
+    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A.", "M.A."],
   },
   {
     id: 19,
@@ -754,7 +754,7 @@ const staffData = [
     qualification: "PhD, M.P.Ed, B.P.Ed, BA",
     experience: "12 Years",
     email: "athleteumesh5@gmail.com",
-    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
+    courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A.","M.A."],
   },
 ];
 
@@ -781,6 +781,7 @@ export default function StaffCards() {
 
   const selected = course ? normalize(course) : null;
 
+  console.log("Selected course:", selected);
   const staffSequence = {
     bca: [1, 2, 4, 7, 11, 52, 51, 53, 10, 18, 35, 54, 9, 59, 20, 41, 55, 22, 43, 58 , 47,19],
 
@@ -790,8 +791,8 @@ export default function StaffCards() {
     ],
 
     ba: [1, 2, 8, 14, 30,37, 47, 19],
-    ma : [1, 2, 8, 14, 30,37, 47, 19],
-
+    ma: [1, 2, 8, 14, 30,37, 47, 19],
+   
     bsc: [1, 2, 3, 11, 12, 30, 57,47, 19],
 
     bcom: [1, 2, 26, 21, 29, 61, 23, 25, 31, 33, 36, 13, 12, 37,64,47, 19]
@@ -818,6 +819,8 @@ export default function StaffCards() {
         );
       })
     : staffData;
+
+    console.log("Filtered staff count:", filtered.length);
 
   return (
     <div className="flex justify-center mt-30 lg:mt-50 pb-12 bg-white">
