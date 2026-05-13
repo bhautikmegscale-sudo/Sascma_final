@@ -28,7 +28,7 @@ const staffData = [
     email: "bhumisdesai@gmail.com",
     courses: ["B.COM.", "M.COM.", "B.B.A.", "B.C.A.", "B.SC.", "M.SC.", "B.A."],
   },
-  
+
   // {
   //   id: 5,
   //   name: "Dr. Dilshad Burzin Patel",
@@ -122,7 +122,7 @@ const staffData = [
     qualification: "BSc(CS), PGDCA, MSc(CS), UGC-NET, PhD (Pursuing)",
     experience: "3 Years",
     email: "jayeshbmaurya@gmail.com",
-    courses:["B.C.A"]
+    courses: ["B.C.A"]
   },
   {
     id: 11,
@@ -254,7 +254,7 @@ const staffData = [
     qualification: "MSc (Statistics), BSc (Statistics)",
     experience: "9 Years",
     email: "champanerikomal2022@gmail.com",
-     courses:["B.C.A"]
+    courses: ["B.C.A"]
   },
   {
     id: 23,
@@ -265,7 +265,7 @@ const staffData = [
     qualification: "PhD, M.Phil, GSET, MA (Economics) - Gold medalist , MA (Hindu Studies), BA (Economics)",
     experience: "16 Years",
     email: "jayshreeeco@gmail.com",
-    courses:["B.COM."]
+    courses: ["B.COM."]
   },
   {
     id: 24,
@@ -277,7 +277,7 @@ const staffData = [
     qualification: "NET JRF, M.Com, B.Com, PhD (Pursuing)",
     experience: "4 Years",
     email: "drusya4edu@gmail.com",
-    courses: [ "B.B.A."],
+    courses: ["B.B.A."],
   },
   {
     id: 25,
@@ -300,7 +300,7 @@ const staffData = [
     qualification: "M.Phil, MA, B.Ed, BA, PhD (Pursuing)",
     experience: "11 Years",
     email: "devaangobhatt@gmail.com",
-    courses:["B.COM."]
+    courses: ["B.COM."]
   },
   {
     id: 27,
@@ -433,7 +433,7 @@ const staffData = [
     qualification: "BA, LL.B, LLM",
     experience: "5 Years",
     email: "shekhawatrajni311@gmail.com",
-    courses:["B.COM.", "B.A."]
+    courses: ["B.COM.", "B.A."]
   },
   // {
   //   id: 38,
@@ -506,7 +506,7 @@ const staffData = [
     qualification: "MSc (IT), BSc (IT)",
     experience: "5 Years",
     email: "minaln44.nm@gmail.com",
-    courses:["B.C.A"]
+    courses: ["B.C.A"]
   },
   {
     id: 44,
@@ -543,7 +543,7 @@ const staffData = [
     qualification: "MBA, B.Com",
     experience: "5 Years",
     email: "rajul.shah85@gmail.com",
-    courses: [ "B.B.A."],
+    courses: ["B.B.A."],
   },
   {
     id: 49,
@@ -567,7 +567,7 @@ const staffData = [
     qualification: "GSET, M.Com, B.Com",
     experience: "6 Years",
     email: "njivasha@gmail.com",
-    courses: [ "B.B.A."],
+    courses: ["B.B.A."],
   },
   {
     id: 51,
@@ -590,7 +590,7 @@ const staffData = [
     qualification: "PhD, MSc ICT, BCA",
     experience: "12 Years",
     email: "pooja.sascma24@gmail.com",
-    courses:["B.C.A",]
+    courses: ["B.C.A",]
   },
   {
     id: 53,
@@ -625,7 +625,7 @@ const staffData = [
     qualification: "MSc (IT), BSc (IT)",
     experience: "6 Years",
     email: "hinalvshah1904@gmail.com",
-    courses:["B.C.A"]
+    courses: ["B.C.A"]
   },
   {
     id: 56,
@@ -660,7 +660,7 @@ const staffData = [
     qualification: "MSc Software Project Management",
     experience: "2 Year",
     email: "desaikajal52111@gamil.com",
-    courses:["B.C.A"]
+    courses: ["B.C.A"]
   },
   {
     id: 59,
@@ -671,7 +671,7 @@ const staffData = [
     qualification: "GSET, MA (English), BA (English), PhD (Pursuing)",
     experience: "3 Years",
     email: "maitry1698@gmail.com",
-     courses:["B.C.A."]
+    courses: ["B.C.A."]
   },
   {
     id: 60,
@@ -683,7 +683,7 @@ const staffData = [
     qualification: "M.Com, B.Com",
     experience: "1 Year",
     email: "dhruvishajariwala22@gmail.com",
-    courses: [ "B.B.A."],
+    courses: ["B.B.A."],
   },
   {
     id: 61,
@@ -707,7 +707,7 @@ const staffData = [
     qualification: "-",
     experience: "3 Years",
     email: "hetalvadhvaniya18@gmail.com",
-    courses: [ "B.B.A."],
+    courses: ["B.B.A."],
   },
   {
     id: 63,
@@ -719,20 +719,20 @@ const staffData = [
     qualification: "BCOM,MCOM,PHD( pursuing),MBA ( pursuing)",
     experience: "4 Years",
     email: "Krishnasavani07@gmail.com",
-    courses: [ "B.B.A."],
+    courses: ["B.B.A."],
   },
   {
-  id: 64,
-  name: "Priyanka Ujjawal Bhojawala",
-  designation: "Assistant Professor",
-  image: "https://sascma.ac.in:8443/api/v1/Uploads/media/cdc1574b-0096-4894-840d-c3691e6d18d9.jpeg",
-  specialization: "Advanced Accounting and Auditing",
-  qualification: "MCom - GSET (Commerce) - PGCM Business Analyst - PhD (Pursuing)",
-  experience: "8 Years",
-  email: "priyajariwala8676@gmail.com",
-  courses: ["B.COM."]
-},
-{
+    id: 64,
+    name: "Priyanka Ujjawal Bhojawala",
+    designation: "Assistant Professor",
+    image: "https://sascma.ac.in:8443/api/v1/Uploads/media/cdc1574b-0096-4894-840d-c3691e6d18d9.jpeg",
+    specialization: "Advanced Accounting and Auditing",
+    qualification: "MCom - GSET (Commerce) - PGCM Business Analyst - PhD (Pursuing)",
+    experience: "8 Years",
+    email: "priyajariwala8676@gmail.com",
+    courses: ["B.COM."]
+  },
+  {
     id: 47,
     name: "Dr. Sonal Amit Desai",
     designation: "Librarian",
@@ -782,38 +782,40 @@ export default function StaffCards() {
   const selected = course ? normalize(course) : null;
 
   const staffSequence = {
-    bca: [1, 2, 47, 19, 4, 7, 11, 52, 51, 53, 10, 18, 35, 54, 9, 59, 20, 41, 55, 22, 43, 58],
+    bca: [1, 2, 4, 7, 11, 52, 51, 53, 10, 18, 35, 54, 9, 59, 20, 41, 55, 22, 43, 58 , 47,19],
 
     bba: [
-      1, 2, 47, 19, 6, 10, 27, 15, 39, 24, 42, 34, 31, 12, 28, 40, 50,
-      30, 32, 44, 46, 49, 56, 16, 17, 62, 57, 60,
+      1, 2, 6, 10, 27, 15, 39, 24, 42, 34, 31, 12, 28, 40, 50,
+      30, 32, 44, 46, 49, 56, 16, 17, 62, 57, 60,47,19
     ],
 
-    ba: [1, 2, 47, 19, 8, 14, 30],
+    ba: [1, 2, 8, 14, 30, 47, 19],
 
-    bsc: [1, 2, 47, 19, 3, 11, 12, 30, 57],
+    bsc: [1, 2, 3, 11, 12, 30, 57,47, 19],
 
-    bcom: [1, 2, 47, 19, 26, 21, 29, 61, 23, 25, 31, 33, 36, 13, 12, 37]
+    bcom: [1, 2, 26, 21, 29, 61, 23, 25, 31, 33, 36, 13, 12, 37,47, 19]
   };
+
+
 
   const filtered = selected
     ? staffData
-        .filter(
-          (s) =>
-            s.courses &&
-            s.courses.some((c) => normalize(c) === selected)
-        )
-        .sort((a, b) => {
-          const sequence = staffSequence[selected] || [];
+      .filter(
+        (s) =>
+          s.courses &&
+          s.courses.some((c) => normalize(c) === selected)
+      )
+      .sort((a, b) => {
+        const sequence = staffSequence[selected] || [];
 
-          const aIndex = sequence.indexOf(a.id);
-          const bIndex = sequence.indexOf(b.id);
+        const aIndex = sequence.indexOf(a.id);
+        const bIndex = sequence.indexOf(b.id);
 
-          return (
-            (aIndex === -1 ? 999 : aIndex) -
-            (bIndex === -1 ? 999 : bIndex)
-          );
-        })
+        return (
+          (aIndex === -1 ? 999 : aIndex) -
+          (bIndex === -1 ? 999 : bIndex)
+        );
+      })
     : staffData;
 
   return (
@@ -901,4 +903,3 @@ function StaffCard({ staff }) {
     </motion.div>
   );
 }
- 
