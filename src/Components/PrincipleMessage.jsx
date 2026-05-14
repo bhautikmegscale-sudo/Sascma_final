@@ -44,9 +44,9 @@
             className="lg:w-1/2 w-full flex justify-center"
           >
             <img
-              src="https://sascma.ac.in:8443/api/v1/Uploads/media/8a50229f-931d-4d57-ae90-c63c4012a6e5.JPG"
+              src="https://sascma.ac.in:8443/api/v1/Uploads/media/99d9dee3-dda4-4975-ab4c-f4d91cb6ad30.jpeg"
               alt="Principal"
-              className="w-full h-auto lg:h-135 object-cover rounded-3xl  border-4 border-white"
+              className="w-full h-auto lg:h-175 object-cover  rounded-3xl border-4 border-white"
             />
           </motion.div>
 

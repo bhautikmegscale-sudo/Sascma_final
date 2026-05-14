@@ -84,7 +84,7 @@ const Footer = () => {
                 <li>Email: sascma@yahoo.com</li>
               </ul>
               {/* Social Icons */}
-              <div className="flex items-center gap-3 mt-3">
+              <div className="flex items-center gap-3 mt-3 ml-[-20px]">
                 <a href="#" className="text-gray-400 border border-gray-400 hover:border-white p-1 rounded hover:text-white transition">
                   <FaFacebookF size={16} />
                 </a>

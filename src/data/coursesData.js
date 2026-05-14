@@ -207,9 +207,9 @@ export const coursesData = [
       <!-- Coordinator Section -->
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
        <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -223,7 +223,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
           alt="Dr. Bhumi Soham Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -469,9 +469,9 @@ export const coursesData = [
       <div class="space-y-6">
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5">
          <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -813,9 +813,9 @@ export const coursesData = [
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
        
         <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -829,7 +829,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/97461799-055a-41d3-8efe-a7871cbd1ee3.JPG"
           alt="Dr. Chandni Sanket Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1117,9 +1117,9 @@ export const coursesData = [
         <!-- Coordinator Section -->
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
          <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1133,7 +1133,7 @@ export const coursesData = [
           <img
             src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
             alt="Dr. Bhumi Soham Desai"
-            class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+            class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
           />
           <div>
             <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1276,9 +1276,9 @@ export const coursesData = [
       <!-- Coordinator Section -->
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
        <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1292,7 +1292,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG"
           alt="Dr. Hemang Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1472,9 +1472,9 @@ export const coursesData = [
       <!-- Coordinator Section -->
       <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5 mb-8">
        <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1488,7 +1488,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG"
           alt="Ms. Dhyani Darpan Vashi"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-lg font-semibold text-[#9d2235] mt-2">
@@ -1587,9 +1587,9 @@ export const coursesData = [
         <!-- Coordinator Section -->
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4  items-center gap-5 mb-8">
          <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1603,7 +1603,7 @@ export const coursesData = [
           <img
             src="https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG"
             alt="Dr. Hemang Desai"
-            class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+            class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
           />
           <div>
             <p class="text-lg font-semibold text-[#9d2235] mt-2">
@@ -1791,9 +1791,9 @@ export const coursesData = [
       <div class="space-y-6">
         <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 items-center gap-5">
          <img
-          src="https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG"
+          src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-75 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">

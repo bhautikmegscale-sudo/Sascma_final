@@ -169,16 +169,6 @@ const Header = () => {
       ],
     },
     {
-      name: "Gallery",
-      submenu: null,
-      link: "/gallery",
-    },
-    {
-      name: "Career",
-      link: "/career",
-      submenu: null,
-    },
-    {
       name: "Accreditations",
       submenu: [
         { label: "IPD", link: `/pdf-viewer?file=${encodeURIComponent("https://sascma.ac.in/IDP/SASCMA_IDP_final.pdf")}`, newTab: false },
@@ -212,6 +202,16 @@ const Header = () => {
         { label: "Reviews", link: "/courses" }
       ],
     },
+      {
+      name: "Gallery",
+      submenu: null,
+      link: "/gallery",
+    },
+    {
+      name: "Career",
+      link: "/career",
+      submenu: null,
+    },
   ];
 
   useEffect(() => {
@@ -234,19 +234,28 @@ const Header = () => {
     >
       {/* Top Bar */}
       <nav className="hidden lg:flex border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center h-14">
+        <div className="px-4 w-full">
+          <div className="flex justify-between items-center h-14 gap-2">
             {/* Only show top links on lg and up */}
-            <div className="hidden lg:flex space-x-6">
+            <div className="hidden lg:flex gap-3 xl:gap-6 flex-wrap xl:flex-nowrap">
               {topLinks.map((item) => (
                 <div
                   key={item.label}
-                  className="flex items-center space-x-2 text-xs uppercase text-white"
+                  className="flex items-center gap-1 xl:gap-2 text-[10px] xl:text-xs uppercase text-white whitespace-nowrap"
                 >
                   <span className="text-white">{item.icon}</span>
-                  <span>{item.label}</span>
+                  <span className="truncate xl:truncate-none">{item.label}</span>
                 </div>
               ))}
+            </div>
+             <div className="hidden lg:block ml-4">
+              <Link
+                to="/admissions"
+                className="relative overflow-hidden rounded-sm inline-flex min-w-[220px] items-center justify-center bg-[#9D2235] px-6 py-2 text-md font-semibold text-white transition-all duration-500 ease-in-out group z-10 border border-[#9D2235] hover:shadow-2xl"
+              >
+                <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center rounded-full"></span>
+                <span className="relative z-10">Admission for 2026-27</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -254,9 +263,9 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-8xl mx-auto px-4">
-          <div className="flex justify-between lg:justify-around items-center py-4 relative">
-            <div className="flex ">
+        <div className="max-w-8xl mx-auto px-2">
+          <div className="flex justify-between lg:justify-around items-center py-3 md:py-4 relative gap-2">
+            <div className="flex flex-shrink-0">
               {/* Logo */}
               <a
                 href="/"
@@ -264,18 +273,18 @@ const Header = () => {
                   e.preventDefault();
                   window.location.href = "/";
                 }}
-                className="flex items-center gap-2 md:gap-4 cursor-pointer">
+                className="flex items-center gap-1 md:gap-3 xl:gap-4 cursor-pointer">
                 <img
                   src="/logo.webp"
                   alt="SASCMA Logo"
-                  className="h-16 w-auto"
+                  className="h-12 md:h-12 xl:h-16 w-auto"
                 />
 
-                <div className="leading-tight">
-                  <h1 className="text-[20px] font-bold tracking-wide text-gray-900">
+                <div className="leading-tight hidden sm:block">
+                  <h1 className="text-sm md:text-md xl:text-[20px] font-bold tracking-wide text-gray-900 whitespace-nowrap">
                     SASCMA COLLEGE
                   </h1>
-                  <p className="text-sm tracking-widest text-gray-500 font-semibold">
+                  <p className="text-[10px] md:text-[12px] xl:text-sm tracking-widest text-gray-500 font-semibold whitespace-nowrap">
                     SINCE 1910
                   </p>
                 </div>
@@ -285,7 +294,7 @@ const Header = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:flex space-x-3 xl:space-x-6 text-[#9D2235] font-medium">
+            <div className="hidden lg:flex gap-2 xl:gap-6 text-[#9D2235] font-medium flex-wrap xl:flex-nowrap">
               {mainLinks.map((link) => {
                 const hasSubmenu = !!link.submenu;
                 const isOpen = activeMenu === link.name;
@@ -293,7 +302,7 @@ const Header = () => {
                 return (
                   <div
                     key={link.name}
-                    className="relative"
+                    className="relative whitespace-nowrap"
                     // Open submenu on hover (also works on devices that support hover)
                     onMouseEnter={() => { if (!isOpen) { hasSubmenu && setActiveMenu(link.name); } }}
                     onMouseLeave={() => { if (!isOpen) { setActiveMenu(null); } }}
@@ -312,7 +321,7 @@ const Header = () => {
                               window.location.href = "/";
                             }
                           }}
-                          className="text-md xl:text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1 cursor-pointer"
+                          className="text-sm lg:text-sm xl:text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1 cursor-pointer whitespace-nowrap"
                         >
                           {link.name}
                         </a>
@@ -325,7 +334,7 @@ const Header = () => {
                               window.location.href = "/";
                             }
                           }}
-                          className="text-md xl:text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1 cursor-pointer"
+                          className="text-sm lg:text-sm xl:text-lg hover:text-[#7f1a2a] transition-colors py-2 px-1 cursor-pointer whitespace-nowrap"
                         >
                           {link.name}
                         </Link>
@@ -341,7 +350,7 @@ const Header = () => {
                               prev === link.name ? null : link.name
                             );
                           }}
-                          className="p-1 cursor-pointer"
+                          className="p-1 cursor-pointer flex-shrink-0"
                           aria-label="Toggle submenu"
                         >
                           <svg
@@ -366,7 +375,7 @@ const Header = () => {
                     {/* Submenu */}
                     {hasSubmenu && isOpen && (
                       <div
-                        className=" absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-md border border-gray-200 z-50"
+                        className=" absolute left-0  mt-2 w-56 bg-white shadow-xl rounded-md border border-gray-200 z-50"
                         // Keep open when hovering over submenu itself
                         onMouseEnter={() => { setActiveMenu(link.name); }}
                         onMouseLeave={() => { setActiveMenu(null); }}
@@ -465,15 +474,7 @@ const Header = () => {
             </div>
             
             {/* Desktop Admission Button */}
-            <div className="hidden lg:block ml-4">
-              <Link
-                to="/admissions"
-                className="relative overflow-hidden rounded-full inline-flex min-w-[220px] items-center justify-center bg-[#9D2235] px-6 py-3 text-md font-semibold text-white transition-all duration-500 ease-in-out group z-10 border border-[#9D2235] hover:shadow-2xl"
-              >
-                <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center rounded-full"></span>
-                <span className="relative z-10">Admission for 2026-27</span>
-              </Link>
-            </div>
+           
 
 
             {/* Mobile Menu Button */}

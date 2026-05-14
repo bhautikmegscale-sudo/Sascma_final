@@ -9,7 +9,7 @@ const staffData = [
     name: "Dr. Ashish Desai",
     designation: "Principal",
     image:
-      "https://sascma.ac.in:8443/api/v1/Uploads/media/f0c13545-5bce-4b1a-94a5-f422cebe541d.JPG",
+      "https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg",
     specialization: "Accountancy and Statistics",
     qualification: "PhD, MPhil, M.Com, B.Com",
     experience: "22 Years",
