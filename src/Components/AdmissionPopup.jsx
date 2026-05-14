@@ -64,7 +64,7 @@ export default function AdmissionPopup() {
             </h2>
 
             <h2 className="mt-1 text-sm sm:text-lg md:text-2xl font-bold leading-snug text-[#012a5e] animate-bounce-scale">
-              Keep SASCMA - STRES
+              Keep SASCMA - STERS
             </h2>
 
             {/* Search Info */}
