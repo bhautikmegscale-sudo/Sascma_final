@@ -58,13 +58,13 @@ export default function AdmissionPopup() {
             </p>
 
             <h2 className="mt-2 text-sm sm:text-lg md:text-2xl font-bold leading-snug text-black">
-              🎓 Choose Your Path: Commerce, Management,
-              <br className="hidden sm:block" />
-              Computer Science & Arts (VNSGU)
+               Commerce, Management,Computer Science & Arts (VNSGU)  
             </h2>
 
-            <h2 className="mt-1 text-sm sm:text-lg md:text-2xl font-bold leading-snug text-[#012a5e] animate-bounce-scale">
+            <h2 className="mt-1 text-sm sm:text-lg md:text-md font-bold leading-snug text-[#012a5e] animate-bounce-scale">
               Keep SASCMA - STERS
+              <br />
+               As your Top Preference In The Collage Choice Selection!
             </h2>
 
             {/* Search Info */}
