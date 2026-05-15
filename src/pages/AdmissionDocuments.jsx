@@ -64,12 +64,12 @@ const AdmissionDocuments = () => {
 
               {/* Button */}
               <div className="relative z-10">
-                {document.pdfPath ? (
+                {document.pdfPath || document.videoPaths?.length ? (
                   <Link
                     to={`/admissions/view/${document.id}`}
                     className="inline-flex items-center gap-2 rounded-full bg-[#9D2235] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:bg-[#14213d] hover:shadow-xl"
                   >
-                    View Document
+                    {document.videoPaths?.length ? "View Videos" : "View Document"}
 
                     <ArrowRight
                       size={18}

@@ -1,21 +1,23 @@
 import React from "react";
-import { useLocation, Link, Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { admissionDocuments } from "../data/admissionDocuments";
 import {
   ArrowLeft,
-  ExternalLink,
   FileText,
   BookOpen,
   GraduationCap,
+  Play,
 } from "lucide-react";
 
 const AdmissionPdfViewer = () => {
   const { id } = useParams();
   const document = admissionDocuments.find((item) => item.id === id);
 
-  if (!document || !document.pdfPath) {
+  if (!document || (!document.pdfPath && !document.videoPaths?.length)) {
     return <Navigate to="/admissions" replace />;
   }
+
+  const isVideoCollection = Boolean(document.videoPaths?.length);
 
   return (
     <section className="min-h-screen bg-[#f8f8f8] px-4 pb-8 pt-40 sm:px-6 lg:px-8">
@@ -38,15 +40,42 @@ const AdmissionPdfViewer = () => {
         </Link>
       </div>
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 pb-8">
-        {/* <div className="overflow-hidden rounded-md border border-gray-300 bg-white shadow-sm">
-          <iframe
-            src={document.pdfPath}
-            title={document.title}
-            className="h-[80vh] w-full"
-          />
-        </div> */}
         <div className="md:col-span-2 bg-white rounded shadow overflow-hidden">
-          {document.pdfPath?.toLowerCase().endsWith(".pdf") ? (
+          {isVideoCollection ? (
+            <div className="p-4 sm:p-6">
+            
+
+              <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                {document.videoPaths.map((videoPath, index) => (
+                  <div
+                    key={videoPath}
+                    className="group overflow-hidden rounded-2xl border border-gray-200 bg-[#0f172a] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="relative">
+                      <video
+                        controls
+                        preload="metadata"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="h-56 w-full object-cover bg-black"
+                      >
+                        <source src={videoPath} type="video/mp4" />
+                      </video>
+
+                      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 transition duration-300 group-hover:opacity-100">
+                        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/80 shadow-2xl">
+                          <Play className="ml-1 text-[#9D2235]" size={24} fill="currentColor" />
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : document.pdfPath?.toLowerCase().endsWith(".pdf") ? (
             <iframe
               src={document.pdfPath}
               title={document.title}

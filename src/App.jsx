@@ -114,6 +114,7 @@ function App() {
         <Route path="/admissions" element={<AdmissionDocuments />} />
         <Route path="/admissions-support" element={<AdmissionSupportPage />} />
         <Route path="/inquiry" element={<Inquiry />} />
+        <Route path="/view/:id" element={<AdmissionPdfViewer />} />
         <Route path="/admissions/view/:id" element={<AdmissionPdfViewer />} />
         <Route path="/terms-of-use" element={<TermsConditions  />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy  />} />

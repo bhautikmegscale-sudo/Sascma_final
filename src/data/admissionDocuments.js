@@ -17,30 +17,28 @@ export const admissionDocuments = [
   {
     id: "curricular-activities",
     title: "Our Curricular Activities 2025-26",
-    pdfPath: "/AICTE/EOA_Report_2025-26.PDF",
+    pdfPath: "/admission/curriculam_activity.pdf",
   },
   {
     id: "extra-curricular-activities",
     title: "Our Extra Curricular Activities 2025-26",
-    pdfPath: "/AICTE/EOA_Report_2025-26.PDF",
+    pdfPath: "/admission/Extra_curriculam_activity.pdf",
   },
 
   // NEW ITEMS
   {
     id: "success-story",
     title: "Our Success Story",
-    pdfPath: "/AICTE/EOA_Report_2025-26.PDF",
+    videoPaths: [
+      "/testimonials/video1.mp4",
+      "/testimonials/video2.mp4",
+      "/testimonials/video3.mp4",
+      "/testimonials/video4.mp4",
+      "/testimonials/video5.mp4",
+      "/testimonials/video6.mp4",
+    ],
   },
-  {
-    id: "pamphlet-english",
-    title: "Pamphlet For Admission 2026 English",
-    pdfPath: "/AICTE/EOA_Report_2025-26.PDF",
-  },
-  {
-    id: "pamphlet-gujarati",
-    title: "Pamphlet For Admission 2026 Gujarati",
-    pdfPath: "/AICTE/EOA_Report_2025-26.PDF",
-  },
+  
   {
     id: "career-after-ma",
     title: "Career Opportunities After M.A",
