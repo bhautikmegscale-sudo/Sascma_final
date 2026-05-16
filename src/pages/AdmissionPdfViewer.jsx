@@ -67,7 +67,7 @@ const AdmissionPdfViewer = () => {
         <div className="md:col-span-2 bg-white rounded shadow overflow-hidden">
           {isVideoCollection ? (
             <div className="p-4 sm:p-6">
-            
+
 
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                 {document.videoPaths.map((videoPath) => (
@@ -100,42 +100,35 @@ const AdmissionPdfViewer = () => {
               </div>
             </div>
           ) : document.pdfPath?.toLowerCase().endsWith(".pdf") ? (
-            isMobileScreen ? (
-              <div className="flex min-h-[60vh] flex-col items-center justify-center bg-gradient-to-br from-[#f8fafc] to-[#eef2ff] p-6 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#9D2235]/10 text-[#9D2235]">
-                  <FileText className="h-8 w-8" />
+            isMobileScreen ? (<>
+
+              <div className="bg-gradient-to-br from-[#f8fafc] to-[#eef2ff] p-4 text-center sm:p-6">
+                <div className="w-full flex justify-end">
+                  <div className="mb-6 flex max-w-sm gap-3 ">
+
+                    <a
+                      href={document.pdfPath}
+                      download
+                      className="inline-flex items-center justify-center gap-2 rounded-lg  px-5 py-3 font-semibold text-[#213153] transition hover:bg-[#213153] hover:text-white"
+                    >
+                      <Download className="h-4 w-4" />
+                      Download
+                    </a>
+                  </div>
+                </div>
+                <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+                  <iframe
+                    src={document.pdfPath}
+                    title={`${document.title} preview`}
+                    className="h-[70vh] w-full border-0"
+                  />
                 </div>
 
-                <h2 className="mt-4 text-xl font-bold text-[#14213d]">
-                  Open PDF
-                </h2>
 
-                <p className="mt-3 max-w-md text-sm leading-6 text-gray-600">
-                  Some mobile browsers only show the first page inside the website.
-                  Open the PDF in your phone&apos;s full viewer to see all pages properly.
-                </p>
 
-                <div className="mt-6 flex w-full max-w-sm flex-col gap-3">
-                  <a
-                    href={document.pdfPath}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#9D2235] px-5 py-3 font-semibold text-white transition hover:bg-[#7f1c2c]"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    Open Full PDF
-                  </a>
 
-                  <a
-                    href={document.pdfPath}
-                    download
-                    className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#213153] px-5 py-3 font-semibold text-[#213153] transition hover:bg-[#213153] hover:text-white"
-                  >
-                    <Download className="h-4 w-4" />
-                    Download PDF
-                  </a>
-                </div>
-              </div>
+
+              </div></>
             ) : (
               <iframe
                 src={document.pdfPath}
