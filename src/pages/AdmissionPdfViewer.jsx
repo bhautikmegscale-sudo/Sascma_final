@@ -29,6 +29,14 @@ const AdmissionPdfViewer = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, [id]);
+
   if (!document || (!document.pdfPath && !document.videoPaths?.length)) {
     return <Navigate to="/admissions" replace />;
   }
