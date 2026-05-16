@@ -17,7 +17,7 @@ export const admissionDocuments = [
   {
     id: "curricular-activities",
     title: "Our Curricular Activities 2025-26",
-    pdfPath: "/admission/curriculam_activity.pdf",
+    pdfPath: "/admission/curriculam_activity2.pdf",
   },
   {
     id: "extra-curricular-activities",

@@ -69,7 +69,7 @@ export default function AdmissionPopup() {
 
             {/* Search Info */}
             <div className="mt-3 text-xs sm:text-sm md:text-lg font-semibold leading-relaxed">
-              <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-1 sm:gap-2">
+              <div className="flex flex-row sm:flex-wrap items-center justify-center gap-1 sm:gap-2">
                 <span>For all courses search</span>
 
                 <span className="bg-[#9D2235] text-white px-2 py-1 rounded text-[11px] sm:text-sm">
@@ -77,7 +77,7 @@ export default function AdmissionPopup() {
                 </span>
               </div>
 
-              <div className="mt-2 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-1 sm:gap-2">
+              <div className="mt-2 flex flex-row sm:flex-wrap items-center justify-center gap-1 sm:gap-2">
                 <span>For BA & MA search</span>
 
                 <span className="bg-[#9D2235] text-white px-2 py-1 rounded text-[11px] sm:text-sm">

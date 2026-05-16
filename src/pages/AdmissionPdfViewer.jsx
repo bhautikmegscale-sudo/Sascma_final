@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { admissionDocuments } from "../data/admissionDocuments";
 import {
@@ -7,11 +7,27 @@ import {
   BookOpen,
   GraduationCap,
   Play,
+  ExternalLink,
+  Download,
 } from "lucide-react";
 
 const AdmissionPdfViewer = () => {
   const { id } = useParams();
   const document = admissionDocuments.find((item) => item.id === id);
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
+
+  useEffect(() => {
+    const updateScreenSize = () => {
+      setIsMobileScreen(window.innerWidth < 768);
+    };
+
+    updateScreenSize();
+    window.addEventListener("resize", updateScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", updateScreenSize);
+    };
+  }, []);
 
   if (!document || (!document.pdfPath && !document.videoPaths?.length)) {
     return <Navigate to="/admissions" replace />;
@@ -20,7 +36,7 @@ const AdmissionPdfViewer = () => {
   const isVideoCollection = Boolean(document.videoPaths?.length);
 
   return (
-    <section className="min-h-screen bg-[#f8f8f8] px-4 pb-8 pt-40 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-[#f8f8f8] px-4 pb-8 pt-14 md:pt-40 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto mt-8 mb-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#9D2235]">
@@ -46,7 +62,7 @@ const AdmissionPdfViewer = () => {
             
 
               <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-                {document.videoPaths.map((videoPath, index) => (
+                {document.videoPaths.map((videoPath) => (
                   <div
                     key={videoPath}
                     className="group overflow-hidden rounded-2xl border border-gray-200 bg-[#0f172a] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
@@ -76,11 +92,49 @@ const AdmissionPdfViewer = () => {
               </div>
             </div>
           ) : document.pdfPath?.toLowerCase().endsWith(".pdf") ? (
-            <iframe
-              src={document.pdfPath}
-              title={document.title}
-              className="w-full h-[90vh] border-0"
-            />
+            isMobileScreen ? (
+              <div className="flex min-h-[60vh] flex-col items-center justify-center bg-gradient-to-br from-[#f8fafc] to-[#eef2ff] p-6 text-center">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#9D2235]/10 text-[#9D2235]">
+                  <FileText className="h-8 w-8" />
+                </div>
+
+                <h2 className="mt-4 text-xl font-bold text-[#14213d]">
+                  Open PDF
+                </h2>
+
+                <p className="mt-3 max-w-md text-sm leading-6 text-gray-600">
+                  Some mobile browsers only show the first page inside the website.
+                  Open the PDF in your phone&apos;s full viewer to see all pages properly.
+                </p>
+
+                <div className="mt-6 flex w-full max-w-sm flex-col gap-3">
+                  <a
+                    href={document.pdfPath}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#9D2235] px-5 py-3 font-semibold text-white transition hover:bg-[#7f1c2c]"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Open Full PDF
+                  </a>
+
+                  <a
+                    href={document.pdfPath}
+                    download
+                    className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#213153] px-5 py-3 font-semibold text-[#213153] transition hover:bg-[#213153] hover:text-white"
+                  >
+                    <Download className="h-4 w-4" />
+                    Download PDF
+                  </a>
+                </div>
+              </div>
+            ) : (
+              <iframe
+                src={document.pdfPath}
+                title={document.title}
+                className="h-[90vh] w-full border-0"
+              />
+            )
           ) : (
             <div className="flex items-center justify-center bg-gray-100 p-4">
               <img

@@ -64,14 +64,14 @@ export default function CourseDetail() {
       <div className=" pt-4  md:py-8">
         <div className="max-w-7xl px-4 lg:px-8 mx-auto">
           {/* Tabs */}
-          <div className="flex flex-wrap gap-2 sm:gap-4 border-b border-[#213153]/15 mb-4 md:mb-8">
+          <div className="flex flex-wrap gap-1 sm:gap-4 border-b border-[#213153]/15 mb-4 md:mb-8">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               return (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-3 text-sm sm:text-base font-medium transition
+                  className={`flex items-center gap-1 px-2 sm:px-5 py-2 sm:py-3 text-sm sm:text-base font-medium transition
                     ${
                       activeTab === tab.id
                         ? "text-[#9d2235] border-b-2 border-[#9d2235]"

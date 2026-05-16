@@ -5,7 +5,7 @@ import { admissionDocuments } from "../data/admissionDocuments";
 
 const AdmissionDocuments = () => {
   return (
-    <section className="min-h-screen bg-[#f5f7fb] px-4 pt-32 pb-20 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-[#f5f7fb] px-4 pt-12 md:pt-32 pb-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         
         {/* Heading */}

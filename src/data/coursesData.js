@@ -107,7 +107,7 @@ export const coursesData = [
     <div class="grid lg:grid-cols-4 gap-8 items-start">
       <!-- LEFT CONTENT -->
       <div class="lg:col-span-3 text-justify">
-      <h2 class="text-2xl font-bold text-[#213153] mb-2">
+      <h2 class="text-xl md:text-2xl font-bold text-[#213153] mb-2">
         ABOUT THE DEPARTMENT OF COMMERCE
       </h2>
       <p class="mb-2">
@@ -119,7 +119,7 @@ export const coursesData = [
       <p class="mb-6">
         Our Bachelor of Commerce (B.Com.) and Master of Commerce (M.Com.) programs are designed to nurture ethical, innovative, and community-oriented leaders who will contribute positively to business, society, and the nation.
       </p>
-      <h3 class="text-2xl font-bold text-[#213153] mb-2">
+      <h3 class="text-xl md:text-2xl font-bold text-[#213153] mb-2">
         Bachelor of Commerce (B.Com.) at a Glance
       </h3>
       <div class="space-y-4 mb-6">
@@ -209,7 +209,7 @@ export const coursesData = [
        <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -223,7 +223,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
           alt="Dr. Bhumi Soham Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -275,7 +275,7 @@ export const coursesData = [
     <div class="grid lg:grid-cols-4 gap-8 items-start">
       <!-- LEFT CONTENT -->
       <div class="lg:col-span-3 text-justify">
-      <h2 class="text-2xl font-bold text-[#213153] mb-2">
+      <h2 class="text-xl md:text-2xl font-bold text-[#213153] mb-2">
         Bachelor of Computer Applications (BCA)
       </h2>
       <p class="mb-2">
@@ -471,7 +471,7 @@ export const coursesData = [
          <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -667,7 +667,7 @@ export const coursesData = [
     <div class="grid lg:grid-cols-4 gap-8 items-start">
       <!-- LEFT CONTENT -->
       <div class="lg:col-span-3 text-justify">
-      <h2 class="text-2xl font-bold text-[#213153] mb-2">
+      <h2 class="text-xl md:text-2xl font-bold text-[#213153] mb-2">
         Bachelor of Business Administration (BBA)
       </h2>
       <p class="mb-2">
@@ -815,7 +815,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -829,7 +829,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/97461799-055a-41d3-8efe-a7871cbd1ee3.JPG"
           alt="Dr. Chandni Sanket Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1024,7 +1024,7 @@ export const coursesData = [
        <!-- LEFT CONTENT -->
         <div class="lg:col-span-3 text-justify">
 
-        <h3 class="text-2xl font-bold text-[#213153] mb-2">
+        <h3 class="text-xl md:text-2xl font-bold text-[#213153] mb-2">
           Master of Commerce (M.Com.) at a Glance
         </h3>
         <div class="space-y-4 mb-6">
@@ -1119,7 +1119,7 @@ export const coursesData = [
          <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1133,7 +1133,7 @@ export const coursesData = [
           <img
             src="https://sascma.ac.in:8443/api/v1/Uploads/media/9e79f859-7b89-4190-8d87-aae95ae46f64.JPG"
             alt="Dr. Bhumi Soham Desai"
-            class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+            class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
           />
           <div>
             <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1174,7 +1174,7 @@ export const coursesData = [
      <div class="grid lg:grid-cols-4 gap-8 items-start">
        <!-- LEFT CONTENT -->
       <div class="lg:col-span-3 text-justify">
-      <h2 class="text-2xl font-bold text-[#213153] mb-2">
+      <h2 class="text-xl md:text-2xl font-bold text-[#213153] mb-2">
         About M.Sc.IT (Integrated) Course
       </h2>
       <p class="mb-2">
@@ -1278,7 +1278,7 @@ export const coursesData = [
        <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1292,7 +1292,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG"
           alt="Dr. Hemang Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1327,7 +1327,7 @@ export const coursesData = [
        <!-- LEFT CONTENT -->
       <div class="grid lg:grid-cols-4 gap-8 items-start">
       <div class="lg:col-span-3 text-justify">
-      <h2 class="text-2xl font-bold text-[#213153] mb-2">
+      <h2 class="text-xl md:text-2xl font-bold text-[#213153] mb-2">
         Bachelor of Arts in Psychology (BA Psychology)
       </h2>
       <p class="mb-2">
@@ -1474,7 +1474,7 @@ export const coursesData = [
        <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1488,7 +1488,7 @@ export const coursesData = [
         <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/ce295a97-27c4-4594-b9e2-2960818b8f84.JPG"
           alt="Ms. Dhyani Darpan Vashi"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-lg font-semibold text-[#9d2235] mt-2">
@@ -1523,7 +1523,7 @@ export const coursesData = [
      <div class="grid lg:grid-cols-4 gap-8 items-start">
        <!-- LEFT CONTENT -->
         <div class="lg:col-span-3 text-justify">
-        <h2 class="text-2xl font-bold text-[#213153] mb-2">
+        <h2 class="text-xl md:text-2xl font-bold text-[#213153] mb-2">
           About B.Sc.(DS) Course
         </h2>
         <p class="mb-2">
@@ -1589,7 +1589,7 @@ export const coursesData = [
          <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
@@ -1603,7 +1603,7 @@ export const coursesData = [
           <img
             src="https://sascma.ac.in:8443/api/v1/Uploads/media/8079761d-9251-4bc2-940b-4dd8611a51e4.JPG"
             alt="Dr. Hemang Desai"
-            class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+            class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
           />
           <div>
             <p class="text-lg font-semibold text-[#9d2235] mt-2">
@@ -1793,7 +1793,7 @@ export const coursesData = [
          <img
           src="https://sascma.ac.in:8443/api/v1/Uploads/media/faa3acd2-a897-4f4d-92b1-569279b5da6d.jpeg"
           alt="Dr. Ashish Desai"
-          class="w-full h-85 rounded-xl  border border-gray-300 shadow-md"
+          class="w-full h-full rounded-xl  border border-gray-300 shadow-md"
         />
         <div>
           <p class="text-xl font-semibold text-[#9d2235] mt-2">
