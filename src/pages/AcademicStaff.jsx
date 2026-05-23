@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 import { useParams } from "react-router-dom";
 
 const staffData = [
@@ -781,24 +781,14 @@ export default function StaffCards() {
 
   const selected = course ? normalize(course) : null;
 
-  console.log("Selected course:", selected);
   const staffSequence = {
-    bca: [1, 2, 4, 7, 11, 52, 51, 53, 10, 18, 35, 54, 9, 59, 20, 41, 55, 22, 43, 58 , 47,19],
-
-    bba: [
-      1, 2, 6, 10, 27, 15, 39, 24, 42, 34, 31, 12, 28, 40, 50,
-      30, 32, 44, 46, 49, 56, 16, 17, 62, 57, 60,63,47,19
-    ],
-
-    ba: [1, 2, 8, 14, 30,37, 47, 19],
-    ma: [1, 2, 8, 14, 30,37, 47, 19],
-   
-    bsc: [1, 2, 3, 11, 12, 30, 57,47, 19],
-
-    bcom: [1, 2, 26, 21, 29, 61, 23, 25, 31, 33, 36, 13, 12, 37,64,47, 19]
+    bca: [1, 2, 4, 7, 11, 52, 51, 53, 10, 18, 35, 54, 9, 59, 20, 41, 55, 22, 43, 58, 47, 19],
+    bba: [1, 2, 6, 10, 27, 15, 39, 24, 42, 34, 31, 12, 28, 40, 50, 30, 32, 44, 46, 49, 56, 16, 17, 62, 57, 60, 63, 47, 19],
+    ba: [1, 2, 8, 14, 30, 37, 47, 19],
+    ma: [1, 2, 8, 14, 30, 37, 47, 19],
+    bsc: [1, 2, 3, 11, 12, 30, 57, 47, 19],
+    bcom: [1, 2, 26, 21, 29, 61, 23, 25, 31, 33, 36, 13, 12, 37, 64, 47, 19],
   };
-
-
 
   const filtered = selected
     ? staffData
@@ -809,7 +799,6 @@ export default function StaffCards() {
       )
       .sort((a, b) => {
         const sequence = staffSequence[selected] || [];
-
         const aIndex = sequence.indexOf(a.id);
         const bIndex = sequence.indexOf(b.id);
 
@@ -819,8 +808,6 @@ export default function StaffCards() {
         );
       })
     : staffData;
-
-    console.log("Filtered staff count:", filtered.length);
 
   return (
     <div className="flex justify-center mt-30 lg:mt-50 pb-12 bg-white">
@@ -851,7 +838,7 @@ function StaffCard({ staff }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <motion.div
+    <Motion.div
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 200 }}
       className="bg-white rounded-lg shadow-xl overflow-hidden"
@@ -878,7 +865,7 @@ function StaffCard({ staff }) {
 
         <AnimatePresence>
           {open && (
-            <motion.div
+            <Motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
@@ -900,10 +887,10 @@ function StaffCard({ staff }) {
               <p>
                 <span className="font-semibold">Email:</span> {staff.email}
               </p>
-            </motion.div>
+            </Motion.div>
           )}
         </AnimatePresence>
       </div>
-    </motion.div>
+    </Motion.div>
   );
 }
