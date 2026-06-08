@@ -180,7 +180,7 @@ export default function CourseDetail() {
   );
 
   return (
-    <div className="min-h-screen bg-white pt-20 md:pt-24 pb-10">
+    <div className="bg-white pt-20 md:pt-24 pb-10">
       <div className="relative h-64 sm:h-80 md:h-96 w-full">
         <img
           src={course.banner}
@@ -206,7 +206,7 @@ export default function CourseDetail() {
         </div>
       </div>
 
-      <div className="md:h-screen max-w-7xl mx-auto px-4 lg:px-8 pt-6 md:pt-10">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 pt-6 md:pt-10">
         {isArtsCourse ? (
           <div className="grid gap-6 lg:grid-cols-[300px_minmax(0,1fr)] lg:items-start">
             <aside className="lg:sticky lg:top-28 rounded-lg border border-[#213153]/15 bg-white p-3 shadow-sm">
