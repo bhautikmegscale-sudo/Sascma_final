@@ -113,10 +113,10 @@ const qualification =
     </p>
 
     <div className="pt-2">
-      <p className="font-medium">Warm regards,</p>
-      <p className="font-semibold">Dr. Ashish Desai</p>
-      <p>Principal</p>
-      <p>SASCMA College</p>
+      <p className="font-medium">Warm regards,</p><br />
+      <p className="font-semibold">Dr. Ashish Desai</p><br />
+      <p>Principal</p><br />
+      <p>SASCMA College</p><br />
     </div>
 
   </div>
