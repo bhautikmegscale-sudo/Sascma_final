@@ -2,26 +2,13 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const Principle = () => {
-  const messages = [
-    {
-      title: "Dr. Ashish K. Desai",
-      name: "(PhD, MPhil, M.Com. - Accountancy, M. Com.- Statistics, B.Com)",
-      role: "Principal",
-      description: `Education is the foundation upon which individuals build their future and contribute meaningfully to society. At SASCMA College, we are committed to creating an academic environment that nurtures knowledge, discipline, values, and excellence.
-      Under the guidance of STERS Trust, the college strives to provide quality education through dedicated faculty, modern infrastructure, and a culture that encourages intellectual growth and holistic development. We believe that true education extends beyond academic achievement and helps students develop confidence, responsibility, leadership, and a lifelong passion for learning.
-Our institution continuously works towards empowering students with the skills, ethics, and vision required to meet the challenges of a dynamic and competitive world. Along with academic pursuits, students are encouraged to participate in cultural, social, and co-curricular activities that contribute to their overall personality development.
-At SASCMA College, our objective is not only to prepare students for successful careers but also to shape responsible citizens with strong human values and social awareness.
-I extend my best wishes to all students for a meaningful, enriching, and successful academic journey.
+  const fullText = "Dr. Ashish K. Desai";
 
-Warm regards,
-Dr. Ashish Desai
-Principal
-SASCMA College`
-    },
-  ];
+const qualification =
+  "(PhD, MPhil, M.Com. - Accountancy, M.Com. - Statistics, B.Com)";
 
   /* 🔹 Typing Effect Logic */
-  const fullText = messages[0].title;
+  const fullText = "Dr. Ashish K. Desai";
   const [typedText, setTypedText] = useState("");
 
   useEffect(() => {
@@ -75,28 +62,66 @@ SASCMA College`
             <span className="w-10 h-0.5 bg-red-700 ml-3"></span>
           </div>
 
-          {/* Content */}
-          {messages.map((msg, idx) => (
-            <div key={idx} className="flex flex-col gap-4">
+<div className="flex flex-col gap-1">
 
-              {/* ✅ REAL Typing Effect */}
-              <h3 className="text-3xl md:text-4xl font-semibold text-gray-800 whitespace-nowrap">
-                {typedText}
-                {/* <span className="ml-1 border-r-2 border-gray-800 " /> */}
-              </h3>
+  <h3 className="text-3xl md:text-4xl font-semibold text-gray-800 whitespace-nowrap">
+    {typedText}
+  </h3>
 
-              <p className="text-gray-600 mt-1">
-                <span className="font-medium">{msg.name}</span> —{" "}
-                <span className="text-gray-400">{msg.role}</span>
-              </p>
+  <p className="text-gray-600 mt-1">
+    <span className="font-medium">
+      {qualification}
+    </span>{" "}
+    — <span className="text-gray-400">Principal</span>
+  </p>
 
-              <div className="mt-4 space-y-5 text-gray-700 leading-8 text-justify">
-                {msg.description.split("\n\n").map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
-            </div>
-          ))}
+  <div className="mt-4 space-y-5 text-gray-700 leading-relaxed text-base text-justify">
+
+    <p>
+      Education is the foundation upon which individuals build their future
+      and contribute meaningfully to society. At SASCMA College, we are
+      committed to creating an academic environment that nurtures knowledge,
+      discipline, values, and excellence.
+    </p>
+
+    <p>
+      Under the guidance of STERS Trust, the college strives to provide
+      quality education through dedicated faculty, modern infrastructure,
+      and a culture that encourages intellectual growth and holistic
+      development. We believe that true education extends beyond academic
+      achievement and helps students develop confidence, responsibility,
+      leadership, and a lifelong passion for learning.
+    </p>
+
+    <p>
+      Our institution continuously works towards empowering students with
+      the skills, ethics, and vision required to meet the challenges of a
+      dynamic and competitive world. Along with academic pursuits, students
+      are encouraged to participate in cultural, social, and co-curricular
+      activities that contribute to their overall personality development.
+    </p>
+
+    <p>
+      At SASCMA College, our objective is not only to prepare students for
+      successful careers but also to shape responsible citizens with strong
+      human values and social awareness.
+    </p>
+
+    <p>
+      I extend my best wishes to all students for a meaningful, enriching,
+      and successful academic journey.
+    </p>
+
+    <div className="pt-2">
+      <p className="font-medium">Warm regards,</p>
+      <p className="font-semibold">Dr. Ashish Desai</p>
+      <p>Principal</p>
+      <p>SASCMA College</p>
+    </div>
+
+  </div>
+
+</div>
         </motion.div>
       </div>
 
