@@ -4,11 +4,11 @@
   const Principle = () => {
     const messages = [
       {
-        title: "Dr. Ashish Desai",
-        name: "(PhD, MPhil, M.Com, B.Com)",
+        title: "Dr. Ashish K. Desai",
+        name: "(PhD, MPhil, M.Com. - Accountancy, M. Com.- Statistics, B.Com)",
         role: "Principal",
         description:
-          "As Principal of SASCMA College, it is my distinct pleasure to welcome you to our institute. At SASCMA, under the guidance of STERS, we pride ourselves on providing a nurturing and academically rich environment supported by excellent infrastructure. We are committed to the holistic development of our students, offering a wide array of programs, including our exciting new additions for 2025-26: MSc IT (Integrated), BSc Data Science, BA Psychology, BBA (Foreign Trade), and BCom Data Analytics. Our dedicated faculty and staff are here to guide you on your educational journey. Explore our website to discover the vibrant life at SASCMA, where learning goes beyond the classroom. We look forward to welcoming you to our community."
+          "Education is the foundation upon which individuals build their future and contribute meaningfully to society. At SASCMA College, we are committed to creating an academic environment that nurtures knowledge, discipline, values, and excellence.Under the guidance of STERS Trust, the college strives to provide quality education through dedicated faculty, modern infrastructure, and a culture that encourages intellectual growth and holistic development. We believe that true education extends beyond academic achievement and helps students develop confidence, responsibility, leadership, and a lifelong passion for learning.Our institution continuously works towards empowering students with the skills, ethics, and vision required to meet the challenges of a dynamic and competitive world. Along with academic pursuits, students are encouraged to participate in cultural, social, and co-curricular activities that contribute to their overall personality development.At SASCMA College, our objective is not only to prepare students for successful careers but also to shape responsible citizens with strong human values and social awareness.I extend my best wishes to all students for a meaningful, enriching, and successful academic journey.Warm regards,Dr. Ashish DesaiPrincipalSASCMA College"
       },
     ];
 
@@ -44,7 +44,7 @@
             className="lg:w-1/2 w-full flex justify-center"
           >
             <img
-              src="https://sascma.ac.in:8443/api/v1/Uploads/media/99d9dee3-dda4-4975-ab4c-f4d91cb6ad30.jpeg"
+              src="https://sascma.ac.in:8443/api/v1/Uploads/media/96eb2807-c488-4309-ad6c-2bae67da4532.jpeg"
               alt="Principal"
               className="w-full h-auto lg:h-175 object-cover  rounded-3xl border-4 border-white"
             />
