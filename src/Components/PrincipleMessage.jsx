@@ -8,17 +8,12 @@ const Principle = () => {
       name: "(PhD, MPhil, M.Com. - Accountancy, M. Com.- Statistics, B.Com)",
       role: "Principal",
       description: `Education is the foundation upon which individuals build their future and contribute meaningfully to society. At SASCMA College, we are committed to creating an academic environment that nurtures knowledge, discipline, values, and excellence.
-
-Under the guidance of STERS Trust, the college strives to provide quality education through dedicated faculty, modern infrastructure, and a culture that encourages intellectual growth and holistic development. We believe that true education extends beyond academic achievement and helps students develop confidence, responsibility, leadership, and a lifelong passion for learning.
-
+      Under the guidance of STERS Trust, the college strives to provide quality education through dedicated faculty, modern infrastructure, and a culture that encourages intellectual growth and holistic development. We believe that true education extends beyond academic achievement and helps students develop confidence, responsibility, leadership, and a lifelong passion for learning.
 Our institution continuously works towards empowering students with the skills, ethics, and vision required to meet the challenges of a dynamic and competitive world. Along with academic pursuits, students are encouraged to participate in cultural, social, and co-curricular activities that contribute to their overall personality development.
-
 At SASCMA College, our objective is not only to prepare students for successful careers but also to shape responsible citizens with strong human values and social awareness.
-
 I extend my best wishes to all students for a meaningful, enriching, and successful academic journey.
 
 Warm regards,
-
 Dr. Ashish Desai
 Principal
 SASCMA College`
@@ -96,10 +91,10 @@ SASCMA College`
               </p>
 
               <div className="mt-4 space-y-5 text-gray-700 leading-8 text-justify">
-  {msg.description.split("\n\n").map((paragraph, index) => (
-    <p key={index}>{paragraph}</p>
-  ))}
-</div>
+                {msg.description.split("\n\n").map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
             </div>
           ))}
         </motion.div>
