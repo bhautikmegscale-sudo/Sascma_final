@@ -112,13 +112,12 @@ const qualification =
       and successful academic journey.
     </p>
 
-    <div className="pt-2">
-      <p className="font-medium">Warm regards,</p><br />
-      <p className="font-semibold">Dr. Ashish Desai</p><br />
-      <p>Principal</p><br />
-      <p>SASCMA College</p><br />
-    </div>
-
+    <div className="pt-2 text-gray-700">
+  <p>
+    <span className="font-medium">Warm regards, </span>
+    <span className="font-semibold text-gray-800">Dr. Ashish Desai</span>, Principal, SASCMA College
+  </p>
+</div>
   </div>
 
 </div>
