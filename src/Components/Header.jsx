@@ -97,7 +97,7 @@ const Header = () => {
       ),
     },
     {
-      label: "sascma@yahoo.com",
+      label: "info@sascma.ac.in",
       icon: (
         <svg
           className="h-4 w-4"
