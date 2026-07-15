@@ -248,14 +248,35 @@ const Header = () => {
                 </div>
               ))}
             </div>
-             <div className="hidden lg:block ml-4">
+             <div className="hidden lg:flex items-center gap-2 xl:gap-3 ml-4">
               <Link
                 to="/admissions"
-                className="relative overflow-hidden rounded-sm inline-flex min-w-[220px] items-center justify-center bg-[#9D2235] px-6 py-2 text-md font-semibold text-white transition-all duration-500 ease-in-out group z-10 border border-[#9D2235] hover:shadow-2xl"
+                className="relative overflow-hidden rounded-md inline-flex min-w-[170px] xl:min-w-[190px] items-center justify-center bg-[#9D2235] px-3 xl:px-4 py-1.5 xl:py-2 text-xs xl:text-sm font-bold text-white transition-all duration-300 ease-in-out group z-10 border border-[#9D2235] hover:shadow-[0_0_15px_rgba(157,34,53,0.5)] hover:-translate-y-0.5"
               >
-                <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center rounded-full"></span>
-                <span className="relative z-10">Admission for 2026-27</span>
+                <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center"></span>
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out -z-10"></span>
+                <span className="relative z-10 tracking-wide">Admission for 2026-27</span>
               </Link>
+              <a
+                href="https://student.sascma.ac.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative overflow-hidden rounded-md inline-flex min-w-[110px] xl:min-w-[125px] items-center justify-center bg-white px-3 xl:px-4 py-1.5 xl:py-2 text-xs xl:text-sm font-bold text-[#14213d] transition-all duration-300 ease-in-out group z-10 border border-white hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:-translate-y-0.5"
+              >
+                <span className="absolute inset-0 bg-[#9D2235] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center"></span>
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-[#14213d]/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out -z-10"></span>
+                <span className="relative z-10 tracking-wide group-hover:text-white transition-colors duration-300">Student Login</span>
+              </a>
+              <a
+                href="https://https://new.sascma.ac.in/raise-ticket"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative overflow-hidden rounded-md inline-flex min-w-[90px] xl:min-w-[100px] items-center justify-center bg-transparent px-3 xl:px-4 py-1.5 xl:py-2 text-xs xl:text-sm font-bold text-white transition-all duration-300 ease-in-out group z-10 border border-white/30 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:border-white hover:-translate-y-0.5"
+              >
+                <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center"></span>
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out -z-10"></span>
+                <span className="relative z-10 tracking-wide">Help Desk</span>
+              </a>
             </div>
           </div>
         </div>
@@ -671,7 +692,7 @@ const Header = () => {
                   )}
                 </div>
               ))}
-              <div className="px-4 py-3 border-t border-gray-100">
+              <div className="px-4 py-3 border-t border-gray-100 flex flex-col gap-2">
                 <Link
                   to="/admissions"
                   onClick={() => setMobileMenuOpen(false)}
@@ -680,6 +701,26 @@ const Header = () => {
                   <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center rounded-full"></span>
                   <span className="relative z-10">Admission for 2026-27</span>
                 </Link>
+                <a
+                  href="https://student.sascma.ac.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="relative overflow-hidden rounded-full inline-flex w-full items-center justify-center bg-[#14213d] px-3 py-3 text-md font-semibold text-white transition-all duration-500 ease-in-out group z-10 border border-[#14213d]"
+                >
+                  <span className="absolute inset-0 bg-[#9D2235] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center rounded-full"></span>
+                  <span className="relative z-10">Student Login</span>
+                </a>
+                <a
+                  href="https://https://new.sascma.ac.in/raise-ticket"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="relative overflow-hidden rounded-full inline-flex w-full items-center justify-center bg-[#a8394b] px-3 py-3 text-md font-semibold text-white transition-all duration-500 ease-in-out group z-10 border border-[#a8394b]"
+                >
+                  <span className="absolute inset-0 bg-[#14213d] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out -z-10 origin-center rounded-full"></span>
+                  <span className="relative z-10">Help Desk</span>
+                </a>
               </div>
             </div>
           )}
