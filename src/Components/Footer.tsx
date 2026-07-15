@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="space-y-2 text-center">
               <p className="font-bold text-[#a8394b] text-sm">
                 The Surat Technical Education & Research Society <br />
-                Smt. Kalavatiben Fulchandbhai Vakharia Education Complex  
+                Smt. Kalavatiben Fulchandbhai Vakharia Education Complex
                 Dumas Road, Vesu, Surat – 395007
               </p>
               <p className="text-gray-300 font-bold text-sm">
@@ -81,7 +81,7 @@ const Footer = () => {
                 <li>Dumas Road, Vesu</li>
                 <li>Surat – 395007</li>
                 <li>Phone: +91 88666 61565</li>
-                <li>Email: sascma@yahoo.com</li>
+                <li>Email: info@sascma.ac.in</li>
               </ul>
               {/* Social Icons */}
               <div className="flex items-center gap-3 mt-3 ml-[-20px]">
