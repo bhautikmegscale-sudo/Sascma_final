@@ -268,7 +268,7 @@ const Header = () => {
                 <span className="relative z-10 tracking-wide group-hover:text-white transition-colors duration-300">Student Login</span>
               </a>
               <a
-                href="https://https://new.sascma.ac.in/raise-ticket"
+                href="https://new.sascma.ac.in/raise-ticket"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative overflow-hidden rounded-md inline-flex min-w-[90px] xl:min-w-[100px] items-center justify-center bg-transparent px-3 xl:px-4 py-1.5 xl:py-2 text-xs xl:text-sm font-bold text-white transition-all duration-300 ease-in-out group z-10 border border-white/30 hover:shadow-[0_0_15px_rgba(255,255,255,0.15)] hover:border-white hover:-translate-y-0.5"
@@ -712,7 +712,7 @@ const Header = () => {
                   <span className="relative z-10">Student Login</span>
                 </a>
                 <a
-                  href="https://https://new.sascma.ac.in/raise-ticket"
+                  href="https://new.sascma.ac.in/raise-ticket"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
