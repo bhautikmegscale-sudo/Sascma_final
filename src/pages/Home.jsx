@@ -10,7 +10,7 @@ import AdmissionPopup from '../Components/AdmissionPopup';
 const Home = () => {
   return (
     <>
-      <AdmissionPopup />
+      {/* <AdmissionPopup /> */}
       <Banner />
       <WelcomeSection />
       <Enotice />
