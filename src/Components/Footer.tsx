@@ -10,7 +10,6 @@ const Footer = () => {
         { label: "About Us", url: "https://sascma.ac.in/about" },
         { label: "Committee", url: "https://sascma.ac.in0//committee" },
         { label: "Courses", url: "https://sascma.ac.in/courses" },
-        { label: "Career", url: "https://sascma.ac.in/career" },
         { label: "Events", url: "https://sascma.ac.in/events" },
         { label: "Staff", url: "https://sascma.ac.in/staff/academic" },
       ],

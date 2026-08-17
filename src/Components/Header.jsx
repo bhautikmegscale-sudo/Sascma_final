@@ -202,14 +202,14 @@ const Header = () => {
         { label: "Reviews", link: "/courses" }
       ],
     },
-      {
+    {
       name: "Gallery",
       submenu: null,
       link: "/gallery",
     },
     {
-      name: "Career",
-      link: "/career",
+      name: "SOS",
+      link: "/sos",
       submenu: null,
     },
   ];

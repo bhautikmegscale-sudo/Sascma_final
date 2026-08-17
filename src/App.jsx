@@ -55,7 +55,6 @@ import CourseDetail from './pages/CourseDetail';
 
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import Career from './pages/Career';
 import Committee from './pages/Committee';
 import Amenities from './pages/Amenities';
 import PdfViewer from "./pages/PdfViewer";
@@ -66,6 +65,7 @@ import TermsConditions from "./pages/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Inquiry from "./pages/Inquiry";
 import Gallery from "./pages/Gallery";
+import SOS from "./pages/SOS";
 import AdmissionDocuments from "./pages/AdmissionDocuments";
 import AdmissionSupportPage from "./pages/AdmissionSupportPage";
 import AdmissionPdfViewer from "./pages/AdmissionPdfViewer";
@@ -108,9 +108,9 @@ function App() {
         <Route path="/staff/non-academic" element={<NonAcademicStaff />} />
 
         <Route path="/courses/:id" element={<CourseDetail />} />
-        <Route path="/career" element={<Career />} />
         <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/gallery" element={<Gallery  />} />
+        <Route path="/sos" element={<SOS />} />
         <Route path="/admissions" element={<AdmissionDocuments />} />
         <Route path="/admissions-support" element={<AdmissionSupportPage />} />
         <Route path="/inquiry" element={<Inquiry />} />
