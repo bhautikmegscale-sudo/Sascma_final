@@ -1,3 +1,5 @@
+
+
 // import React from 'react';
 // import { useEffect, useState } from "react";
 // import Header from './Components/Header';
@@ -63,6 +65,7 @@ import Courses from './pages/Courses';
 import Events from './pages/Events';
 import TermsConditions from "./pages/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ReturnRefundPolicy from "./pages/ReturnRefundPolicy";
 import Inquiry from "./pages/Inquiry";
 import Gallery from "./pages/Gallery";
 import SOS from "./pages/SOS";
@@ -118,6 +121,8 @@ function App() {
         <Route path="/admissions/view/:id" element={<AdmissionPdfViewer />} />
         <Route path="/terms-of-use" element={<TermsConditions  />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy  />} />
+        <Route path="/return-refund-cancellation-policy" element={<ReturnRefundPolicy />} />
+        <Route path="/refund-policy" element={<ReturnRefundPolicy />} />
 
         {/* <Route path="/courses" element={<Courses />} />
         <Route path="/faculty" element={<Faculty />} />
@@ -133,3 +138,139 @@ function App() {
 }
 
 export default App;
+
+// // import React from 'react';
+// // import { useEffect, useState } from "react";
+// // import Header from './Components/Header';
+// // import Footer from './Components/Footer';
+// // import Banner from './Components/Banner';
+// // import CourseCard from './Components/CourseCard';
+// // import WelcomeSection from './Components/WelcomeSection';
+// // import FacultyCard from './Components/FacultyCard';
+// // import Enotice from './Components/Enotice';
+// // import Principle from './Components/PrincipleMessage';
+// // import Loader from './Components/Loader';
+// // import Gallery from './Components/Gallery';
+// // function App() {
+// //   const [loading, setLoading] = useState(true);
+// //   useEffect(() => {
+// //     // Simulate page loading
+// //     setTimeout(() => {
+// //       setLoading(false);
+// //     }, 2000); // 2 seconds
+// //   }, []);
+
+// //   if (loading) {
+// //     return <Loader />;
+// //   }
+
+// //   return (
+// //     <>
+// //       <div>
+// //         <Header />
+// //         <Banner />
+// //         <WelcomeSection/>
+// //         <Enotice/>
+// //         <Principle/>
+// //         <CourseCard/>
+// //         <FacultyCard/>
+// //         <Footer />
+// //       </div>
+// //     </>
+// //   )
+// // }
+
+// // export default App
+
+
+
+
+// import React, { useEffect, useState } from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Header from './Components/Header';
+// import Footer from './Components/Footer';
+// import Loader from './Components/Loader';
+// import AcademicStaff from './pages/AcademicStaff';
+// import NonAcademicStaff from './pages/NonAcademicStaff';
+// import CourseDetail from './pages/CourseDetail';
+
+// import Home from './pages/Home';
+// import AboutUs from './pages/AboutUs';
+// import Committee from './pages/Committee';
+// import Amenities from './pages/Amenities';
+// import PdfViewer from "./pages/PdfViewer";
+// import TestimonialVideos from "./pages/TestimonialVideos";
+// import Courses from './pages/Courses';
+// import Events from './pages/Events';
+// import TermsConditions from "./pages/TermsConditions";
+// import PrivacyPolicy from "./pages/PrivacyPolicy";
+// import Inquiry from "./pages/Inquiry";
+// import Gallery from "./pages/Gallery";
+// import SOS from "./pages/SOS";
+// import AdmissionDocuments from "./pages/AdmissionDocuments";
+// import AdmissionSupportPage from "./pages/AdmissionSupportPage";
+// import AdmissionPdfViewer from "./pages/AdmissionPdfViewer";
+
+// import FloatingInquiryButton from "./Components/FloatingInquiryButton";
+// import ScrollToTopButton from "./Components/ScrollToTopButton";
+// import { i } from "framer-motion/client";
+// // import Courses from './pages/Courses';
+// // import Faculty from './pages/Faculty';
+// // import Gallery from './pages/Gallery';
+// // import Contact from './pages/Contact';
+
+// function App() {
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     setTimeout(() => {
+//       setLoading(false);
+//     }, 2000);
+//   }, []);
+
+//   if (loading) {
+//     return <Loader />;
+//   }
+
+//   return (
+//     <Router>
+//       <Header />
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<AboutUs />} />
+//         <Route path="/committee" element={<Committee />} />
+//         <Route path="/amenities" element={<Amenities />} />
+//         <Route path="/pdf-viewer" element={<PdfViewer />} />
+//         <Route path="/testimonial" element={<TestimonialVideos />} />
+//         <Route path="/courses" element={<Courses />} />
+//         <Route path="/events" element={<Events />} />
+//         <Route path="/staff/academic/:course" element={<AcademicStaff />} />
+//         <Route path="/staff/academic" element={<AcademicStaff />} />
+//         <Route path="/staff/non-academic" element={<NonAcademicStaff />} />
+
+//         <Route path="/courses/:id" element={<CourseDetail />} />
+//         <Route path="/inquiry" element={<Inquiry />} />
+//         <Route path="/gallery" element={<Gallery  />} />
+//         <Route path="/sos" element={<SOS />} />
+//         <Route path="/admissions" element={<AdmissionDocuments />} />
+//         <Route path="/admissions-support" element={<AdmissionSupportPage />} />
+//         <Route path="/inquiry" element={<Inquiry />} />
+//         <Route path="/view/:id" element={<AdmissionPdfViewer />} />
+//         <Route path="/admissions/view/:id" element={<AdmissionPdfViewer />} />
+//         <Route path="/terms-of-use" element={<TermsConditions  />} />
+//         <Route path="/privacy-policy" element={<PrivacyPolicy  />} />
+
+//         {/* <Route path="/courses" element={<Courses />} />
+//         <Route path="/faculty" element={<Faculty />} />
+//         <Route path="/gallery" element={<Gallery />} />
+//         <Route path="/contact" element={<Contact />} /> */}
+//       </Routes>
+
+//       <Footer />
+//       <FloatingInquiryButton />
+//       <ScrollToTopButton />
+//     </Router>
+//   );
+// }
+
+// export default App;
