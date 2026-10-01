@@ -1,4 +1,7 @@
+
+
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -117,14 +120,18 @@ const Footer = () => {
               @Megascale
             </a>
           </p>
-          <div className="flex items-center gap-3">
-            <a href="https://sascma.ac.in/privacy-policy" className="hover:text-white cursor-pointer">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-3 gap-y-1">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors cursor-pointer">
               Privacy Policy
-            </a>
+            </Link>
             <span>|</span>
-            <a href="https://sascma.ac.in/terms-of-use" className="hover:text-white cursor-pointer">
+            <Link to="/terms-of-use" className="hover:text-white transition-colors cursor-pointer">
               Terms of Use
-            </a>
+            </Link>
+            <span>|</span>
+            <Link to="/refund-policy" className="hover:text-white transition-colors cursor-pointer">
+              Return, Refund, &amp; Cancellation Policy
+            </Link>
           </div>
         </div>
       </div>
@@ -133,3 +140,139 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// import React from "react";
+// import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+
+// const Footer = () => {
+//   const footerLinks = [
+//     {
+//       title: "Home",
+//       submenu: [
+//         { label: "Home", url: "https://sascma.ac.in" },
+//         { label: "About Us", url: "https://sascma.ac.in/about" },
+//         { label: "Committee", url: "https://sascma.ac.in0//committee" },
+//         { label: "Courses", url: "https://sascma.ac.in/courses" },
+//         { label: "Events", url: "https://sascma.ac.in/events" },
+//         { label: "Staff", url: "https://sascma.ac.in/staff/academic" },
+//       ],
+//     },
+//     {
+//       title: "Courses",
+//       submenu: [
+//         { label: "B.B.A", url: "https://sascma.ac.in/courses/bba" },
+//         { label: "B.COM.", url: "https://sascma.ac.in0//courses/bcom" },
+//         { label: "B.C.A", url: "https://sascma.ac.in0//courses/bca" },
+//         { label: "M.COM.", url: "https://sascma.ac.in0/0//courses/mcom" },
+//         { label: "M.SC.", url: "https://sascma.ac.in0/0//courses/msc" },
+//         { label: "B.A.", url: "https://sascma.ac.in0//courses/ba" },
+//         { label: "B.SC.", url: "https://sascma.ac.in0//courses/bsc" },
+//       ],
+//     },
+//   ];
+
+//   return (
+//     <footer className="bg-[#213153] text-white">
+//       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12">
+//         {/* Top Section */}
+//         <div className="flex flex-col lg:flex-row gap-10 border-b border-gray-600 pb-10">
+//           {/* Logo & Description */}
+//           <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-6 lg:w-1/2">
+//             <img src="/logo.webp" alt="College Logo" className="h-32 sm:h-40" />
+//             <div className="space-y-2 text-center">
+//               <p className="font-bold text-[#a8394b] text-sm">
+//                 The Surat Technical Education & Research Society <br />
+//                 Smt. Kalavatiben Fulchandbhai Vakharia Education Complex
+//                 Dumas Road, Vesu, Surat – 395007
+//               </p>
+//               <p className="text-gray-300 font-bold text-sm">
+//                 SASCMA English Medium Commerce College & Shri Hasmukhlal Hojiwala
+//                 College of Business Administration & Smt. Ushaben Jayvadan
+//                 Bodawala College of Computer Application
+//               </p>
+//               <p className="font-bold text-[#a8394b] text-sm">
+//                 Affiliated to Veer Narmad South Gujarat University
+//               </p>
+//             </div>
+//           </div>
+
+//           {/* Links Section */}
+//           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 lg:w-1/2">
+//             {footerLinks.map((section) => (
+//               <div key={section.title}>
+//                 <h4 className="text-lg font-bold mb-4 text-[#a8394b]">{section.title}</h4>
+//                 <ul className="space-y-2 text-sm font-semibold">
+//                   {section.submenu.map((item) => (
+//                     <li key={item.label}>
+//                       <a
+//                         href={item.url}
+//                         className="text-gray-400 hover:text-white transition"
+//                       >
+//                         {item.label}
+//                       </a>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             ))}
+
+//             {/* Contact */}
+//             <div>
+//               <h4 className="text-lg font-bold mb-4 text-[#a8394b]">Contact Us</h4>
+//               <ul className="space-y-2 text-sm text-gray-400 font-semibold">
+//                 <li>Dumas Road, Vesu</li>
+//                 <li>Surat – 395007</li>
+//                 <li>Phone: +91 88666 61565</li>
+//                 <li>Email: info@sascma.ac.in</li>
+//               </ul>
+//               {/* Social Icons */}
+//               <div className="flex items-center gap-3 mt-3 ml-[-20px]">
+//                 <a href="#" className="text-gray-400 border border-gray-400 hover:border-white p-1 rounded hover:text-white transition">
+//                   <FaFacebookF size={16} />
+//                 </a>
+//                 <a href="#" className="text-gray-400 border border-gray-400 hover:border-white p-1 rounded hover:text-white transition">
+//                   <FaTwitter size={16} />
+//                 </a>
+//                 <a href="#" className="text-gray-400 border border-gray-400 hover:border-white p-1 rounded hover:text-white transition">
+//                   <FaInstagram size={16} />
+//                 </a>
+//                 <a href="#" className="text-gray-400 border border-gray-400 hover:border-white p-1 rounded hover:text-white transition">
+//                   <FaLinkedinIn size={16} />
+//                 </a>
+//                 <a href="#" className="text-gray-400 border border-gray-400 hover:border-white p-1 rounded hover:text-white transition">
+//                   <FaYoutube size={16} />
+//                 </a>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Bottom Bar */}
+//         <div className="mt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400 gap-4">
+//           <p className="text-center md:text-left">
+//             © 2025 SASCMA College | Proudly created by{" "}
+//             <a
+//               href="https://www.megascale.in/"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="hover:underline text-white"
+//             >
+//               @Megascale
+//             </a>
+//           </p>
+//           <div className="flex items-center gap-3">
+//             <a href="https://sascma.ac.in/privacy-policy" className="hover:text-white cursor-pointer">
+//               Privacy Policy
+//             </a>
+//             <span>|</span>
+//             <a href="https://sascma.ac.in/terms-of-use" className="hover:text-white cursor-pointer">
+//               Terms of Use
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default Footer;
